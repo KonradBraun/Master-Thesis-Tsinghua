@@ -56,7 +56,7 @@ Not requested (nice to have): zeta potential of the NDs, ND distribution through
 - **Zotero 10 + MCP server** (v0.14.1, local writes): 105 top-level items (local API, 30 Oct) sorted into chapter collections + "Parameter sources (ZnSO4, GF)" + "Manufacturing (option)"; DFT papers in "4 Continuum Modelling / DFT (likely not needed)". MCP reads can be stale → query local API (see claude-notes). Small open items: Ma PhD thesis → item type Dissertation; Hess 2018 without PDF (arXiv version available); Cytiva catalog → type Report, number CY53855.
 - PDFs: `bash tools/pdf2txt.sh "Literature/Potential"` (Git Bash) → `txt/`.
 - Python via `py`; Remote Control on; sleep on mains power disabled.
-- **Git repository:** soon (30 Oct). Git 2.45 installed, global user.name/email set. Open: local only or private remote; what to exclude (proposal: `.mph`, LaTeX build files, PDFs, confidential group files — manuscript under review).
+- **Git repository:** private, `github.com/KonradBraun/Master-Thesis-Tsinghua`, branch `main` (set up 30 Oct). Tracks all notes and the LaTeX sources (`.tex` = latest text incl. formatting; PDF is rebuilt, not tracked). `.gitignore` excludes `.mph`/`.exe`, `Literature/Potential/`, the group's confidential files (`Literature/*.pdf|docx|png`, `Literature/group-data/` — put the group's raw data there) and LaTeX build output → **back up `.mph` and group files separately.** Push: done by the student (Claude's push is blocked by the permission check).
 
 ## To pass on to the group
 Reference errors in the manuscript: [4] = [16] · [2] broken DOI (correct: 10.1002/aenm.202102707) · SI [1] incomplete · SI [3] mixes two Kresse & Furthmüller 1996 papers. Possible mismatch in Fig. 5c (check original). Further inconsistencies: paper-summary F13–F21.

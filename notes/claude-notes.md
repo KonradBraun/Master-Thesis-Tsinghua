@@ -8,6 +8,7 @@ Short, only things a fresh session would otherwise get wrong. Not a log.
 - Zotero MCP server times out at session start if Zotero isn't open yet → open Zotero before starting the session; otherwise the student reconnects it: `/mcp` → zotero → Reconnect (also works in the desktop app; Claude can't reconnect project servers itself).
 - PowerShell `Invoke-WebRequest` to the Zotero local API fails ("connection closed") — use `curl.exe` instead.
 - Zotero MCP **reads can be stale** (items added in Zotero desktop not visible) while writes still work. For current counts/items query the local API directly: `curl "http://localhost:23119/api/users/0/items/top?limit=100&format=json"` (header `Total-Results`).
+- Git: `git push` from Claude is blocked by the auto-mode permission check → student pushes. In PowerShell 5.1 `git commit -F -` with a here-string fails → write the message to a file in the scratchpad.
 - PDFs: convert with `bash tools/pdf2txt.sh <folder>` → `<folder>/txt/`, read the .txt, not the PDF (far cheaper). Render single pages only when figures matter.
 
 ## COMSOL (tcd, 6.3)
