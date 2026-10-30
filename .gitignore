@@ -1,0 +1,34 @@
+# Large binaries (COMSOL models incl. the group's, installers) — back up separately
+*.mph
+*.mphbin
+*.exe
+
+# Literature PDFs and their text versions (copyright; kept in Zotero)
+Literature/Potential/
+
+# Group's confidential files (manuscript under review, SI, raw data)
+Literature/*.pdf
+Literature/*.docx
+Literature/*.png
+Literature/group-data/
+
+# LaTeX build output
+build/
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.xdv
+Thesis Proposal/**/*.pdf
+
+# Editor / OS
+VSCode/
+Thumbs.db
+desktop.ini

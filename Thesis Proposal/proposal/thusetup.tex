@@ -1,0 +1,49 @@
+% !TEX root = ./main.tex
+
+% Cover and document settings (ThuThesis v7.7.1, proposal mode)
+% Note: no empty lines inside \thusetup{...}
+\thusetup{
+  output = electronic,
+  thesis-type = proposal,
+  %
+  % Titles — working title, not decided yet
+  title  = {（中文题目待定）},
+  title* = {Working Title: Continuum Modelling of Nanodiamond-Decorated Glass Fibre Separators for Aqueous Zinc-Ion Batteries},
+  %
+  degree-category  = {工学硕士},
+  degree-category* = {Master of Science},
+  %
+  department  = {Department of Mechanical Engineering},
+  discipline  = {Mechanical Engineering},
+  discipline* = {Mechanical Engineering},
+  %
+  author  = {Konrad Braun},
+  author* = {Konrad Braun},
+  student-id = {TODO},
+  %
+  supervisor  = {Xining Zang, Associate Professor},
+  supervisor* = {Associate Professor Xining Zang},
+  %
+  % date = {2026-11-20},
+  include-spine = false,
+}
+
+\thusetup{
+  math-font = xits,
+}
+
+\usepackage{amsthm}
+\usepackage{threeparttable}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{siunitx}
+
+% Bibliography: biblatex + biber, numeric (order of citation)
+\usepackage[backend=biber, style=thuthesis-numeric]{biblatex}
+\addbibresource{ref/refs.bib}
+
+\graphicspath{{figures/}}
+
+% hyperref last
+\usepackage{hyperref}

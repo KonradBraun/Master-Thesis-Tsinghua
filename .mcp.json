@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "zotero": {
+      "type": "stdio",
+      "command": "C:\\Users\\konra\\.local\\bin\\zotero-mcp.exe",
+      "env": {
+        "ZOTERO_LOCAL": "true"
+      }
+    }
+  }
+}

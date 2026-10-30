@@ -1,0 +1,19 @@
+{
+    // ThuThesis (Thesis Proposal/proposal) needs XeLaTeX -> xelatex recipe first.
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk-xelatex",
+            "command": "latexmk",
+            "args": ["-synctex=1", "-interaction=nonstopmode", "-file-line-error", "-xelatex", "-outdir=%OUTDIR%", "%DOC%"]
+        },
+        {
+            "name": "latexmk-pdflatex",
+            "command": "latexmk",
+            "args": ["-synctex=1", "-interaction=nonstopmode", "-file-line-error", "-pdf", "-outdir=%OUTDIR%", "%DOC%"]
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        { "name": "latexmk (xelatex)", "tools": ["latexmk-xelatex"] },
+        { "name": "latexmk (pdflatex)", "tools": ["latexmk-pdflatex"] }
+    ]
+}
