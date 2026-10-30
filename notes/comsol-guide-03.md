@@ -69,11 +69,7 @@ An der Grenze ND/GF springt die Ladung → steile Gradienten. Statt *Extremely f
 - Im **stationären** Zustand fließt SO₄²⁻ nirgends (es reagiert nicht). Das GF-Profil ändert sich durch eine dünne Schicht daher kaum. Der Effekt zeigt sich **an der Anodenoberfläche** (Donnan-„Puffer": mehr Zn²⁺ direkt an der Elektrode) und vor allem im **Zeitverlauf** und bei **hohen Strömen** (Sand-Zeit, Grenzstrom).
 - Deshalb danach: Sweep über `i_app` (z. B. 2–20 mA/cm²) mit und ohne Ladung.
 
-## Virtueller Bruce–Vincent (Modell 04, Anleitung 19.10.)
-Save As `04_ZnZn_1D_BruceVincent.mph` · Parameter `dV = 10[mV]` · Electrode Surface 2 → **Electric potential = dV** · Output times `0 10^range(-3,0.1,3.6)` · Sweep nur `X_ND = 0 100 1000 3100` · Point Graph Stromdichte an Punkt 3 (log t) · Point Evaluation bei t = 0 und letztem t: i (Punkt 3), η₁ (Punkt 1), η₂ (Punkt 3).
-Auswertung: t₊ = I_ss(ΔV − η₀)/[I₀(ΔV − η_ss)], η = |η₁|+|η₂| (ersetzt R₀·I₀ bzw. R_ss·I_ss aus der EIS). Check: X = 0 → 0.51.
-
-## Danach (eigene Schritte, Anleitung folgt)
-- **Kalibrierung an t₊ = 0.69:** virtueller Bruce–Vincent-Versuch im Modell (ΔV = 10 mV, I₀ und I_ss ablesen, gleiche Formel wie die Gruppe) → X_ND so wählen, dass 0.69 herauskommt. Erst dann ist der Vergleich mit der Messung fair.
+## Danach
+- **Virtueller Bruce–Vincent / Kalibrierung an t₊ = 0.69:** Modell 04, eigene Anleitung `comsol-guide-04.md` (30.10.).
 - Plausibilitätscheck X_ND ↔ Zeta-Potential / Oberflächenladung (Daten vom Postdoc).
 - L_ND, eps_ND, tau_ND aus Postdoc-Daten (ND-Menge, Querschnitt-SEM) ersetzen.
