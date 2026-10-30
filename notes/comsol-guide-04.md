@@ -18,7 +18,7 @@ Drei Fragen:
 - **Kinetik macht die Formel empfindlich.** Mit i₀ = 5 A/m² ist R_ct ≈ RT/(2F·i₀) ≈ 2.6e-3 Ω·m² pro Elektrode, der Elektrolyt im Modell nur ~7e-5 Ω·m² → η₀ ≈ 9.87 von 10 mV, ΔV − η₀ ≈ 0.13 mV. Ein Fehler von 0.01 mV in η verschiebt t₊ um ~8 %. In der echten Zelle (R_ct ~680 Ω vs. ~3 Ω Elektrolyt) ist das noch extremer → relevant für die Kritik F13/F19. Deshalb rechnen wir zusätzlich mit schneller Kinetik (i₀ = 2000 A/m², UME-Wert Rana et al., `parameters.md`): Dann dominiert der Elektrolyt und die Formel ist gut konditioniert.
 
 ## 1. Randbedingung: Spannung statt Strom
-- **Electrode Surface 1** (Punkt 1, x = 0, Seite mit ND-Schicht): bleibt Electric ground — nur prüfen.
+- **Electrode Surface 1** (Punkt 1, x = 0, Seite mit ND-Schicht): muss **Electric ground** sein — prüfen (in der Modellhistorie taucht auch „External short" auf).
 - **Electrode Surface 2** (Punkt 3, x = L): Abschnitt *Electrode Phase Potential Condition* von **Average current density** (`i_app`) auf **Electric potential** umstellen, φ_s,ext = **`dV`** ⚠️ (Dropdown-Name).
 → ES2 liegt 10 mV höher: dort Auflösung, an x = 0 Abscheidung durch die ND-Schicht — wie in Modell 03.
 
@@ -53,6 +53,13 @@ Drei Fragen:
 2. **X = 0, i₀ = 2000:** I_ss/I₀ ≈ 0.55 (nahe t₊ = 0.51; der Rest ist die kleine Kinetik-Korrektur, die die Formel herausrechnet).
 3. **Größenordnung I₀ (X = 0):** i₀ = 5 → ~1.9 A/m² (≈ 0.19 mA/cm², kinetisch begrenzt); i₀ = 2000 → ~120 A/m² (Elektrolyt-begrenzt) — eigene Abschätzung aus R_ct und R_Elyt oben.
 4. Konvergenzprobleme bei X = 10000 → diesen Wert weglassen, Rest reicht.
+
+## Mit den S6-Rohdaten (sobald in `Literature/group-data/`)
+Ändert am Modell-Setup nichts — Modell 04 kann sofort gerechnet werden. Die Rohdaten nutze ich für:
+1. **Tatsächliches Protokoll:** angelegte Spannung (wirklich 10 mV?), Dauer, Zeitauflösung (welcher Punkt ist „I₀"?), EIS vor/nach.
+2. **t₊ exakt nachrechnen** (statt abgelesener ~Werte) → F13 bestätigen oder widerlegen.
+3. **Gemessenes I(t) gegen Modell legen:** Im Modell fällt der Strom durch Ionentransport bei i₀ = 5 nur um ~1 %; gemessen ~42 % (GF) bzw. ~13 % (ND@GF). Bestätigen die Rohdaten das, kommt der Abfall von der Grenzfläche (R₀ → R_s), nicht vom Transport (Abschätzung in `progress.md`).
+4. Ggf. dritter `i0`-Wert, passend zum gemessenen R₀ (R₀ ~680 Ω → i₀ ~0.5 A/m², eigene Rechnung mit A = 0.785 cm²) — erst nach Rohdaten-Check.
 
 ## Optional danach
 - **ND im ganzen GF statt nur oben:** zweiter Sweep `L_ND` = `40[um] 300[um] 600[um]` bei i₀ = 2000, X = 3100 → zeigt, wie dick die Schicht für 0.69 sein müsste (Gegenprobe zur Abschätzung oben).
