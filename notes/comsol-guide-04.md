@@ -15,7 +15,7 @@ Die Gruppe misst t₊ mit Bruce–Vincent (ΔV = 10 mV laut SI, 600 s): GF 0.51,
 - Ohm passt nicht zu 10 mV: I·R_gesamt ≈ 47–51 mV (GF), ≈ 14–16 mV (ND@GF).
 - Nachgerechnet: GF t₊ = 0.52–0.53 (gemeldet 0.51); ND@GF **0.99–1.15** je nach EIS-Ablesung (gemeldet 0.69) → schlecht konditioniert, 0.69 nicht reproduzierbar → **kein Kalibrierziel**.
 - Stromabfall gemessen −42 % (GF) / −13 % (ND@GF); Transport allein (gemessenes R_bulk) erklärt nur 0.5–4 % → der Abfall kommt von der Grenzfläche.
-→ Modell 04 wird damit vor allem **Methodenkritik + Obergrenze für den Schichteffekt**; die Kalibrierung von X auf 0.69 entfällt (Vorschlag, noch nicht beschlossen).
+→ Modell 04 wird damit vor allem **Methodenkritik + Obergrenze für den Schichteffekt**; die Kalibrierung von X auf 0.69 entfällt (beschlossen 30.10.). Die Rohdaten-Auswertung bleibt Hintergrund — in der Arbeit argumentieren wir nur mit den Simulationsergebnissen.
 
 ## Erwartung (eigene Abschätzung — das Modell prüft sie)
 - **Dünne Schicht hebt t₊ kaum:** R₀ = R_GF + R_ND, R_ss = R_GF/t₊,GF + R_ND/t₊,ND, gemessen t₊ ≈ R₀/R_ss. Mit R_ND/R_GF ≈ 0.065 und t₊,GF = 0.51 gibt selbst eine perfekt selektive Schicht nur **≈ 0.53**.

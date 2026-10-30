@@ -3,12 +3,11 @@
 **Status:** draft structure without DFT (COMSOL only, decided 14 Oct). Deadline: **mid-December 2026** (student, 30 Oct); template: ThuThesis 选题报告 (18 Oct). Length and governing institution **not confirmed** — ~40 pages is the student's estimate.
 **Reuse:** Chapters 2–4 should carry over into the thesis almost unchanged.
 
-**Decided (30 Oct):** chapter cut (a) — fundamentals separate from the simulation state of the art, as below; funnel AZIBs → separators/NDs → modelling → state of the art of simulation → gap. Writing directly in English (discussions partly in German).
+**Decided (30 Oct):** chapter cut (a) — fundamentals separate from the simulation state of the art, as below; funnel AZIBs → separators/NDs → modelling → state of the art of simulation → gap. Writing directly in English (discussions partly in German). Critique of the group's paper only through our own simulation results — no statements that their measurements/calculations are wrong.
 
 **Open options** (student decides):
 - Full cell / cathode: open — half cell first; depends on scope and available data (30 Oct)
 - Phase-field section: only if dendrite growth is simulated — undecided
-- Critique of the group's paper: explicit, or framed generally as "limitations of existing models" — ask the supervisor
 - **Manufacturing chapter (proposed 17 Oct, not yet discussed with supervisor):** one thesis chapter after the design study — tolerances and process window for the ND coating, sensitivity/UQ of which process parameter matters most. Gives the RWTH Produktionstechnik link without bending the topic.
 
 ---
@@ -68,9 +67,9 @@
 - Sub-objectives and explicit out-of-scope list — *option:* derive manufacturing tolerances / process window for the ND coating
 
 ## 7. Methodology — ~4–5 p *(write last)*
-- 7.1 Model chain: GF baseline → ND layer with fixed charge → design study (see `../notes/progress.md`)
+- 7.1 Model chain: 1D GF baseline → ND layer with fixed charge → virtual Bruce–Vincent → 2D mechanism models (pore structure, interface, corrosion) → mechanism ranking (see `../notes/progress.md`, approach agreed with the student 30 Oct)
 - 7.2 COMSOL model: geometry, Tertiary Current Distribution (Nernst–Planck), BCs, parameters
-- 7.3 Calibration and validation: calibrate on GF σ, check t₊; calibrate ND charge on t₊, check σ
+- 7.3 Calibration and validation: calibrate on GF σ; ND fixed charge estimated physically, not calibrated on t₊ (virtual Bruce–Vincent shows the method's limits in Zn cells); compare trends with measured voltage, nucleation overpotential, interfacial resistance
 - 7.4 Design study and sensitivity analysis — *option:* tolerance analysis under process variation (Uncertainty Quantification Module); scripted/automated calibration and parameter studies (Optimization Module, LiveLink for MATLAB)
 - 7.5 **Parameter table** — value, unit, source, status (keep as a living file from day one)
 
@@ -89,7 +88,7 @@ Expect 80–150 entries.
 - [ ] Example proposals from previous students?
 - [ ] Depth on simulation fundamentals vs electrochemistry?
 - [ ] One committed scope, or alternatives with a recommendation?
-- [ ] How explicitly may the gap be stated as a limitation of the group's own paper?
+- [x] How explicitly to criticise the group's paper — decided by the student (30 Oct): only through own simulation results
 - [x] AI use: allowed, no declaration needed (student, 30 Oct)
 
 # Literature workflow

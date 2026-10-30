@@ -5,21 +5,22 @@
 - **18 Oct:** proposal must be in Tsinghua format (ThuThesis 选题报告); cover: Department of Mechanical Engineering, Mechanical Engineering, Master of Science.
 - **Message sent 18 Oct** asking for: (1) approximate ND amount per separator (mg), (2) raw data of SI Fig. S5 and S6, (3) spacer/spring of the CR2032 cells (→ compressed separator thickness), (4) the paper's `.mph` file. **Answer (18 Oct):** talk to Dr. Yanmei Zhang first (first author, equal contribution, of the group's ND synthesis paper, ACS Nano 20 (2026) 20231; Tsinghua ME). She forwarded the questions to the former postdoc. **Answers 19 Oct** (→ `parameters.md`): ND 0.1–0.4 mg/separator, Φ10 mm, layer 30–50 µm on the fibres, zeta ND@GF −38.8 mV, stack Zn/sep/Zn, CP 50 µm. Raw S5/S6 + `.mph` in a few days → group `.mph` files in `COMSOL/Old models/` (20 Oct); raw data of SI Fig. S6 (Bruce–Vincent) in `data/figure S6/` (30 Oct, evaluated, see COMSOL models). S5 raw data: unknown. **Key estimate:** this loading gives fixed charge ≤ ~100 mol/m³, but ~3100 needed for t₊ = 0.69 → Donnan exclusion alone likely can't explain the measured t₊ (to test with model 03).
 - Proposal deadline: **mid-December** (student, 30 Oct). Paper still under review (30 Oct).
-- Still to ask later: proposal length; her view on dendrite growth; how openly to frame weaknesses of the group's paper (she is corresponding author); manufacturing-chapter idea (below).
+- **Nobody who worked on the paper is left in the group** (student, 30 Oct): the former postdoc can provide data, but not how the experiments were done → don't plan on protocol questions.
+- Still to ask later (supervisor): proposal length; her view on dendrite growth; manufacturing-chapter idea; the approach below.
 
-## Proposed approach — not yet agreed
-1. **COMSOL baseline, plain GF** — Zn//Zn, tertiary current distribution (Nernst–Planck) + Butler–Volmer, porous separator. Calibrate on σ_eff = 2.83 S/m.
-2. **ND layer with real properties** — porous layer with fixed negative charge (anion exclusion), calibrated on t₊ = 0.69, check σ = 2.94 S/m. Plausibility vs literature ND surface charge. ND distribution (top layer vs penetrated into GF) unknown → treat as design variable.
-3. **Design study** — ND loading, distribution, placement; sensitivity analysis.
+## Approach — agreed with the student 30 Oct, not yet discussed with the supervisor
+**Goal:** find out in simulation why ND@GF cells perform so much better (Zn//Zn 47 h → 3738 h at 2 mA/cm²) — rank candidate mechanisms by how much of the improvement each can explain, not predict cycle life.
+1. **Done:** 1D baseline GF (models 01–02), ND layer with fixed charge (03) → fixed-charge/Donnan effect negligible at realistic loading.
+2. **Model 04 (short):** virtual Bruce–Vincent → upper bound of the layer effect on the *measured* t₊ + limits of the method in Zn cells. t₊ = 0.69 is cited, not used as calibration target; t₊ only as scenario parameter; fixed charge X estimated physically (loading, surface groups, zeta).
+3. **Main work: recreate the processes in the cell (2D)** — pore structure / current distribution (GF pores up to 14 µm vs NDs filling the voids; metric: uniformity of current density at the anode) · interface (nucleation, kinetics, passivation; parametric) · corrosion/HER (option; Tafel I_corr halves, Fig. 2f; COMSOL "Water-Based with Electroneutrality" + HER). Mechanics (puncture +18 %) only discussed. Optional: dendrite onset via Sand's time or phase field.
+4. **If time is left:** full cells (open) · design study (ND loading/distribution) / manufacturing tolerances (RWTH link, below) · DFT only with the supervisor's OK (excluded 14 Oct).
 
-Optional: dendrite onset via Sand's time, or phase-field growth.
-Option (19 Oct, not confirmed): **corrosion/HER** as further mechanism — Tafel I_corr halves with ND (1.17 → 0.56 mA, Fig. 2f); COMSOL "Water-Based with Electroneutrality" + HER reaction.
-Assessment after model 03 (own, 19 Oct): fixed charge (step 2) too weak at 2 M with 0.1–0.4 mg ND → focus shifts to 2D homogenisation of pore structure (most promising), interfacial kinetics/nucleation (parametric only), corrosion (option). Mechanics (puncture +18 %) only discussed. Goal: rank mechanisms, not predict cycle life.
+**Framing of critique (student, 30 Oct):** the group's t₊ = 0.69 is questioned only through our own simulation results (model 04) — never as "miscalculated". The S6 raw-data check (below) is background, not a thesis statement.
 Later, for the thesis: switch electrolyte to COMSOL 6.3 "Concentrated Electrolyte Transport" (2 M ZnSO₄ is too non-ideal for dilute Nernst–Planck) and compare both.
 
 **Comparison with the paper's model (later):** same geometry with bumps on the anode; A = as in paper (0.5 V, NDs as holes) · B = same but constant current 2 mA/cm² · C = + concentration gradients and real parameters · D = + NDs as charged layer. Metric: current density along the anode (max/mean). Shows which part of the paper's effect survives.
 
-**Proposed (17 Oct), not yet discussed with supervisor — RWTH link:** one thesis chapter after step 3 on manufacturing tolerances / process window for the ND coating (UQ Module); automation only as method.
+**Proposed (17 Oct), not yet discussed with supervisor — RWTH link:** one thesis chapter on manufacturing tolerances / process window for the ND coating (UQ Module); automation only as method.
 
 **Metrics instead of colour plots:** std. dev. of current density along the anode · max/mean Zn²⁺ flux · depletion depth. Claims: trends and mechanisms, not absolute accuracy.
 
@@ -43,7 +44,7 @@ Later, for the thesis: switch electrolyte to COMSOL 6.3 "Concentrated Electrolyt
 | t₊ recalculated (group formula, ΔV = 10 mV) | 0.52–0.53 (reported 0.51) | 0.99–1.15 depending on R read-off (reported 0.69) |
 
 Findings: (1) Ohm's law needs ~47–51 / ~14–16 mV, not 10 mV → F13 confirmed. (2) ND@GF t₊ is ill-conditioned and not reproducible → 0.69 unusable as calibration target. (3) Transport alone (measured R_bulk, t₊ 0.2–0.5) gives only 0.5–4 % decay → measured decay is interfacial (GF R_total +85 %, ND@GF +6 %). (4) ND@GF R_bulk 1.85 Ω with σ = 2.94 S/m, A = 0.785 cm² → L ≤ ~430 µm, consistent with the compressed-thickness estimate; the GF cell's 7.3 Ω implies extra series resistance (cell-to-cell scatter, F15). Single cells, no repeats.
-**Proposed consequence (30 Oct, not agreed):** drop "calibrate X on t₊ = 0.69" (outline §7.3); estimate X physically (loading, surface groups, zeta); model 04 = method critique + upper bound of the layer effect; mechanism ranking shifts towards the interface (kinetics/passivation, corrosion).
+→ Consequences: see Approach (agreed 30 Oct). Why Bruce–Vincent fails here (own): R_interface is 50–200× R_bulk, so the transport signal is only ~1–4 % of the current and is buried by interface changes.
 - Group's models `Old models/GF(1).mph`, `ND@GF(1).mph` (COMSOL 6.3, Apr 2025) — first look from the file contents, without opening in COMSOL: **only Electric Currents (AC/DC), one stationary study**, 2D (no axisymmetry found), terminals 0.5 V / 0 V, conductivities 3.5 and 2.15 S/m; ND@GF window title "diamond part removed" (NDs as holes). → no Secondary Current Distribution / diluted species as stated in SI §1.7, i.e. pure ohmic conduction. Verify in COMSOL.
 - Office PC has COMSOL 5.6: model 01 rebuilt there (results after geometry fix not yet checked); 6.3 files can't be opened there.
 - i₀ = 5 A/m² still a start value → calibrate on Fig. 3c/3d.
@@ -55,13 +56,13 @@ Findings: (1) Ohm's law needs ~47–51 / ~14–16 mV, not 10 mV → F13 confirme
 As of 30 Oct: no chapter text yet (only headings in `data/chap0*.tex`).
 - **30 Oct – 8 Nov:** add the group's files · solve + document model 04 · verify group model in COMSOL · write Ch. 3.4
 - **9 – 15 Nov:** i₀ calibration (Fig. 3c/3d) · rest of Ch. 3 + Ch. 4 · supervisor meeting: research question + length
-- **16 – 22 Nov:** optional first 2D step (group geometry, comparison models A/B) · Ch. 2 + 5
+- **16 – 22 Nov:** first 2D step (group geometry, comparison models A/B) — start of the main simulation work · Ch. 2 + 5
 - **23 – 29 Nov:** Ch. 6, 7 (preliminary results), 8, 1 → full draft to supervisor ~27 Nov
 - **30 Nov – 14 Dec:** feedback, revision, ~1 week buffer, submission
 
 ## Data
-Parameters with sources and status: `notes/parameters.md`. Requested from the group: see Supervisor. Note: SI §1.6 uses the **separator** area A in σ = L/(R·A) (size not stated) → raw S5 data give the area-specific resistance directly, independent of their L and A.
-**No own lab measurements planned** (student, 30 Oct): data come from the group (former postdoc) or are estimates. Compressed GF thickness until the group answers: ~430 µm estimate (Hess 2018), 675 µm as the other sensitivity case (proposal).
+Parameters with sources and status: `notes/parameters.md`. Requested from the group: see Supervisor. **Wishlist for the former postdoc (data only, proposal 30 Oct):** original SEM images of GF and ND@GF (S3 — pore structure for the 2D model) · raw voltage data Fig. 3c/3d (i₀ calibration) · raw Tafel data Fig. 2f (corrosion) · S5 raw data (conductivity). Note: SI §1.6 uses the **separator** area A in σ = L/(R·A) (size not stated) → raw S5 data give the area-specific resistance directly, independent of their L and A.
+**No own lab measurements planned** (student, 30 Oct): data come from the group (former postdoc) or are estimates. Compressed GF thickness: ~430 µm estimate (Hess 2018; consistent with the ND@GF R_bulk in S6), 675 µm as the other sensitivity case.
 Not requested (nice to have): zeta potential of the NDs, ND distribution through the GF thickness, which side faces the anode, repeat measurements.
 
 ## Tools and setup
