@@ -203,7 +203,7 @@ Bar heights in Fig. 5c appear to show large negative SO₄²⁻ adsorption energ
 
 ## F13 — t₊ raw data inconsistent with ΔV = 10 mV ⚠️ central for step 2
 With R₀ ~680 Ω (GF), 10 mV allow at most ~15 µA; measured I₀ ~68.5 µA → I₀R₀ ≈ 47 mV (ND@GF ≈ 14 mV), both > ΔV. The Bruce–Vincent formula only gives positive t₊ because numerator and denominator are both negative. Recalculated from read-off values: ~0.53 (GF), ~0.77 (ND@GF) vs reported 0.51/0.69. **The calibration target t₊ = 0.69 cannot be verified from the raw data.**
-Further (own, 30 Oct, read-off values): I·R is ~constant over time — ~47–50 mV (GF), ~14–15 mV (ND@GF) — so the current decay is explained by the rise of the interfacial resistance (R₀ → R_s), not by concentration polarisation (with R_ct ≫ R_bulk ≈ 3 Ω, transport alone gives ≲ 2 % decay vs. ~42 % / ~13 % measured). Check with the S6 raw data (received 30 Oct).
+**Confirmed with the S6 raw data (30 Oct, own evaluation, table in `../notes/progress.md`):** I·R_total ≈ 47–51 mV (GF) and ≈ 14–16 mV (ND@GF), not 10 mV. Recalculated t₊: GF 0.52–0.53, **ND@GF 0.99–1.15** depending on how R is read from the EIS (reported 0.69) — ill-conditioned, not reproducible. Current decay −42 % / −13 % vs. 0.5–4 % possible from transport alone → interfacial, not concentration polarisation.
 
 ## F14 — No kinetic advantage at room temperature
 R_ct at 25 °C is practically equal (~290 vs ~282 Ω, S8/S9); at 30–50 °C ND@GF has the *higher* R_ct. The lower Eₐ comes from a weaker temperature dependence, not faster kinetics. Supports modelling the ND effect via transport (t₊), not via i₀.

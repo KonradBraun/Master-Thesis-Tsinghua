@@ -1,6 +1,7 @@
 # Large binaries (COMSOL models incl. the group's, installers) — back up separately
 *.mph
 *.mphbin
+*.lock
 *.exe
 
 # Literature PDFs and their text versions (copyright; kept in Zotero)
@@ -11,6 +12,7 @@ Literature/*.pdf
 Literature/*.docx
 Literature/*.png
 Literature/group-data/
+data/
 
 # LaTeX build output
 build/
