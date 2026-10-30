@@ -10,6 +10,7 @@
 - **Language:** chat in English; German for detailed explanations of topics new to the student, with English technical terms alongside.
 - **Background:** strong on Li-ion, new to zinc-ion. Knows continuum FEM/CFD (Moldex3D) — explain electrochemistry and Zn-specific concepts; the FEM workflow can be assumed familiar.
 - **.md files must stay current** — outdated content misleads future sessions. Small factual updates (status, completed tasks, setup) are made right away and mentioned. Larger changes (plan, structure, decisions, deleting content) are proposed first and made after the student's OK — don't change prematurely. Ask when unsure whether something is decided. Keep files short; replace outdated content rather than appending.
+- **Keep repo and notes lean** (student, 30 Oct): remove outdated, wrong or no-longer-needed content and files — Git keeps old versions. Routine cleanup (finished guides, done tasks, superseded numbers) right away and mention it; removing decisions or plan content still needs the OK. COMSOL step guides (`notes/comsol-guide-NN.md`) are temporary: once the model is done and its results and key setup are in `progress.md`, delete the guide.
 - **Literature comes from Zotero, never from memory.** Author names, titles, DOIs and BibTeX via the Zotero MCP server (Zotero must be running). Missing sources are added to Zotero first, by DOI. Never expand author initials.
 - **Every number needs a source:** paper/SI with figure or table, a Zotero reference, or an explicit "estimate". Values read off figures are marked "~".
 - **Verify before recommending** tools, plugins, repos or licences (requirements, maintenance, compatibility). Flag anything unverified as an inference.
@@ -30,6 +31,7 @@
 ## Key files
 - `notes/progress.md` — current state, proposed plan (not agreed), setup, pending tasks
 - `Literature/paper-summary.md` — group paper + SI: methods, measured data, critical findings
+- `notes/comsol-guide-NN.md` — temporary step-by-step guide for the COMSOL model currently being built
 - `notes/parameters.md` — model parameter table with sources and status (living file, becomes proposal §7.5)
 - `Literature/triage.md` — triage of the student's PDF collection (`Literature/Potential/`, text versions in `txt/`) and open literature gaps
 - `Thesis Proposal/proposal/` — the proposal in LaTeX (ThuThesis v7.7.1, Tsinghua 选题报告 format, English, XeLaTeX); `ref/refs.bib` from Zotero via `tools/zotero2bib.ps1` (PowerShell; `bash` in PowerShell hits WSL) or `tools/zotero2bib.sh` (Git Bash)
