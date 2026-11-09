@@ -18,7 +18,7 @@
 **Framing of critique (student, 30 Oct):** the group's t₊ = 0.69 is questioned only through our own simulation results (model 04) — never as "miscalculated". The S6 raw-data check (below) is background, not a thesis statement.
 Later, for the thesis: switch electrolyte to COMSOL 6.3 "Concentrated Electrolyte Transport" (2 M ZnSO₄ is too non-ideal for dilute Nernst–Planck) and compare both.
 
-**Comparison with the paper's model (later):** same geometry with bumps on the anode; A = as in paper (0.5 V, NDs as holes) · B = same but constant current 2 mA/cm² · C = + concentration gradients and real parameters · D = + NDs as charged layer. Metric: current density along the anode (max/mean). Shows which part of the paper's effect survives.
+**Comparison with the paper's model:** group's geometry (Fig. 2h/i files); A = as in paper · B = equal separator conductivity in both (isolates the ND row) · C = + electrode kinetics (Secondary Current Distribution) at constant 2 mA/cm² · D = + concentration (tertiary) and NDs as charged layer. Metric: current density along the anode (max/mean). Note: in the purely ohmic model, constant voltage vs constant current only rescales — the operating point matters only from C on.
 
 **Proposed (17 Oct), not yet discussed with supervisor — RWTH link:** one thesis chapter on manufacturing tolerances / process window for the ND coating (UQ Module); automation only as method.
 
