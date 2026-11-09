@@ -43,7 +43,7 @@ LaTeX headings in `proposal/data/chap0*.tex` still follow `outline.md` → adapt
 ## Timeline — proposed 4 Nov, replaces the 30 Oct plan (§ numbers = structure above)
 As of 4 Nov: no chapter text yet. Main effort: the literature review (reading and comparing, not writing). Preliminary results = models 01–04; 2D is optional for the proposal.
 - **4 – 10 Nov:** model 04 ✅ (9 Nov) · literature search: reviews, set up literature matrices (separators, simulation studies)
-- **11 – 17 Nov:** read + write §2.2 separators, §2.3 NDs · supervisor meeting (research question, length, form questions)
+- **11 – 17 Nov:** read + write §2.2 separators, §2.3 NDs · WeChat to supervisor: (1) form questions + length, (2) short results summary + proposed research question
 - **18 – 24 Nov:** §2.4 simulation, §2.1, §2.5 gap · §4 methodology with preliminary results · first 2D step (group geometry, models A/B) only if on track
 - **25 – 29 Nov:** §1, 3, 5, 6 → full draft to supervisor ~29 Nov
 - **30 Nov – 14 Dec:** revision · Word form · slides for the oral presentation (date unknown) · buffer · submission
