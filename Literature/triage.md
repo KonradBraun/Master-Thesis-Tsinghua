@@ -1,7 +1,7 @@
 # Triage — `Literature/Potential/` (17 Oct 2026)
 
 Based on title + abstract only (from `Potential/txt/`). **A** = read in detail now · **B** = read the relevant section when writing that chapter · **C** = probably not needed.
-None of these are in Zotero yet except Liu 2024 (halloysite, already in Zotero). Short names = file names.
+Imported into Zotero (tag `pdf-folder-import`; spot-checked 4 Nov). Short names = file names; chapter numbers refer to `../Thesis Proposal/outline.md` (thesis).
 
 ## A — read now (parameters, core physics, step 2) — done 17 Oct, values in `../notes/parameters.md`
 Note: the 1951 diffusion paper covers only 0.001–0.005 M; the Zn "deviations" paper uses alkaline zincate for its Sand's-time part.
@@ -44,7 +44,7 @@ Earlier:
 Bimetallic MOF glass fiber (Li–S) · Current density driven texture evolution in zinc powder anodes · Multifunctional pH-Controlling Electrolyte · The magnetohydrodynamic effect (alkaline) · Flexible electrodes review · Scalable Manufacturing of (MXene films) · Validating Computational Models (social-science models) · Transverse Number Measurement (**scanned OneNote notes, no text**)
 
 ## Gaps still open
-- ~~Bulk conductivity, Zn kinetics~~ — found (see `../notes/parameters.md`)
+- **Chinese literature** for the proposal review (form requirement; meaning still to clarify with the supervisor)
 - **Continuum/FEM models of separators in metal batteries** (Ch. 5) — only one weak Zn paper so far
 - **Separator heterogeneity / pore-scale or 2D models of current focusing** (for the 2D homogenisation step) — new since 19 Oct
 - **Thermodynamic factor ZnSO₄** (Pitzer & Mayorga 1974) — for CET

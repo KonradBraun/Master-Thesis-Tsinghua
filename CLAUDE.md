@@ -20,7 +20,7 @@
 
 **Decided (18 Oct):** proposal in Tsinghua format (ThuThesis 选题报告), English.
 
-**Proposal deadline:** mid-December 2026 (student, 30 Oct). **Thesis deadline:** ~15 Jul 2027 (student, unconfirmed); aim to finish late Jun / early Jul. **RWTH supervisor:** none yet (30 Oct). **AI use:** allowed, no declaration needed (student, 30 Oct).
+**Proposal deadline:** Mon 14 Dec 2026 (student, 4 Nov); formal requirements from the Tsinghua form (V202401) in `Thesis Proposal/proposal-plan.md`. **Thesis deadline:** ~15 Jul 2027 (student, unconfirmed); aim to finish late Jun / early Jul. **RWTH supervisor:** none yet (30 Oct). **AI use:** allowed, no declaration needed (student, 30 Oct).
 
 **Not yet decided:** research question, exact scope (e.g. whether dendrite growth is simulated), proposal length. Earlier suggestions on these are proposals, not decisions.
 
@@ -32,9 +32,10 @@
 - `notes/progress.md` — current state, proposed plan (not agreed), setup, pending tasks
 - `Literature/paper-summary.md` — group paper + SI: methods, measured data, critical findings
 - `notes/comsol-guide-NN.md` — temporary step-by-step guide for the COMSOL model currently being built
-- `notes/parameters.md` — model parameter table with sources and status (living file, becomes proposal §7.5)
+- `notes/parameters.md` — model parameter table with sources and status (living file, becomes the parameter table in proposal §4)
 - `Literature/triage.md` — triage of the student's PDF collection (`Literature/Potential/`, text versions in `txt/`) and open literature gaps
 - `Thesis Proposal/proposal/` — the proposal in LaTeX (ThuThesis v7.7.1, Tsinghua 选题报告 format, English, XeLaTeX); `ref/refs.bib` from Zotero via `tools/zotero2bib.ps1` (PowerShell; `bash` in PowerShell hits WSL) or `tools/zotero2bib.sh` (Git Bash)
-- `Thesis Proposal/outline.md` — draft proposal structure without DFT, open options, questions on formalities, literature workflow
+- `Thesis Proposal/proposal-plan.md` — proposal: form requirements, proposed structure with page budget, Word-form checklist, timeline, supervisor questions
+- `Thesis Proposal/outline.md` — draft thesis chapter outline (incl. full fundamentals), open options, literature workflow
 - `Reference/` — background primers (German)
 - `notes/claude-notes.md` — Claude's own short notes on pitfalls and non-obvious facts; read before relying on assumptions

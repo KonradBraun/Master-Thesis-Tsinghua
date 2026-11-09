@@ -1,9 +1,8 @@
-# Parameter Table — living file (becomes proposal §7.5)
+# Parameter Table — living file (becomes the parameter table in proposal §4)
 
 Status: ✅ sourced · ⚠️ sourced but not directly applicable · ❌ placeholder / gap. Values read off figures marked "~".
 
 **Rule (student, 18 Oct):** group's own measured values come first; literature only where the group has no value or the group value is clearly unrealistic (decided case by case, together). Literature values stay in the table as cross-check — where they differ (e.g. t₊ 0.51 vs 0.20), run both as a sensitivity case.
-PDFs not yet in Zotero — add before citing.
 
 | Parameter | Value | Source | Status / note |
 |---|---|---|---|
@@ -26,7 +25,7 @@ PDFs not yet in Zotero — add before citing.
 | i₀ (Zn²⁺/Zn) | start 5 A/m² (estimates ~1–15 A/m² from group's cells) · literature: **0.20 A/cm² = 2000 A/m²** in 1 M ZnSO₄ (fast-scan CV on W ultramicroelectrode, Allen–Hickling; Tafel gave 0.32 A/cm²) | own estimates (paper-summary §2b); Rana, Faisal & Dick, Small Methods 10 (2026) 2500508, doi 10.1002/smtd.202500508 | ❌ **gap / discrepancy ~100–1000×** between intrinsic kinetics (clean UME) and effective values in real cells (foil, surface films). Model needs the effective value → calibrate on Fig. 3c/3d |
 | i₀ on a macroscopic Zn electrode (RDE), 25 °C | ~0.02 / 2.5 / 8.7 A/m² at 0.01 / 0.07 / 0.15 M ZnSO₄ (in 0.2 M Na₂SO₄; own evaluation of i₀ = A·exp(−2000/T)); "black-box" D(Zn) ≈ 0.5 × 10⁻⁹ m²/s | Zouari & Lapicque, Electrochim. Acta 37 (1992) 439, Table 2 | ⚠️ dilute, but same order as the group's cell estimates (1–15 A/m²) → supports "effective i₀ ≪ UME value". Strong concentration dependence — no extrapolation to 2 M |
 | α_a, α_c | 1, 1 (symmetric, n = 2) | Zouari & Lapicque fix α = 0.5 per electron (α·n = 1) — fit could not separate α and i₀; Rana et al. use α = 0.5 | ⚠️ supported as the standard assumption, not measured for 2 M |
-| Temperature | 298.15 K | assumption ("room temperature", Fig. 3) | ⚠️ |
+| Temperature | 298.15 K | assumption ("room temperature", Fig. 3) | ⚠️ models 01–04 actually ran at the COMSOL default 293.15 K → set T in Default Model Inputs for new models |
 | ND surface groups | ~67 –COOH per 5 nm detonation ND (≈ 0.85 /nm², own conversion) | Shalumon & Stehlik 2026, ACS AMI 18, 47144 (review) | ⚠️ detonation ND, not coal/laser ND |
 | ND loading | 0.1–0.4 mg per separator (Φ10 mm → 0.13–0.51 mg/cm²) | group (former postdoc via Yanmei Zhang, 19 Oct) | ✅ |
 | ND layer thickness | 30–50 µm, NDs deposited on the glass fibres (not a separate film) | group, 19 Oct | ✅ |
@@ -40,9 +39,6 @@ PDFs not yet in Zotero — add before citing.
 | ND zeta potential (literature) | air-oxidised ND: −35 mV (pH 3) to −55 mV (pH 11); **positive** when sp² carbon is on the surface (H-ND ~+45 mV) | Ginés et al. 2017, Nanoscale 9, 12549; review above | ⚠️ sign of the group's ND charge is an assumption — sp² content not characterised |
 
 ## Open gaps — keep searching (priority order)
-1. ~~Bulk conductivity of 2 M ZnSO₄~~ — found (5.67 S/m)
-2. **Effective i₀ and α in real Zn foil cells** — intrinsic UME value is ~100–1000× higher than cell-derived estimates → calibrate
-3. ~~Salt diffusion coefficient at 2 M~~ — found (3.27 × 10⁻¹⁰ m²/s)
-4. ~~Bulk t₊ at 2 M~~ — found (0.197). **Modelling consequence (own):** σ = 5.67 S/m, D_salt = 3.27 × 10⁻¹⁰ m²/s and t₊ = 0.197 cannot all be matched by ideal Nernst–Planck with two ion D's (fitting D_salt and t₊ gives σ ≈ 31 S/m). Needs a concentrated-solution (Newman-type) binary-electrolyte formulation with σ, D_salt, t₊ as separate inputs — COMSOL's "Battery with Binary Electrolyte" is 1:1 only, but **COMSOL 6.3 adds the "Concentrated Electrolyte Transport" interface** (Onsager–Stefan–Maxwell, arbitrary ions with user-defined charges; in Electrochemistry, Battery Design, Electrodeposition, Fuel Cell modules). Inputs are Maxwell–Stefan diffusivities (Zn–H₂O, SO₄–H₂O, Zn–SO₄) → convert from σ, D_salt, t₊ (+ thermodynamic factor, density). Still open: separator t₊ (group), **thermodynamic factor** of ZnSO₄ (activity data, e.g. Pitzer & Mayorga 1974) — needed for the CET conversion; — Bruce–Vincent values scatter strongly (0.2 vs 0.7 for near-identical Zn electrolytes, Gomez Vazquez et al., Adv. Mater. 2025)
-5. ~~GF/D porosity~~ found (Hess 2018); compressed thickness ~430 µm only as estimate from Li coin cells — confirm with the group's spacer/spring
-6. ~~ND loading / layer thickness, charge sign~~ — from the group (19 Oct). Raw S5/S6 + `.mph` pending ("a few days"). Still unknown: L used in σ = L/(R·A), compressed thickness
+1. **Effective i₀ and α in real Zn foil cells** — intrinsic UME value is ~100–1000× higher than cell-derived estimates → calibrate
+2. **Concentrated-solution parameters.** Modelling consequence (own): σ = 5.67 S/m, D_salt = 3.27 × 10⁻¹⁰ m²/s and t₊ = 0.197 cannot all be matched by ideal Nernst–Planck with two ion D's (fitting D_salt and t₊ gives σ ≈ 31 S/m). Needs a concentrated-solution (Newman-type) binary-electrolyte formulation with σ, D_salt, t₊ as separate inputs — COMSOL's "Battery with Binary Electrolyte" is 1:1 only, but **COMSOL 6.3 adds the "Concentrated Electrolyte Transport" interface** (Onsager–Stefan–Maxwell, arbitrary ions with user-defined charges; in Electrochemistry, Battery Design, Electrodeposition, Fuel Cell modules). Inputs are Maxwell–Stefan diffusivities (Zn–H₂O, SO₄–H₂O, Zn–SO₄) → convert from σ, D_salt, t₊ (+ thermodynamic factor, density). Still open: separator t₊ (group), **thermodynamic factor** of ZnSO₄ (activity data, e.g. Pitzer & Mayorga 1974) — needed for the CET conversion; — Bruce–Vincent values scatter strongly (0.2 vs 0.7 for near-identical Zn electrolytes, Gomez Vazquez et al., Adv. Mater. 2025)
+3. **Compressed GF thickness** — ~430 µm only as estimate (Hess 2018, Li coin cells; consistent with S6 R_bulk) — spacer/spring and S5 raw data not received; L used in σ = L/(R·A) unknown

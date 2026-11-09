@@ -1,17 +1,17 @@
-# Current State — 30 Oct 2026 (last work on the project: 21 Oct)
+# Current State — 9 Nov 2026 (model 04 done)
 
 ## Supervisor
 - **Decided (14 Oct):** COMSOL only, no DFT. Start by getting familiar with COMSOL.
 - **18 Oct:** proposal must be in Tsinghua format (ThuThesis 选题报告); cover: Department of Mechanical Engineering, Mechanical Engineering, Master of Science.
 - **Data from the group** (via Dr. Yanmei Zhang — first author of the group's ND synthesis paper, ACS Nano 20 (2026) 20231, Tsinghua ME — and the former postdoc, 19 Oct; → `parameters.md`): ND 0.1–0.4 mg/separator, Φ10 mm, layer 30–50 µm on the fibres, zeta ND@GF −38.8 mV, stack Zn/sep/Zn, CP 50 µm · group `.mph` → `COMSOL/Old models/` · SI Fig. S6 raw data → `data/figure S6/` (evaluated, see COMSOL models) · S5 raw data and spacer/spring: not received.
-- Proposal deadline: **mid-December** (student, 30 Oct). Paper still under review (30 Oct).
+- Proposal deadline: **Mon 14 Dec 2026** (student, 4 Nov); form requirements in `Thesis Proposal/proposal-plan.md`. Paper still under review (30 Oct).
 - **Nobody who worked on the paper is left in the group** (student, 30 Oct): the former postdoc can provide data, but not how the experiments were done → don't plan on protocol questions.
-- Still to ask later (supervisor): proposal length; her view on dendrite growth; manufacturing-chapter idea; the approach below.
+- Questions for the supervisor: `../Thesis Proposal/proposal-plan.md`.
 
 ## Approach — agreed with the student 30 Oct, not yet discussed with the supervisor
 **Goal:** find out in simulation why ND@GF cells perform so much better (Zn//Zn 47 h → 3738 h at 2 mA/cm²) — rank candidate mechanisms by how much of the improvement each can explain, not predict cycle life.
 1. **Done:** 1D baseline GF (models 01–02), ND layer with fixed charge (03) → fixed-charge/Donnan effect negligible at realistic loading.
-2. **Model 04 (short):** virtual Bruce–Vincent → upper bound of the layer effect on the *measured* t₊ + limits of the method in Zn cells. t₊ = 0.69 is cited, not used as calibration target; t₊ only as scenario parameter; fixed charge X estimated physically (loading, surface groups, zeta).
+2. **Done (9 Nov), model 04:** virtual Bruce–Vincent — a thin charged layer can't raise the measured t₊ (0.506 → 0.511 at local t₊ 0.72), and the method is ill-conditioned with realistic kinetics. t₊ = 0.69 is cited, not used as calibration target; t₊ only as scenario parameter; fixed charge X estimated physically (loading, surface groups, zeta).
 3. **Main work: recreate the processes in the cell (2D)** — pore structure / current distribution (GF pores up to 14 µm vs NDs filling the voids; metric: uniformity of current density at the anode) · interface (nucleation, kinetics, passivation; parametric) · corrosion/HER (option; Tafel I_corr halves, Fig. 2f; COMSOL "Water-Based with Electroneutrality" + HER). Mechanics (puncture +18 %) only discussed. Optional: dendrite onset via Sand's time or phase field.
 4. **If time is left:** full cells (open) · design study (ND loading/distribution) / manufacturing tolerances (RWTH link, below) · DFT only with the supervisor's OK (excluded 14 Oct).
 
@@ -29,8 +29,16 @@ Later, for the thesis: switch electrolyte to COMSOL 6.3 "Concentrated Electrolyt
 ## COMSOL models (in `COMSOL/`)
 - `Simulation_01_ZnZn_1D_test.mph` — free electrolyte, placeholders. Checked: profile 1987–2013 mol/m³, 73 mV — matches hand estimate. Lessons → `notes/claude-notes.md`.
 - `02_ZnZn_1D_separator.mph` — **done (19 Oct), matches hand estimate:** t_plus 0.51 → cZn 1895–2105 mol/m³, 75.6 mV; t_plus 0.69 → ~1934–2066, 74.6 mV (kinetics dominate at i0 = 5 A/m²). Setup: L = 675 µm; D_Zn = D_salt/(2(1−t_plus)), D_SO4 = D_salt/(2·t_plus) → 3.34e-10 / 3.21e-10 m²/s at t_plus = 0.51 (fitted to D_salt = 3.27e-10; model σ ~3.5× too high, accepted: ohmic drop only a few mV); Separator node ε = 0.92, Tortuosity τ = 1.84 (from 2.83/5.67); parametric sweep over t_plus.
-- `03_ZnZn_1D_ND_layer.mph` — **done (19 Oct).** Setup: ND layer 40 µm (domain 1, at the anode, within L), ε_ND = 0.89, τ_ND = τ_sep (assumption); fixed charge X as third species cX (z = −1, D = 1e-18 m²/s — immobile; exactly 0 can make the solver singular), cSO4 from electroneutrality, ν_cX = 0; Donnan initial value in the layer cZn = X/4 + √(X²/16 + c0²) (otherwise salt is drawn from the GF — artefact); mesh 200 + 200 elements, ratio 10. X ↔ surface charge: X ≈ σ_s·a_s/(F·ε). Results: 2 mA/cm², 1800 s: **GF profile identical for all X** (1905→2105; steady state has zero SO₄ flux). Only cZn inside the layer rises: at anode 1895 / 1905 / 1920 / 2165 / 2815 mol/m³ for X = 0 / 50 / 100 / 1000 / 3100. Realistic X ≤ ~100 → ~1 % effect. Voltage 75.63 / 75.56 / 75.48 / 74.12 / 71.23 mV (realistic X: −0.15 mV; group's nucleation overpotential differs by ~10 mV GF vs ND@GF — different quantity). **i_app sweep 2–35 mA/cm²** (cZn at anode, X = 0 / 100): 1895/1920 · 1473/1499 · 946/974 · 419/454 · 156/202 → realistic charge adds only 25–46 mol/m³ (cZn ≥ X/2 "buffer"); limiting current (~38 mA/cm², uncompressed GF) unchanged since GF profile unchanged; below i_lim no Sand's time in 1D. **Conclusion: fixed-charge mechanism negligible in 1D** (ideal solution, homogenised charge). Next: virtual Bruce–Vincent, then 2D.
-- `04_ZnZn_1D_BruceVincent.mph` — **set up, not solved** (Save As of 03 + `dV = 10[mV]`; guide `comsol-guide-04.md`). Plan: ES2 → Electric potential `dV`; log output times incl. 0.1 s and 600 s; rel. tolerance 1e-6; sweep `X_ND` 0–10000 × `i0` 0.5 / 5 / 2000 A/m² (0.5 ≈ measured R₀ of the GF cell, 2000 = UME value); export `phil`, `cZn`, current at points 1 and 3 to `COMSOL/results/`. Settings of 03/04 confirmed (screenshots 30 Oct): ES1 = Electric potential 0 V; Nernst E_eq + Butler–Volmer with mass action law → η is pure activation overpotential. Own estimates to test: a 40 µm layer raises the measured t₊ to ≤ ~0.53 even if perfectly selective; with i₀ = 5 A/m² the formula is ill-conditioned (ΔV − η₀ ≈ 0.13 mV).
+- `03_ZnZn_1D_ND_layer.mph` — **done (19 Oct).** Setup: ND layer 40 µm (domain 1, at the anode, within L), ε_ND = 0.89, τ_ND = τ_sep (assumption); fixed charge X as third species cX (z = −1, D = 1e-18 m²/s — immobile; exactly 0 can make the solver singular), cSO4 from electroneutrality, ν_cX = 0; Donnan initial value in the layer cZn = X/4 + √(X²/16 + c0²) (otherwise salt is drawn from the GF — artefact); mesh 200 + 200 elements, ratio 10. X ↔ surface charge: X ≈ σ_s·a_s/(F·ε). Results: 2 mA/cm², 1800 s: **GF profile identical for all X** (1905→2105; steady state has zero SO₄ flux). Only cZn inside the layer rises: at anode 1895 / 1905 / 1920 / 2165 / 2815 mol/m³ for X = 0 / 50 / 100 / 1000 / 3100. Realistic X ≤ ~100 → ~1 % effect. Voltage 75.63 / 75.56 / 75.48 / 74.12 / 71.23 mV (realistic X: −0.15 mV; group's nucleation overpotential differs by ~10 mV GF vs ND@GF — different quantity). **i_app sweep 2–35 mA/cm²** (cZn at anode, X = 0 / 100): 1895/1920 · 1473/1499 · 946/974 · 419/454 · 156/202 → realistic charge adds only 25–46 mol/m³ (cZn ≥ X/2 "buffer"); limiting current (~38 mA/cm², uncompressed GF) unchanged since GF profile unchanged; below i_lim no Sand's time in 1D. **Conclusion: fixed-charge mechanism negligible in 1D** (ideal solution, homogenised charge).
+- `04_ZnZn_1D_BruceVincent.mph` — **done (9 Nov), virtual Bruce–Vincent.** Setup: Save As of 03; ES2 → Electric potential `dV` = 10 mV (ES1 = 0 V); Nernst E_eq + Butler–Volmer with mass action law; output times log 1e-3–4000 s incl. 0.1 s and 600 s; rel. tolerance 1e-6; sweep `X_ND` 0/100/1000/3100/10000 × `i0` 0.5/5/2000 A/m² (0.5 ≈ R₀ of the group's GF cell, 2000 = UME value); runtime 115 s. **Model temperature = COMSOL default 293.15 K** (not 298.15 K). Exports `COMSOL/results/04_BV_P1.txt` / `_P3.txt` (phil, cZn at x = 0 / L, all times); evaluation `tools/analyse_bv04.py` (current reconstructed from the model's Butler–Volmer at both electrodes, mismatch 2e-5; ΔV − η = Δφ_l + Nernst term).
+
+  | virtual t₊ (steady state) | X = 0 | 100 | 1000 | 3100 |
+  |---|---|---|---|---|
+  | i0 = 2000 A/m² | 0.506 | 0.507 | 0.510 | 0.511 |
+  | i0 = 5 | 0.512 | 0.512 | 0.510 | 0.40 |
+  | i0 = 0.5 | 0.512 | 0.512 | 0.47 | ≈ 0 |
+
+  Findings: (1) Method check passed (X = 0 → 0.51 = input). (2) A 40 µm layer barely changes the measured cell t₊ even when its local t₊ is 0.72 (X = 3100): 0.506 → 0.511 — consistent with the series estimate (≤ ~0.53 even for a perfectly selective layer) → 0.69 cannot come from a thin charged layer. (3) Realistic kinetics (i0 = 0.5–5): transport-driven current decay only 0.1–1.3 % (I_ss/I₀ = 0.999 / 0.987); evaluated t₊ becomes unstable once the layer is charged, because ΔV − η₀ is only 0.01–0.13 mV → Bruce–Vincent is ill-conditioned when R_ct ≫ R_bulk. (4) 600 s instead of steady state: ≤ +0.03 (i0 = 2000: +0.008) → measurement duration is not the issue. (5) **X = 10000 excluded:** the Donnan jump (13–20 mV) is under-resolved at the layer/GF interface — implied fixed charge at the electrode drifts −5 %, I_ss drops (unphysical); X ≤ 3100 drift ≤ 0.8 %. Interface mesh refinement needed if the limit case is ever wanted.
 
 **S6 raw data evaluated (30 Oct, `data/figure S6/`, own evaluation with `tools/analyse_s6.py`: HF intercept = R_bulk, LF end of arc = R_total):** chronoamperometry 0.1–600 s (0.1 s steps) + EIS before/after (Z', −Z'' only, no frequency column).
 
@@ -49,15 +57,9 @@ Findings: (1) Ohm's law needs ~47–51 / ~14–16 mV, not 10 mV → F13 confirme
 - i₀ = 5 A/m² still a start value → calibrate on Fig. 3c/3d.
 
 ## Next steps
-1. COMSOL model 04: finish and solve virtual Bruce–Vincent (guide: `notes/comsol-guide-04.md`), then i₀ calibration · 2. start writing Ch. 3.4 (ion transport, t₊, Sand's time) · 3. motivation literature for Ch. 1 (student searches; put PDFs in `Literature/Potential`).
-
-## Proposal timeline — agreed 30 Oct; deadline mid-December (assumed Mon 14 Dec)
-As of 30 Oct: no chapter text yet (only headings in `data/chap0*.tex`).
-- **30 Oct – 8 Nov:** solve + document model 04 · verify group model in COMSOL · write Ch. 3.4
-- **9 – 15 Nov:** i₀ calibration (Fig. 3c/3d) · rest of Ch. 3 + Ch. 4 · supervisor meeting: research question + length
-- **16 – 22 Nov:** first 2D step (group geometry, comparison models A/B) — start of the main simulation work · Ch. 2 + 5
-- **23 – 29 Nov:** Ch. 6, 7 (preliminary results), 8, 1 → full draft to supervisor ~27 Nov
-- **30 Nov – 14 Dec:** feedback, revision, ~1 week buffer, submission
+Proposal first (deadline Mon 14 Dec; structure, timeline: `../Thesis Proposal/proposal-plan.md`):
+1. Literature search for the review: reviews first, literature matrices (separators, simulation studies), motivation literature (student searches; PDFs into `Literature/Potential`).
+After the proposal draft (optional before): i₀ calibration (Fig. 3c/3d) · verify group model in COMSOL · first 2D step. New models: set T = 298.15 K in Default Model Inputs.
 
 ## Data
 Parameters with sources and status: `notes/parameters.md`. Requested from the group: see Supervisor. **Wishlist for the former postdoc (data only, proposal 30 Oct):** original SEM images of GF and ND@GF (S3 — pore structure for the 2D model) · raw voltage data Fig. 3c/3d (i₀ calibration) · raw Tafel data Fig. 2f (corrosion) · S5 raw data (conductivity). Note: SI §1.6 uses the **separator** area A in σ = L/(R·A) (size not stated) → raw S5 data give the area-specific resistance directly, independent of their L and A.

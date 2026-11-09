@@ -19,6 +19,11 @@ Short, only things a fresh session would otherwise get wrong. Not a log.
 - Electrode Surface potential is not `phis` but `tcd.phis_es<N>`.
 - Default Reference Concentrations are 0[M] — must be set (else Nernst/mass action divide by zero).
 - `.mph` is a zip: `modelinfo.xml` (version, physics, `lastComputationDate`) and `dmodel.xml` (settings) can be read without COMSOL — shows whether a model was actually solved after editing.
+- An `.mph` open in COMSOL is locked — read it via `[IO.File]::Open(path, 'Open', 'Read', 'ReadWrite')` + `ZipArchive`.
+- COMSOL's default temperature (Default Model Inputs) is **293.15 K** — set it explicitly.
+- Missing current column in an export: reconstruct it from `phil`, `cZn` at the electrodes with the model's own Butler–Volmer (mass action: i = i0·[exp(fη_ref) − (c/c0)·exp(−fη_ref)], η_ref = φs − φl, exact T) and check that ES1 and ES2 agree (`tools/analyse_bv04.py`).
+- Fixed charge as an extra species: Donnan jumps ≳ 10 mV at a layer boundary need interface mesh refinement (model 04, X = 10000 drifted 5 %).
+- After switching an Electrode Surface from current to potential control, old plots of `tcd.phisext_es<N>` fail ("undefined variable") — delete them.
 - 2 M ZnSO₄ is too non-ideal for dilute Nernst–Planck (σ, D_salt, t₊ not matchable with two ion D's). 6.3 has "Concentrated Electrolyte Transport" (Maxwell–Stefan, any charges); "Battery with Binary Electrolyte" is 1:1 only.
 
 ## LaTeX

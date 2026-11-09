@@ -1,7 +1,6 @@
-# Thesis Proposal — Outline (DRAFT, 14 Oct 2026)
+# Thesis — Chapter Outline (DRAFT, 14 Oct 2026)
 
-**Status:** draft structure without DFT (COMSOL only, decided 14 Oct). Deadline: **mid-December 2026** (student, 30 Oct); template: ThuThesis 选题报告 (18 Oct). Length and governing institution **not confirmed** — ~40 pages is the student's estimate.
-**Reuse:** Chapters 2–4 should carry over into the thesis almost unchanged.
+**Status:** draft structure without DFT (COMSOL only, decided 14 Oct). Originally the proposal outline; since 4 Nov the **proposal** has its own structure, requirements, timeline and supervisor questions in `proposal-plan.md` (proposed, not agreed). This file keeps the full chapter outline incl. fundamentals for the thesis.
 
 **Decided (30 Oct):** chapter cut (a) — fundamentals separate from the simulation state of the art, as below; funnel AZIBs → separators/NDs → modelling → state of the art of simulation → gap. Writing directly in English (discussions partly in German). Critique of the group's paper only through our own simulation results — no statements that their measurements/calculations are wrong.
 
@@ -80,16 +79,6 @@ Gantt chart, milestones, risks and mitigations.
 Expect 80–150 entries.
 
 ---
-
-# Questions for the supervisor about the proposal
-- [ ] Which institution's rules apply — RWTH, Tsinghua, or both? (length, structure, language)
-- [ ] Required template or structure? Citation style?
-- [ ] Is ~40 pages the expectation? Graded, defence/presentation? (deadline known: mid-Dec)
-- [ ] Example proposals from previous students?
-- [ ] Depth on simulation fundamentals vs electrochemistry?
-- [ ] One committed scope, or alternatives with a recommendation?
-- [x] How explicitly to criticise the group's paper — decided by the student (30 Oct): only through own simulation results
-- [x] AI use: allowed, no declaration needed (student, 30 Oct)
 
 # Literature workflow
 1. Zotero + MCP server; PDFs via Zotero Connector through the library access, so they are attached automatically
