@@ -3,7 +3,7 @@
 Stand 9.11. Basis: die zwei Dateien vom Prof (`COMSOL/Old models/GF(1).mph`, `ND@GF(1).mph`) = vermutlich Fig. 2h/i. Inhalt laut Dateiauslese: `paper-summary.md` F5. ⚠️ = Menüname nicht sicher.
 
 ## Ziel
-Die beiden Modelle unterscheiden sich in zwei Dingen: ND-Reihe (100 Kreise, 0.1 S/m) **und** Separatorleitfähigkeit (2.15 → 0.5 S/m). Wir trennen das:
+Die beiden Modelle unterscheiden sich in zwei Dingen: ND-Reihe (100 Löcher, isolierend; das Material „C (diamond)" ist keiner Domäne zugewiesen) **und** Separatorleitfähigkeit (2.15 → 0.5 S/m). Wir trennen das:
 
 | Fall | Separator | ND-Reihe |
 |---|---|---|
@@ -18,7 +18,7 @@ Originale nicht verändern: `GF(1).mph` öffnen → **Save As** `COMSOL/05_group
 
 ## 1. Erst ansehen (5 min, beide Modelle) — kurz notieren
 - *Geometry 1*: Längeneinheit (µm?)
-- *Materials*: ZnSO4 [liquid] 3.5 S/m · SiO2 2.15 (GF) bzw. 0.5 (ND@GF) · C (diamond) 0.1 S/m auf den 100 Kreisen
+- *Materials*: ZnSO4 [liquid] 3.5 S/m · SiO2 2.15 (GF) bzw. 0.5 (ND@GF) · C (diamond) ohne Zuweisung (Warnsymbol, harmlos)
 - *Electric Currents*: Terminal 0.5 V und Ground — auf welchen Rändern?
 - *Results*: Elektrisches Feld — sieht es aus wie Fig. 2h/i?
 

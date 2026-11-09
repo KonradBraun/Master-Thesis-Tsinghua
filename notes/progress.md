@@ -52,7 +52,7 @@ Later, for the thesis: switch electrolyte to COMSOL 6.3 "Concentrated Electrolyt
 
 Findings: (1) Ohm's law needs ~47–51 / ~14–16 mV, not 10 mV → F13 confirmed. (2) ND@GF t₊ is ill-conditioned and not reproducible → 0.69 unusable as calibration target. (3) Transport alone (measured R_bulk, t₊ 0.2–0.5) gives only 0.5–4 % decay → measured decay is interfacial (GF R_total +85 %, ND@GF +6 %). (4) ND@GF R_bulk 1.85 Ω with σ = 2.94 S/m, A = 0.785 cm² → L ≤ ~430 µm, consistent with the compressed-thickness estimate; the GF cell's 7.3 Ω implies extra series resistance (cell-to-cell scatter, F15). Single cells, no repeats.
 → Consequences: see Approach (agreed 30 Oct). Why Bruce–Vincent fails here (own): R_interface is 50–200× R_bulk, so the transport signal is only ~1–4 % of the current and is buried by interface changes.
-- Group's models `Old models/GF(1).mph`, `ND@GF(1).mph` — read from the file history (9 Nov), details in `paper-summary.md` F5: only Electric Currents (Secondary Current Distribution created, then removed), 0.5 V, geometry = Fig. 2h/i; **separator σ 2.15 S/m (GF) vs 0.5 S/m (ND@GF)** + row of ND circles (0.1 S/m or holes). Not yet opened in COMSOL.
+- Group's models `Old models/GF(1).mph`, `ND@GF(1).mph` — read from the file history (9 Nov), details in `paper-summary.md` F5: only Electric Currents (Secondary Current Distribution created, then removed), 0.5 V, geometry = Fig. 2h/i; **separator σ 2.15 S/m (GF) vs 0.5 S/m (ND@GF)** + row of 100 ND holes. GF file reproduces Fig. 2h (checked in COMSOL 9 Nov); re-run = model 05.
 - Office PC has COMSOL 5.6: model 01 rebuilt there (results after geometry fix not yet checked); 6.3 files can't be opened there.
 - i₀ = 5 A/m² still a start value → calibrate on Fig. 3c/3d.
 
