@@ -41,4 +41,5 @@ Fehlt in einer Tabelle ein Wert oder Fall → Datei neu exportieren.
 ## Erwartung (eigene Überlegung)
 - A (Original) zeigt ein kleineres Max/Mittel als GF — so wie im Paper.
 - Offen ist B: Bleibt der Unterschied, homogenisiert schon die bloße Partikelreihe (geometrischer Effekt → stützt die Porenstruktur-Richtung). Verschwindet er, kam er von der Separatorleitfähigkeit.
+- Achtung bei der Deutung: Die ND-Reihe ist eine fast geschlossene Barriere (80 % der Breite blockiert, 0.4-µm-Schlitze). B testet also einen „Lochblech"-Effekt, nicht die echte ND-Struktur (~5-nm-Partikel verteilt über 30–50 µm).
 - Der Terminalstrom zeigt, wie viel „weniger Strom" bei 0.5 S/m im Spiel ist.
