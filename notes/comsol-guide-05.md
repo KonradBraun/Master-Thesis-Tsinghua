@@ -25,8 +25,9 @@ Originale nicht verändern: `GF(1).mph` öffnen → **Save As** `COMSOL/05_group
 ## 2. ND@GF: Separatorleitfähigkeit als Parameter
 1. *Global Definitions → Parameters*: `sig_sep` = `0.5[S/m]`
 2. *Materials → SiO2 (fused quartz)* → Electrical conductivity: `0.5` durch **`sig_sep`** ersetzen
-3. *Study 1* → Rechtsklick → *Parametric Sweep*: `sig_sep` = `0.5 2.15` (Einheit S/m)
-4. Compute. Im GF-Modell einfach Compute.
+3. *Study 1* → Rechtsklick → *Parametric Sweep*: `sig_sep` = `0.5 2.15 2.94` (Einheit S/m; 2.94 = gemessener Wert ND@GF, Fig. 2a)
+4. Compute. Im GF-Modell genauso: Parameter `sig_sep` = `2.15[S/m]`, SiO2-Leitfähigkeit → `sig_sep`, Sweep `2.15 2.83` (2.83 = gemessener Wert GF).
+   → drei Vergleiche: Original (2.15 vs 0.5) · gleich (2.15 vs 2.15) · gemessen (2.83 vs 2.94).
 
 ## 3. Auswertung (beide Modelle)
 1. **Zinkoberfläche als Auswahl:** *Definitions → Selections → Explicit*, *Geometric entity level: Boundary*, alle Randstücke zwischen Zink und Elektrolyt anklicken (flache Stücke + Halbkreise), Label `Zn surface`.
