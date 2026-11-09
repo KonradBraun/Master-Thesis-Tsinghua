@@ -58,7 +58,7 @@ Findings: (1) Ohm's law needs ~47–51 / ~14–16 mV, not 10 mV → F13 confirme
 
 ## Next steps
 Proposal first (deadline Mon 14 Dec; structure, timeline: `../Thesis Proposal/proposal-plan.md`):
-1. Literature search for the review: reviews first, literature matrices (separators, simulation studies), motivation literature (student searches; PDFs into `Literature/Potential`).
+0. Model 05: group model, variants A/B (~1 h, guide `notes/comsol-guide-05.md`) · 1. Literature search for the review: reviews first, literature matrices (separators, simulation studies), motivation literature (student searches; PDFs into `Literature/Potential`).
 After the proposal draft (optional before): i₀ calibration (Fig. 3c/3d) · verify group model in COMSOL · first 2D step. New models: set T = 298.15 K in Default Model Inputs.
 
 ## Data
