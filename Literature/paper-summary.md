@@ -18,6 +18,8 @@ A "synergy" of several effects, all attributed to oxygen-terminated (111) ND fac
 4. Mechanical barrier — ND hardness resists dendrite penetration (puncture force +18 %)
 5. Suppressed side reactions / HER / corrosion (less SO₄²⁻ adsorption; Tafel Fig. 2f)
 
+**Weighting (re-read 9 Nov):** none quantitative — "synergy", "collectively". Emphasis (title, keywords, §2.5 DFT): the O-terminated (111) surface chemistry is the core; hardness is "additional mechanical reinforcement" (abstract). t₊ only "contributing to improved electrochemical performance at high charge–discharge rates" (§2.2). The abstract names the root problem of GF as "disordered macroporous structures and poor mechanical robustness, leading to non-uniform Zn²⁺ flux"; §2.1 reports a "significant reduction in average pore size" (S3) — but the homogenisation is attributed to surface chemistry ("micro-electric-field regulators, redistributing interfacial charge"), not to pore filling.
+
 Our coverage: models 03/04 test pillar 1 only (quantitatively too weak); pillar 3 → 2D work (their model, with NDs as holes, can only produce a geometric effect); 2 and 5 → interface / corrosion options; 4 → discussion only.
 
 ---
@@ -182,7 +184,12 @@ A **0.5 V** cathodic overpotential is applied, while the measured nucleation ove
 
 ## F5 — Wrong physics interface for the claim being made
 **Secondary current distribution** assumes uniform electrolyte composition — it solves ohmic drop and electrode kinetics but not concentration gradients. It is coupled to a separate dilute-species interface rather than using **Tertiary Current Distribution (Nernst–Planck)**, which solves potential and concentration self-consistently. For a paper whose entire claim is about *concentration homogenisation*, this is the weaker choice.
-**Update (group's `.mph`, received 20 Oct, first look without COMSOL):** the files contain only **Electric Currents** (AC/DC module), stationary — not even secondary current distribution or diluted species. So: pure ohmic conduction, no electrode kinetics, no concentration. Verify in COMSOL.
+**Group's `.mph` (`COMSOL/Old models/GF(1).mph`, `ND@GF(1).mph`, Apr 2025; read from the file history 9 Nov, not yet opened in COMSOL; geometry matches Fig. 2h/i → presumably those figures):**
+- Physics: "Secondary Current Distribution" was created and then **removed**; only **Electric Currents** (pure ohmic conduction) remains — no electrode kinetics, no concentration → S11 (concentration) must come from another model.
+- Stationary; Terminal 0.5 V (boundary 9) vs Ground (boundary 2).
+- Geometry (µm): domain 200 × 150; Zn 200 × 10 below y = 0 with semicircular bumps r = 15; separator layer 200 × 60 at y = 25–85; ND@GF adds a row of 100 circles r = 0.8, pitch 2, at y = 24.2 (just below the separator).
+- Materials: electrolyte = library "ZnSO4 [liquid]" (molten-salt data) with σ overwritten to 3.5 S/m; separator layer = library "SiO2 (fused quartz)" with σ = **2.15 S/m (GF) but 0.5 S/m (ND@GF)**; ND circles = "C (diamond)" σ = 0.1 S/m (window title "diamond part removed" — holes or material, check in COMSOL); Zn = library metal.
+- Consequence (own): the two cases differ not only by the ND row but by a 4× lower separator conductivity — measured values are nearly equal (2.83 vs 2.94 S/m). At fixed 0.5 V that lowers the total current and adds a resistive layer close to the bumps, both of which flatten the field independent of ND chemistry. Background only — in the thesis show it with our own re-simulation (models A/B), not as a statement about their choices.
 
 ## F6 — Convergence concerns in the DFT
 - **Cutoff 350 eV.** VASP's oxygen PAW has ENMAX = 400 eV; standard practice is ENCUT ≥ ENMAX, often 1.3× for accurate forces. 350 eV is **below the recommended minimum for an oxygen-containing system** — and oxygen termination is the entire point of the paper.
