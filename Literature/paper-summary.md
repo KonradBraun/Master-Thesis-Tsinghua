@@ -10,6 +10,16 @@
 | Corresponding | Xining Zang (Tsinghua), Zhijun Zhang (CUMT-B), Wenshu Chen (SEU) |
 | Files | `POWER-D-26-05609 (2).pdf`, `Supporting Information.docx` |
 
+## Claimed mechanism (manuscript highlights (2)/(4) and Conclusion)
+A "synergy" of several effects, all attributed to oxygen-terminated (111) ND facets — **t₊ is one pillar, not the sole cause**:
+1. Ion selectivity / high Zn²⁺ transference — Zn²⁺ captured, SO₄²⁻ repelled (DFT adsorption; t₊ 0.51 → 0.69; H-cell permeation)
+2. Faster Zn²⁺ desolvation (DFT; lower Eₐ)
+3. → homogenised interfacial electric field and Zn²⁺ flux (COMSOL Fig. 2h/i) → planar, dendrite-free deposition (CLSM, in-situ microscopy)
+4. Mechanical barrier — ND hardness resists dendrite penetration (puncture force +18 %)
+5. Suppressed side reactions / HER / corrosion (less SO₄²⁻ adsorption; Tafel Fig. 2f)
+
+Our coverage: models 03/04 test pillar 1 only (quantitatively too weak); pillar 3 → 2D work (their model, with NDs as holes, can only produce a geometric effect); 2 and 5 → interface / corrosion options; 4 → discussion only.
+
 ---
 
 # 1. Methods (from SI)
