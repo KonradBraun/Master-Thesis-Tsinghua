@@ -9,7 +9,7 @@ Phase 1 (breadth) started 10 Nov 2026. One file for the whole review; per sectio
 
 ## §2.2 Separators for Zn anodes
 
-**State (10 Nov):** 46 items in Zotero tagged `lr-2.2` (26 existing + 20 new): 16 full text, 23 abstract only, 7 needs access (Shao → full text, 11 Nov). 33 CN / 7 INT / 6 origin unknown. Phase 1 done; ~15 further candidates screened and not added (no numbers in abstract). Numbers marked † come from a search-engine excerpt of the abstract — verify before citing.
+**State (10 Nov):** 46 items in Zotero tagged `lr-2.2` (26 existing + 20 new): 18 full text, 23 abstract only, 5 needs access (Shao, Zhao 2024, Li 2022 Joule → full text, 11 Nov). 34 CN / 7 INT / 5 origin unknown. Phase 1 done; ~15 further candidates screened and not added (no numbers in abstract). Numbers marked † come from a search-engine excerpt of the abstract — verify before citing.
 
 ### Papers — full text read
 | Ref | Year | CN | What | Key numbers (location) | Rel. | Status |
@@ -29,6 +29,8 @@ Phase 1 (breadth) started 10 Nov 2026. One file for the whole review; per sectio
 | [Yuan 2025 Adv. Sci.](https://doi.org/10.1002/advs.202506035) | 2025 | CN | HfO₂/PVDF superhydrophobic coating on GF; Maxwell polarisation; COMSOL | t₊ 0.729 (Fig. 3h; GF value only in SI); Zn//Zn 4660 (185) h @5/1, 5050 (199) h @10/1 (Fig. 5a,b); Zn//Cu 99.86 % 1400 cyc (Fig. 5f); 1.64 Ah Zn–I₂ pouch | high | full-text-read (SI not) |
 | [Shao 2025 Carbon Energy](https://doi.org/10.1002/cey2.701) | 2025 | CN | Bi-MOF CAU-17 nanorod layer on GF (PVDF binder; GF@PVDF control); "ion pump"; COMSOL | σ 6.88 → 9.83 mS cm⁻¹, t₊ 0.54 → 0.81 (Fig. 1F,G; ΔV n/r); Zn//Zn > 4450 h @1/1 (Fig. 2E, GF value only in figure), 920 h @5/5 at DOD 42.70 %, ~35× GF (Fig. 2F); GF@PVDF 105 h (Fig. S8); Zn//Cu 99.9 % 500 cyc vs GF fails at 195 @2 mA cm⁻² (Fig. 2A) | high | full-text-read (SI not) |
 | [Zhang 2024 Natl. Sci. Rev.](https://doi.org/10.1093/nsr/nwae199) | 2024 | INT (co-corr. CN) | Electrospun MOF nanofibre layer on Zn (not a separator; GF = control) | t₊ 0.64 → 0.88 vs bare Zn (Fig. S20, via text); Zn//Zn 6000 h @1/1, 5400 h @10/20 (Fig. 4d,e) | medium | full-text-read (SI not) |
+| [Zhao 2024 Chin. Chem. Lett.](https://doi.org/10.1016/j.cclet.2023.109332) | 2024 | CN | Kaolin filling the GF interspace; DFT for Zn(002) | t₊ 0.27 → 0.37 (Fig. 2d,e, BV); σ not in main text (the † 10.1 → 13.7 not found); Zn//Zn 500 (168) h @2/1 (Fig. 3d,e), 400 (240) h @0.5 mA cm⁻² (Fig. S3a); HER onset −264 → −221 mV (Fig. 3c); Zn//MnO₂ 96.8 mAh g⁻¹ after 1000 cyc @2 A g⁻¹ (abs) | high | full-text-read (SI not) |
+| [Li 2022 Joule](https://doi.org/10.1016/j.joule.2021.12.009) (commentary) | 2022 | CN (co-corr. AU) | **"Soft shorts" (SS): local Zn contacts that let Zn//Zn cells look stable** | SS mostly at high plating currents, no abrupt voltage drop; shrinking overpotential + falling R_ct are the signature (Fig. 2); 3 protocols: R_ct vs R'_ct after pre-cycles at 1 mA cm⁻²/20 mAh cm⁻² (p. 275–276), negative Eₐ from T-dependent cycling (Fig. 3E–G), Zn//Cu asymmetric cells to define life (p. 277–278); no frequency statistic | high | full-text-read (SI not) |
 | [Chen 2026 Energy Z](https://doi.org/10.20517/energyz.2026.05) (review) | 2026 | CN | Separator review, all chemistries; GF-deficit list; Tab. 3 without metrics | GF: designed for filtration, tortuous, weak, too thick, free water → HER (text) | medium | full-text-read |
 
 ### Papers — abstract only / needs access
@@ -42,7 +44,6 @@ Phase 1 (breadth) started 10 Nov 2026. One file for the whole review; per sectio
 | [Zhang 2024 J. Energy Chem.](https://doi.org/10.1016/j.jechem.2023.10.020) | CN | ZIF-8 on GF; desolvation, (002) | Zn//Zn 2300 h @0.5 mA cm⁻² (mirror-site abstract) | high | abstract-only |
 | [Zhao 2025 Nano Lett.](https://doi.org/10.1021/acs.nanolett.5c01125) | ? | Gradient GF with CeF₃; SO₄²⁻ restraint | Zn//Zn 2500 h @1/1, 1000 h @5/5 | high | abstract-only |
 | [Luo 2025 Small](https://doi.org/10.1002/smll.202410342) | CN | MOF grown in situ on GF | t₊ 0.81 (method n/r); σ "enhanced"; Zn//Zn > 4800 h† | high | abstract-only |
-| [Zhao 2024 Chin. Chem. Lett.](https://doi.org/10.1016/j.cclet.2023.109332) | ? | Kaolin on GF | t₊ 0.27 → 0.37†, σ 10.1 → 13.7 mS cm⁻¹† | high | needs-access (OA) |
 | [Si 2025 Green Chem.](https://doi.org/10.1039/d5gc01465d) | CN | Sulfonated C₃N₄ on GF | t₊ 0.65† | high | abstract-only |
 | [Sun 2023 J. Energy Chem.](https://doi.org/10.1016/j.jechem.2023.03.007) | CN | Sulfonated poly(arylene ether sulfone) dense layer on GF (Janus) | Zn//Zn > 2000 (~90) h at 1 mAh cm⁻²† | high | needs-access |
 | [Chen 2024 Small](https://doi.org/10.1002/smll.202305687) | CN | Sulfonate-rich UiO-66 on GF | Zn//Zn > 3450 h @3 mA cm⁻² | high | abstract-only |
@@ -57,7 +58,6 @@ Phase 1 (breadth) started 10 Nov 2026. One file for the whole review; per sectio
 | [Li 2023 Adv. Mater.](https://doi.org/10.1002/adma.202300019) | CN | 23 µm nanoporous membrane + C/Cu layer (not GF) | Zn//Zn > 2000 h @1, 600 h @10 mA cm⁻² | medium | abstract-only |
 | [Liu 2022 Energy Storage Mater.](https://doi.org/10.1016/j.ensm.2021.11.002) | ? | Zincophilic supramolecules on GF | Zn//Zn 2000 h† | medium | needs-access |
 | [Wang 2026 ACS Nano](https://doi.org/10.1021/acsnano.5c17322) | ? | ZSM-5 zeolite-filled GF; Ah-level pouch | none in abstract | medium | needs-access |
-| [Li 2022 Joule](https://doi.org/10.1016/j.joule.2021.12.009) | CN | "Soft shorts" mimic stable Zn//Zn cycling | n/r | high | needs-access |
 | [Guo 2025 Energy Environ. Sci.](https://doi.org/10.1039/d4ee05044d) | CN | Symmetric-cell gains don't transfer to full cells | qualitative | medium | abstract-only |
 | Reviews: [Gu 2025 AEM](https://doi.org/10.1002/aenm.202502652) (high) · [Li 2024 Sci. Bull.](https://doi.org/10.1016/j.scib.2024.01.011) (high) · [Nian 2025 Nanoscale Horiz.](https://doi.org/10.1039/d5nh00172b) (high, OA) · [Wang 2026 AEM](https://doi.org/10.1002/aenm.202504270) · [Lee 2025 EES Batteries](https://doi.org/10.1039/d5eb00142k) (INT, OA) | CN ×4, INT ×1 | mechanism categories: E-field homogenisation, ion sieving/anion repulsion, desolvation, Zn(002) orientation (Gu, Li); GF modification vs new separator (Li) | | | abstract-only |
 
@@ -72,6 +72,7 @@ j in mA cm⁻², Q in mAh cm⁻²; life = modified (GF control) h. BV = Bruce–
 | Huang 2025 | GF/bacterial cellulose blend, free-standing | 21 → 17 | 0.19 → 0.23 (BV 20 mV) | 998 (115) @2/1; 365 (65) @10/5 | 3.4 % @2/1; 17 % @10/5 | ~100 % 400 cyc | none | full-text |
 | Kim 2025 | PVDF + air plasma on GF/C | 22.44 → 67.43 | 0.35 → 0.49 (BV) | > 500 @2/1 | 3.4 % | 99.98 % (cell unclear) | none | full-text |
 | Zhang 2023 | cationic nanocellulose (free-standing; control anionic NCF) | 3.96 → 4.83 | 0.57 → 0.73 (BV 20 mV) | 1924 (870) @1/4 | 6.8 % | > 99.3 % 800 cyc | FEM 2D c(Zn²⁺), software n/r | full-text |
+| Zhao 2024 | kaolin filling GF | n/r (main text) | 0.27 → 0.37 (BV, ΔV n/r) | 500 (168) @2/1; 400 (240) @0.5/n/r | n/r | Zn//Cu > 200 vs 60 cyc @2/1 (Fig. S6; labels garbled in text) | DFT only | full-text (SI not) |
 | Zhang 2024 ACS AMI | detonation NDs, dip-coating (5 mg / 30 mL, 10 min) | not measured | 0.13 → 0.45 (BV 10 mV) | ~1800 (110) @5/1; ~240 @10/10 | n/r | 99.3 % @2/1 | none | full-text |
 | Cha 2025 | ZrO₂ felt replacing GF | 6.3 → 28.6 | 0.43 → 0.62 (liquid-junction potential) | 3000 (300) @5/1 | n/r | 99.7 vs 97.9 % | DFT/AIMD only | full-text (SI not) |
 | Yuan 2025 | HfO₂/PVDF 9:1, spin coating | "improved" (SI Tab. S1) | GF in SI → 0.729 (BV) | 4660 (185) @5/1; 5050 (199) @10/1 | n/r (20 µm Zn only in full cells) | 99.86 vs 98.99 % | COMSOL 2D, separator ε varied → E, c, j; BCs n/r | full-text (SI not) |
@@ -80,23 +81,22 @@ j in mA cm⁻², Q in mAh cm⁻²; life = modified (GF control) h. BV = Bruce–
 
 ### Synthesis
 - **Four families, one vocabulary.** (i) charged / ion-sieving layers: sulfonate (Si 2025, Sun 2023, Chen 2024), carboxylate (Gou 2025), Nafion (Wu 2021), negatively charged oxides (Tan 2025, Wang 2024 SiOₓ); (ii) inorganic fillers: MOFs, zeolites, minerals, BaTiO₃, HfO₂, ZrO₂, CeF₃, kaolin; (iii) carbon: insulating/functional (GO, g-C₃N₄, NDs) vs conductive (rGO, Ketjen black, vertical graphene) — conductive layers move deposition onto the separator (Lin 2023), and the functional side always faces Zn, no paper compares orientations; (iv) structural (BC blend, PVDF). Reviews (Gu 2025, Li 2024, Chen 2026) and almost every paper explain the effect with the same four mechanisms: E-field homogenisation, ion sieving/SO₄²⁻ repulsion, desolvation, Zn(002) texture — usually asserted with DFT, rarely quantified; a surface charge (ζ) is measured in only 3 papers (Tan, Zhang 2023, Cha).
-- **The GF baseline is not reproducible.** t₊(GF) 0.13–0.54 across 9 papers (Zhang 2024 ACS AMI 0.13, Huang 0.19, Liu 0.22, Zhao 0.27†, Tan/Kim 0.35, Luo 0.38, Shao 0.54 — all BV; Cha 0.43 by liquid-junction potential); σ(GF) 3.8–66.6 mS cm⁻¹ (~17×); GF control life ~60–80 h @1/1 (Luo, Liu) but 110–300 h @5/1 (Zhang 2024, Yuan, Cha). Only Kim and Hansen name the GF grade. → "×-fold" improvements compare against different baselines. The group's GF t₊ of 0.51 lies above all but Shao (0.54) and above bulk 2 M ZnSO₄ (0.197, Purser & Stokes 1951); even the bulk reference is disputed (Cha cites ≈ 0.40).
-- **No consistent σ–t₊ trade-off.** σ falls while t₊ rises in 3 papers (Huang, Liu, Kim's intermediate step) but rises with t₊ in 6 (Luo 2024, Kim final, Zhang 2023, Cha, Shao, Zhao†). A Donnan-type fixed-charge picture predicts lower σ when anions are excluded → the reported pairs are more likely dominated by wetting, uptake and measurement artefacts than by charge selectivity (inference; fits our models 03/04). Huang gets a ~9× life gain with t₊·σ unchanged (calc) → structural, not transport.
-- **Test conditions flatter the results.** Headline Zn//Zn runs use 0.5–5 mA cm⁻² and ≤ 1 mAh cm⁻²; Zn thickness missing in 4 of 9 full-text papers; known headline DOD 0.85–3.4 % (calc). Only 3 papers state a high DOD (Yang 2022 42.7 %, Shao 2025 42.70 % @5/5 → 920 h vs ~26 h GF (calc), Zhang 2022 56 % → 220 h); the identical 42.7 % fits 20 µm Zn at 5 mAh cm⁻² (calc) — likely a shared test convention (inference). Soft shorts can mimic stable cycling (Li 2022 Joule) and symmetric-cell gains don't transfer to full cells (Guo 2025). The group's 3738 h is at 1.7 % DOD — typical, not exceptional.
+- **The GF baseline is not reproducible.** t₊(GF) 0.13–0.54 across 9 papers (Zhang 2024 ACS AMI 0.13, Huang 0.19, Liu 0.22, Zhao 0.27, Tan/Kim 0.35, Luo 0.38, Shao 0.54 — all BV; Cha 0.43 by liquid-junction potential); σ(GF) 3.8–66.6 mS cm⁻¹ (~17×); GF control life ~60–80 h @1/1 (Luo, Liu) but 110–300 h @5/1 (Zhang 2024, Yuan, Cha). Only Kim and Hansen name the GF grade. → "×-fold" improvements compare against different baselines. The group's GF t₊ of 0.51 lies above all but Shao (0.54) and above bulk 2 M ZnSO₄ (0.197, Purser & Stokes 1951); even the bulk reference is disputed (Cha cites ≈ 0.40).
+- **No consistent σ–t₊ trade-off.** σ falls while t₊ rises in 3 papers (Huang, Liu, Kim's intermediate step) but rises with t₊ in 5 (Luo 2024, Kim final, Zhang 2023, Cha, Shao; Zhao's σ† not in its main text). A Donnan-type fixed-charge picture predicts lower σ when anions are excluded → the reported pairs are more likely dominated by wetting, uptake and measurement artefacts than by charge selectivity (inference; fits our models 03/04). Huang gets a ~9× life gain with t₊·σ unchanged (calc) → structural, not transport.
+- **Test conditions flatter the results.** Headline Zn//Zn runs use 0.5–5 mA cm⁻² and ≤ 1 mAh cm⁻²; Zn thickness missing in 4 of 9 full-text papers; known headline DOD 0.85–3.4 % (calc). Only 3 papers state a high DOD (Yang 2022 42.7 %, Shao 2025 42.70 % @5/5 → 920 h vs ~26 h GF (calc), Zhang 2022 56 % → 220 h); the identical 42.7 % fits 20 µm Zn at 5 mAh cm⁻² (calc) — likely a shared test convention (inference). Soft shorts can mimic stable cycling — falling overpotential and R_ct, no voltage drop; Li 2022 Joule proposes R_ct checks, T-dependent Eₐ and Zn//Cu cells as tests, none of which the separator papers here report (inference from the full texts read) and symmetric-cell gains don't transfer to full cells (Guo 2025). The group's 3738 h is at 1.7 % DOD — typical, not exceptional.
 - **GF fails structurally.** Zn grows through the pores to a short (Hansen: 79/80 cells); smaller pores and thicker GF extend life but raise scatter; compression not varied. Fibre loosening (Kim, Liu) and by-product crusts (Huang, Kim). → pore size, thickness and compression are first-order model parameters (2D step).
 - **Simulations are illustrative, and NDs on GF are not new.** 5 papers with continuum FEM (Song, Tan, Yuan, Shao: COMSOL; Zhang 2023): all 2D, semicircular Zn bumps, coating as a homogeneous layer, BCs not in the main text, no validation; concentration scales 0–10 / 0–4 mol m⁻³ vs 2000 mol m⁻³ at 2 M. DFT is never linked to the continuum model. A direct ND@GF precedent exists (Zhang 2024 ACS AMI: t₊ 0.13 → 0.45, 110 → 1800 h @5/1, no simulation) → the gap is the *mechanistic, quantitative* model of an ND-modified separator, not ND@GF itself (§2.5).
-- **Who:** 33 CN / 7 INT / 6 unknown. The only systematic GF-baseline study (Hansen) and the only non-BV t₊ (Cha) are INT.
+- **Who:** 34 CN / 7 INT / 5 unknown. The only systematic GF-baseline study (Hansen) and the only non-BV t₊ (Cha) are INT.
 
 ### Needs access — §2.2 (priority first)
 - 10.1021/acsami.4c15737 (Zhang 2024, ND@GF precedent) — SI: ND mass loading, layer thickness, ζ of the NDs (the 10 Nov download is the main text only; loading there only as a dispersion recipe)
-- 10.1016/j.cclet.2023.109332 (Zhao 2024, OA PDF) — verify t₊ and σ†, method
-- 10.1002/advs.202506035 (Yuan 2025) — SI Tab. S1/S3 (σ, GF t₊), Fig. S26 (COMSOL setup)
+- 10.1002/advs.202506035 (Yuan 2025) — SI Tab. S1/S3 (σ, GF t₊), Fig. S26 (COMSOL setup); 10 Nov download = main text only
 - 10.1002/adma.202003425 (Li 2020), 10.1002/adfm.202204306 (Su 2022), 10.1002/adfm.202112936 (Liang 2022), 10.1021/acs.nanolett.5c01125 (Zhao 2025) — whether and how E-field is simulated; σ, t₊, GF control
 - 10.1007/s12274-021-3957-z (Yang 2022), 10.1002/adma.202205175 (Zhang 2022) — Zn thickness behind the 42.7 / 56 % DOD (42.7 % probably 20 µm at 5 mAh cm⁻², cf. Shao 2025); t₊, σ
-- 10.1016/j.joule.2021.12.009 (Li 2022, soft shorts) — criteria and frequency
 - 10.1016/j.jechem.2023.03.007 (Sun 2023), 10.1016/j.jechem.2024.09.047 (Gou 2025), 10.1039/d3ta06268f (Lee 2024) — t₊/σ, j/Q
 - 10.1002/aenm.202502652 (Gu 2025), 10.1016/j.scib.2024.01.011 (Li 2024) — comparison tables and metrics
 SI of full-text papers:
+- 10.1016/j.cclet.2023.109332 (Zhao, OA) — SI: σ (the † 10.1 → 13.7 mS cm⁻¹), GF grade, Zn thickness, Q of the 0.5 mA cm⁻² run
 - 10.1002/cey2.701 (Shao, OA) — SI: COMSOL setup (Fig. 3L–O), GF grade, Zn thickness, GF life @1/1 (Fig. 2E), Eq. S1–S4
 - 10.1002/smll.202510596 (Tan) — SI: COMSOL setup Fig. 5, σ (Fig. S11), GF grade, Zn thickness
 - 10.1007/s40820-022-00960-z (Song, OA) — SI: COMSOL setup Fig. 3i,j; GF and Zn thickness
@@ -158,7 +158,7 @@ SI of full-text papers:
 
 ## §2.4 Simulation of Zn deposition and separators
 
-**State (10 Nov):** 26 items tagged `lr-2.4` (15 existing + 11 new): 17 full text, 7 abstract only, 2 needs access. 7 CN / 18 INT / 1 unknown. COMSOL use *inside* separator papers: see §2.2 (Song, Tan, Yuan, Zhang 2023).
+**State (10 Nov):** 26 items tagged `lr-2.4` (15 existing + 11 new): 17 full text, 7 abstract only, 2 needs access. 7 CN / 18 INT / 1 unknown. COMSOL use *inside* separator papers: see §2.2 (Song, Tan, Yuan, Shao, Zhang 2023).
 
 ### Continuum models, charged pores, separator microstructure
 | Ref | CN | What | Model / key numbers (location) | Rel. | Status |
@@ -258,16 +258,16 @@ SI of full-text papers:
 ### Synthesis (argument chain)
 - Grid and long-duration storage need very low energy-capacity cost, ≤ US$20 kWh⁻¹ (Sepulveda 2021; Ziegler 2019), plus safety and long life (Dunn 2011). Li-ion faces resource limits and flammable electrolytes (Olivetti 2017, needs access; Dong 2022 p. 1); thermal runaway, vent-gas and fire hazards in stationary BESS lack an agreed suppression strategy (Wang 2025; Feng 2018 for the mechanism). Cost and cycle life per technology: Mongird 2020 (full text needed). AZIBs offer cheap Zn (US$2 vs 19 kg⁻¹ Li, Cui 2025), water-based electrolyte and air assembly, at 60–80 Wh kg⁻¹ (Dong 2022) → stationary, not EV. The Zn anode is the bottleneck (Dong 2022; Yu 2023; Li 2022) → §2.1.
 
-## CN vs international (Zotero tags, 10 Nov, end of Phase 1)
+## CN vs international (Zotero tags, recounted 11 Nov)
 CN = corresponding (lead) author's institution in mainland China/HK/Macau — the student's interpretation of "Chinese literature", not yet confirmed by the supervisor. All items are English-language; no Chinese-language papers so far.
 
 | Section | Items | CN | INT | unknown | full text / abstract / needs access |
 |---|---|---|---|---|---|
 | §1 | 8 | 1 | 6 | 1 | 0 / 5 / 3 |
 | §2.1 | 12 | 5 | 6 | 1 | 3 / 8 / 1 |
-| §2.2 | 46 | 33 | 7 | 6 | 15 / 24 / 7 |
+| §2.2 | 46 | 34 | 7 | 5 | 17 / 24 / 5 (matrix 18 / 23: Shao = DML59VLW, tag not swapped) |
 | §2.3 | 20 | 9 | 8 | 3 | 10 / 5 / 5 |
 | §2.4 | 26 | 7 | 18 | 1 | 17 / 7 / 2 |
-| **unique** | **111** | **54** | **45** | **12** | (Zhang 2024 ACS AMI counted in §2.2 and §2.3) |
+| **unique** | **111** | **55** | **45** | **11** | (Zhang 2024 ACS AMI counted in §2.2 and §2.3) |
 
 Trend for the review: experimental separator/ND work is CN-dominated; GF-baseline studies, ND surface chemistry, method development (Sand's time, phase-field validation, t₊ methodology) and the grid-storage framing are mostly INT. Counting rule for refs cited in the proposal: re-count from the final bibliography.
