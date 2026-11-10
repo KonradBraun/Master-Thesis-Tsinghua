@@ -69,8 +69,7 @@ Findings: (1) Ohm's law needs ~47–51 / ~14–16 mV, not 10 mV → F13 confirme
 
 ## Next steps
 Proposal first (deadline Mon 14 Dec; structure, timeline: `../Thesis Proposal/proposal-plan.md`):
-1. WeChat to the supervisor: (a) form questions + length; (b) short results summary (models 01–05) + proposed research question · 2. Literature search for the review (main block until ~24 Nov) — **running in a separate Claude session** ("Deep literature search for the proposal review", 10 Nov): results in `Literature/review-matrix.md` (§2.2 from 10 full texts committed; partial results for §2.1, §1, §2.4 and 14 §2.2 candidates being merged; Zotero adds, §2.3, refs.bib, CN counts open); capped at 60 % of the 5-hour limit per run; PDFs for its "needs access" list → Zotero Connector / `Literature/Potential` · 3. Write §4 (methods + preliminary results 01–05) in parallel.
-Literature search Phase 1 done (10 Nov): `../Literature/review-matrix.md` (§1–§2.4, synthesis, needs-access lists; 111 items tagged `lr-*` in Zotero) → Phase 2 = full texts of the needs-access items.
+1. WeChat to the supervisor: (a) form questions + length; (b) short results summary (models 01–05) + proposed research question · 2. Literature search (separate Claude session "Deep literature search for the proposal review"; runs capped at 60 % of the 5-hour limit): **Phase 1 done (10 Nov)** — `../Literature/review-matrix.md` (§1–§2.4, synthesis, needs-access lists; 111 items tagged `lr-*` in Zotero: 54 CN / 45 international / 12 unknown; `refs.bib` 160 entries) → Phase 2 = student downloads the needs-access PDFs (Zotero Connector / `Literature/Potential`), then full-text reading · 3. Write §4 (methods + preliminary results 01–05), then §2.2 from the matrix.
 After the proposal draft: i₀ calibration (Fig. 3c/3d) · first 2D step (C in the comparison plan). No postdoc data needed before then. New models: set T = 298.15 K in Default Model Inputs.
 
 ## Data
