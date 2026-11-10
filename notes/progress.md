@@ -6,6 +6,7 @@
 - **Data from the group** (via Dr. Yanmei Zhang — first author of the group's ND synthesis paper, ACS Nano 20 (2026) 20231, Tsinghua ME — and the former postdoc, 19 Oct; → `parameters.md`): ND 0.1–0.4 mg/separator, Φ10 mm, layer 30–50 µm on the fibres, zeta ND@GF −38.8 mV, stack Zn/sep/Zn, CP 50 µm · group `.mph` → `COMSOL/Old models/` · SI Fig. S6 raw data → `data/figure S6/` (evaluated, see COMSOL models) · S5 raw data and spacer/spring: not received.
 - Proposal deadline: **Mon 14 Dec 2026** (student, 4 Nov); form requirements in `Thesis Proposal/proposal-plan.md`. Paper still under review (30 Oct).
 - **Nobody who worked on the paper is left in the group** (student, 30 Oct): the former postdoc can provide data, but not how the experiments were done → don't plan on protocol questions.
+- The supervisor herself called the paper's simulations sloppy (student, 10 Nov) — the thesis is meant to do them properly, not to defend them.
 - Questions for the supervisor: `../Thesis Proposal/proposal-plan.md`.
 
 ## Approach — agreed with the student 30 Oct, not yet discussed with the supervisor
