@@ -215,10 +215,55 @@ SI of full-text papers:
 - 10.1016/j.cclet.2022.03.065 (Li 2022 CCL) — Tab. 1 (PF parameters, image)
 
 ## §2.1 AZIBs and Zn anode failure modes
-*Pending.*
+
+**State (10 Nov):** 12 items tagged `lr-2.1` (5 existing + 7 new): 3 full text, 8 abstract only, 1 needs access. 5 CN / 6 INT / 1 unknown. Test-condition papers (Li 2022 soft shorts, Guo 2025) are under §2.2.
+
+| Ref | CN | What | Key numbers (location) | Rel. | Status |
+|---|---|---|---|---|---|
+| [Dong 2022 Chem. Sci.](https://doi.org/10.1039/d2sc01818g) | CN | Practical Zn anodes: CE/lifespan metrics, interfacial pH, separators, energy density | Zn 819 mAh g⁻¹, 5854 mAh cm⁻³, −0.762 V vs SHE (Intro); HER → local OH⁻ → insulating hydroxide-Zn salts (Fig. 3a); CE valid only at counter-electrode DOD < 20 % (Fig. 1a); > 99.9 % CE needed (§1.1); Zn‖Cu ~1000 h at 0.68 % vs ~190 h at 2.9 % Zn utilisation (Fig. 2b); GF too thick, large pores → uneven deposition (§1.4); N/P 2–5, 60–80 Wh kg⁻¹ realistic (abs, Fig. 5e) | high | full-text-read |
+| [Cui 2025 Electrochim. Acta](https://doi.org/10.1016/j.electacta.2025.146418) | INT | Zn plating/stripping in 2 M ZnSO₄, Zn(ClO₄)₂, ZnCl₂ | 2 M ZnSO₄: pH 3.3, σ 4.83 S m⁻¹, t₊ 0.35 (Tab. 1); ZHS Zn₄SO₄(OH)₆·xH₂O by XRD (Fig. 4); Zn grows over insulating by-products and on protrusions (Fig. 5); Zn US$2 vs Li US$19 kg⁻¹ (p. 1); i_corr values (Fig. 1e) look high — check units | high | full-text-read |
+| [Xu 2023 Mater. Today](https://doi.org/10.1016/j.mattod.2023.04.005) | CN | Physical properties of AZIB electrolytes | 1 M ZnSO₄ ~50 mS cm⁻¹, partly H⁺ hopping (p. 340); BV t₊ = t(Zn²⁺) + t(H⁺) (p. 340); t(Zn²⁺) falls above ~0.14 M (ion pairs); interfacial water after desolvation → HER (p. 341); lab E/C ~1000 g Ah⁻¹ (p. 346) | medium | full-text-read |
+| [Yu 2023 Joule](https://doi.org/10.1016/j.joule.2023.05.004) | CN | Ten concerns of Zn metal anodes (nucleation, facets, corrosion, protocols) | n/r (abstract) | high | abstract-only |
+| [Blanc 2020 Joule](https://doi.org/10.1016/j.joule.2020.03.002) | INT | Scientific challenges of Zn-ion batteries | n/r (abstract) | high | abstract-only |
+| [Li 2022 Joule](https://doi.org/10.1016/j.joule.2022.06.002) | INT | Practical AZIBs: claims overestimated, water activity as core problem | n/r | high | needs-access |
+| [Hao 2020 Energy Environ. Sci.](https://doi.org/10.1039/d0ee02162h) | ? | Zn anode in alkaline vs mild electrolytes | n/r | medium | abstract-only |
+| [Tang 2019 Energy Environ. Sci.](https://doi.org/10.1039/c9ee02526j) | CN | Issues and opportunities of AZIBs | n/r | medium | abstract-only |
+| [Kim 2024 Chem. Soc. Rev.](https://doi.org/10.1039/d4cs00557k) | INT | Li and Zn metal systems as templates for Mg/Ca | n/r (source for Zn vs Li comparison) | medium | abstract-only |
+| [Yu 2024 J. Am. Chem. Soc.](https://doi.org/10.1021/jacs.4c02558) | CN | Water-rich double layer during desolvation drives HER (in situ + MD) | n/r | medium | abstract-only |
+| [Zheng 2019 Science](https://doi.org/10.1126/science.aax6873) | INT | Epitaxial Zn(002) on graphene | "thousands of cycles" (abs) | medium | abstract-only |
+| [Zhang 2024 Adv. Energy Mater.](https://doi.org/10.1002/aenm.202303737) | INT | DFT: adsorbed OH⁻/O²⁻ nucleate dendrites | CE 99.3 % at 1 mAh cm⁻² (abs) | medium | abstract-only |
+
+### Synthesis
+- **The failure modes form one self-reinforcing chain set by the interfacial pH.** Water released during desolvation feeds HER (Xu 2023; Yu 2024 JACS) → local OH⁻ rises → insulating ZHS precipitates in ZnSO₄ (Dong 2022; Cui 2025) → uneven current, Zn grows on protrusions and over the by-products (Cui 2025) → dendrites and encapsulated "dead Zn" lower CE (Dong 2022; Xu 2023); adsorbed OH⁻ also nucleates dendrites at atomic scale (Zhang 2024). The spatial pH field is not measured (Dong) → a continuum target (pH/OH⁻ + precipitation; corrosion option of the thesis).
+- **What a separator can and cannot fix.** It acts on transport: flux homogenisation and pore-scale current focusing (Dong names GF thickness and large pores). It cannot remove HER thermodynamics (Zn²⁺/Zn −0.762 V vs SHE vs HER 0 V at pH 0; 2 M ZnSO₄ pH 3.3, Cui), corrosion at rest, or cathode-side H⁺/hydroxide chemistry (Li 2022, needs access). → claims of HER/corrosion suppression by a separator need an indirect mechanism (solvation, pH buffering) — inference.
+- **Zn ≈ Li metal, with water.** Shared: dendrites, volume change, need for > 99.9 % CE (Dong). Zn-specific: HER/corrosion, by-products instead of an SEI, higher volumetric capacity (5854 mAh cm⁻³, Dong). Li values still need a source (Kim 2024, needs full text).
+- **Practical test criteria.** CE should be measured at counter-electrode DOD < 20 % (Dong); lab cells run at very low Zn utilisation and E/C ~1000 g Ah⁻¹ (Xu) — consistent with §2.2 (headline DOD 0.85–3.4 %).
 
 ## §1 Background
-*Pending.*
 
-## CN vs international (Zotero tags)
-*Counted at the end of Phase 1.*
+**State (10 Nov):** 5 items tagged `lr-1`, all INT; 3 abstract only, 2 needs access. Still missing: a Li-ion/BESS safety (thermal runaway) source and one agency report (IEA/NREL/PNNL) for cost and cycle-life numbers.
+
+| Ref | CN | What | Key numbers (location) | Rel. | Status |
+|---|---|---|---|---|---|
+| [Dunn 2011 Science](https://doi.org/10.1126/science.1212741) | INT | Grid storage review: cost is the barrier | n/r (abs) | high | abstract-only |
+| [Sepulveda 2021 Nat. Energy](https://doi.org/10.1038/s41560-021-00796-8) | INT | Design space for long-duration storage | energy-capacity cost ≤ US$20 kWh⁻¹ to cut electricity cost ≥ 10 %; ≤ US$1 kWh⁻¹ to displace firm generation (abs) | high | abstract-only |
+| [Ziegler 2019 Joule](https://doi.org/10.1016/j.joule.2019.06.012) | INT | Storage costs for wind/solar baseload | ~US$20 kWh⁻¹ target (abs) | medium | abstract-only |
+| [Olivetti 2017 Joule](https://doi.org/10.1016/j.joule.2017.08.019) | INT | Li-ion supply-chain bottlenecks (Li, Co, Ni) | n/r | medium | needs-access |
+| [Liang 2022 Nat. Rev. Mater.](https://doi.org/10.1038/s41578-022-00511-3) | INT | Designing modern aqueous batteries | n/r | high | needs-access |
+
+### Synthesis (argument chain)
+- Grid and long-duration storage need very low energy-capacity cost, ≤ US$20 kWh⁻¹ (Sepulveda 2021; Ziegler 2019), plus safety and long life (Dunn 2011). Li-ion faces resource limits and flammable electrolytes (Olivetti 2017, needs access; Dong 2022 p. 1). AZIBs offer cheap Zn (US$2 vs 19 kg⁻¹ Li, Cui 2025), water-based electrolyte and air assembly, at 60–80 Wh kg⁻¹ (Dong 2022) → stationary, not EV. The Zn anode is the bottleneck (Dong 2022; Yu 2023; Li 2022) → §2.1.
+
+## CN vs international (Zotero tags, 10 Nov, end of Phase 1)
+CN = corresponding (lead) author's institution in mainland China/HK/Macau — the student's interpretation of "Chinese literature", not yet confirmed by the supervisor. All items are English-language; no Chinese-language papers so far.
+
+| Section | Items | CN | INT | unknown | full text / abstract / needs access |
+|---|---|---|---|---|---|
+| §1 | 5 | 0 | 5 | 0 | 0 / 3 / 2 |
+| §2.1 | 12 | 5 | 6 | 1 | 3 / 8 / 1 |
+| §2.2 | 46 | 33 | 7 | 6 | 15 / 24 / 7 |
+| §2.3 | 20 | 9 | 8 | 3 | 10 / 5 / 5 |
+| §2.4 | 26 | 7 | 18 | 1 | 17 / 7 / 2 |
+| **unique** | **108** | **53** | **44** | **11** | (Zhang 2024 ACS AMI counted in §2.2 and §2.3) |
+
+Trend for the review: experimental separator/ND work is CN-dominated; GF-baseline studies, ND surface chemistry, method development (Sand's time, phase-field validation, t₊ methodology) and the grid-storage framing are mostly INT. Counting rule for refs cited in the proposal: re-count from the final bibliography.
