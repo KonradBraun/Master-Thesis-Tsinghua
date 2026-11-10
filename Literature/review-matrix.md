@@ -9,7 +9,7 @@ Phase 1 (breadth) started 10 Nov 2026. One file for the whole review; per sectio
 
 ## §2.2 Separators for Zn anodes
 
-**State (10 Nov):** 46 items in Zotero tagged `lr-2.2` (26 existing + 20 new): 18 full text, 23 abstract only, 5 needs access (Shao, Zhao 2024, Li 2022 Joule → full text, 11 Nov). 34 CN / 7 INT / 5 origin unknown. Phase 1 done; ~15 further candidates screened and not added (no numbers in abstract). Numbers marked † come from a search-engine excerpt of the abstract — verify before citing.
+**State (10 Nov):** 46 items in Zotero tagged `lr-2.2` (26 existing + 20 new): 19 full text, 22 abstract only, 5 needs access (Shao, Zhao 2024, Li 2022 Joule, Gu 2025 → full text, 11 Nov). 34 CN / 7 INT / 5 origin unknown. Phase 1 done; ~15 further candidates screened and not added (no numbers in abstract). Numbers marked † come from a search-engine excerpt of the abstract — verify before citing.
 
 ### Papers — full text read
 | Ref | Year | CN | What | Key numbers (location) | Rel. | Status |
@@ -31,6 +31,7 @@ Phase 1 (breadth) started 10 Nov 2026. One file for the whole review; per sectio
 | [Zhang 2024 Natl. Sci. Rev.](https://doi.org/10.1093/nsr/nwae199) | 2024 | INT (co-corr. CN) | Electrospun MOF nanofibre layer on Zn (not a separator; GF = control) | t₊ 0.64 → 0.88 vs bare Zn (Fig. S20, via text); Zn//Zn 6000 h @1/1, 5400 h @10/20 (Fig. 4d,e) | medium | full-text-read (SI not) |
 | [Zhao 2024 Chin. Chem. Lett.](https://doi.org/10.1016/j.cclet.2023.109332) | 2024 | CN | Kaolin filling the GF interspace; DFT for Zn(002) | t₊ 0.27 → 0.37 (Fig. 2d,e, BV); σ not in main text (the † 10.1 → 13.7 not found); Zn//Zn 500 (168) h @2/1 (Fig. 3d,e), 400 (240) h @0.5 mA cm⁻² (Fig. S3a); HER onset −264 → −221 mV (Fig. 3c); Zn//MnO₂ 96.8 mAh g⁻¹ after 1000 cyc @2 A g⁻¹ (abs) | high | full-text-read (SI not) |
 | [Li 2022 Joule](https://doi.org/10.1016/j.joule.2021.12.009) (commentary) | 2022 | CN (co-corr. AU) | **"Soft shorts" (SS): local Zn contacts that let Zn//Zn cells look stable** | SS mostly at high plating currents, no abrupt voltage drop; shrinking overpotential + falling R_ct are the signature (Fig. 2); 3 protocols: R_ct vs R'_ct after pre-cycles at 1 mA cm⁻²/20 mAh cm⁻² (p. 275–276), negative Eₐ from T-dependent cycling (Fig. 3E–G), Zn//Cu asymmetric cells to define life (p. 277–278); no frequency statistic | high | full-text-read (SI not) |
+| [Gu 2025 Adv. Energy Mater.](https://doi.org/10.1002/aenm.202502652) (review) | 2025 | CN | Critical review of separator mechanisms; Tab. 1 lists mechanism, thickness, strength, cycling per separator; **own GF-grade tests** | Zn/Zn @3/3: GF/A 100 h vs 2×GF/A 300 h; GF/F (denser) better than GF/A (Fig. 12b, text); Whatman GF designed for filtration (text); metrics CE, symmetric-cell DOD, full cells (Fig. 12c) | high | full-text-read |
 | [Chen 2026 Energy Z](https://doi.org/10.20517/energyz.2026.05) (review) | 2026 | CN | Separator review, all chemistries; GF-deficit list; Tab. 3 without metrics | GF: designed for filtration, tortuous, weak, too thick, free water → HER (text) | medium | full-text-read |
 
 ### Papers — abstract only / needs access
@@ -59,7 +60,7 @@ Phase 1 (breadth) started 10 Nov 2026. One file for the whole review; per sectio
 | [Liu 2022 Energy Storage Mater.](https://doi.org/10.1016/j.ensm.2021.11.002) | ? | Zincophilic supramolecules on GF | Zn//Zn 2000 h† | medium | needs-access |
 | [Wang 2026 ACS Nano](https://doi.org/10.1021/acsnano.5c17322) | ? | ZSM-5 zeolite-filled GF; Ah-level pouch | none in abstract | medium | needs-access |
 | [Guo 2025 Energy Environ. Sci.](https://doi.org/10.1039/d4ee05044d) | CN | Symmetric-cell gains don't transfer to full cells | qualitative | medium | abstract-only |
-| Reviews: [Gu 2025 AEM](https://doi.org/10.1002/aenm.202502652) (high) · [Li 2024 Sci. Bull.](https://doi.org/10.1016/j.scib.2024.01.011) (high) · [Nian 2025 Nanoscale Horiz.](https://doi.org/10.1039/d5nh00172b) (high, OA) · [Wang 2026 AEM](https://doi.org/10.1002/aenm.202504270) · [Lee 2025 EES Batteries](https://doi.org/10.1039/d5eb00142k) (INT, OA) | CN ×4, INT ×1 | mechanism categories: E-field homogenisation, ion sieving/anion repulsion, desolvation, Zn(002) orientation (Gu, Li); GF modification vs new separator (Li) | | | abstract-only |
+| Reviews: [Li 2024 Sci. Bull.](https://doi.org/10.1016/j.scib.2024.01.011) (high) · [Nian 2025 Nanoscale Horiz.](https://doi.org/10.1039/d5nh00172b) (high, OA) · [Wang 2026 AEM](https://doi.org/10.1002/aenm.202504270) · [Lee 2025 EES Batteries](https://doi.org/10.1039/d5eb00142k) (INT, OA) | CN ×3, INT ×1 | mechanism categories: E-field homogenisation, ion sieving/anion repulsion, desolvation, Zn(002) orientation (Gu, Li); GF modification vs new separator (Li) | | | abstract-only |
 
 ### Comparison table — modified GF (and GF-like) separators
 j in mA cm⁻², Q in mAh cm⁻²; life = modified (GF control) h. BV = Bruce–Vincent in Zn‖Zn, 2 M ZnSO₄.
@@ -84,7 +85,7 @@ j in mA cm⁻², Q in mAh cm⁻²; life = modified (GF control) h. BV = Bruce–
 - **The GF baseline is not reproducible.** t₊(GF) 0.13–0.54 across 9 papers (Zhang 2024 ACS AMI 0.13, Huang 0.19, Liu 0.22, Zhao 0.27, Tan/Kim 0.35, Luo 0.38, Shao 0.54 — all BV; Cha 0.43 by liquid-junction potential); σ(GF) 3.8–66.6 mS cm⁻¹ (~17×); GF control life ~60–80 h @1/1 (Luo, Liu) but 110–300 h @5/1 (Zhang 2024, Yuan, Cha). Only Kim and Hansen name the GF grade. → "×-fold" improvements compare against different baselines. The group's GF t₊ of 0.51 lies above all but Shao (0.54) and above bulk 2 M ZnSO₄ (0.197, Purser & Stokes 1951); even the bulk reference is disputed (Cha cites ≈ 0.40).
 - **No consistent σ–t₊ trade-off.** σ falls while t₊ rises in 3 papers (Huang, Liu, Kim's intermediate step) but rises with t₊ in 5 (Luo 2024, Kim final, Zhang 2023, Cha, Shao; Zhao's σ† not in its main text). A Donnan-type fixed-charge picture predicts lower σ when anions are excluded → the reported pairs are more likely dominated by wetting, uptake and measurement artefacts than by charge selectivity (inference; fits our models 03/04). Huang gets a ~9× life gain with t₊·σ unchanged (calc) → structural, not transport.
 - **Test conditions flatter the results.** Headline Zn//Zn runs use 0.5–5 mA cm⁻² and ≤ 1 mAh cm⁻²; Zn thickness missing in 4 of 9 full-text papers; known headline DOD 0.85–3.4 % (calc). Only 3 papers state a high DOD (Yang 2022 42.7 %, Shao 2025 42.70 % @5/5 → 920 h vs ~26 h GF (calc), Zhang 2022 56 % → 220 h); the identical 42.7 % fits 20 µm Zn at 5 mAh cm⁻² (calc) — likely a shared test convention (inference). Soft shorts can mimic stable cycling — falling overpotential and R_ct, no voltage drop; Li 2022 Joule proposes R_ct checks, T-dependent Eₐ and Zn//Cu cells as tests, none of which the separator papers here report (inference from the full texts read) and symmetric-cell gains don't transfer to full cells (Guo 2025). The group's 3738 h is at 1.7 % DOD — typical, not exceptional.
-- **GF fails structurally.** Zn grows through the pores to a short (Hansen: 79/80 cells); smaller pores and thicker GF extend life but raise scatter; compression not varied. Fibre loosening (Kim, Liu) and by-product crusts (Huang, Kim). → pore size, thickness and compression are first-order model parameters (2D step).
+- **GF fails structurally.** Zn grows through the pores to a short (Hansen: 79/80 cells); smaller pores and thicker GF extend life but raise scatter (Hansen; confirmed by Gu 2025: 2×GF/A 300 vs 100 h @3/3, denser GF/F beats GF/A); compression not varied. Fibre loosening (Kim, Liu) and by-product crusts (Huang, Kim). → pore size, thickness and compression are first-order model parameters (2D step).
 - **Simulations are illustrative, and NDs on GF are not new.** 5 papers with continuum FEM (Song, Tan, Yuan, Shao: COMSOL; Zhang 2023): all 2D, semicircular Zn bumps, coating as a homogeneous layer, BCs not in the main text, no validation; concentration scales 0–10 / 0–4 mol m⁻³ vs 2000 mol m⁻³ at 2 M. DFT is never linked to the continuum model. A direct ND@GF precedent exists (Zhang 2024 ACS AMI: t₊ 0.13 → 0.45, 110 → 1800 h @5/1, no simulation) → the gap is the *mechanistic, quantitative* model of an ND-modified separator, not ND@GF itself (§2.5).
 - **Who:** 34 CN / 7 INT / 5 unknown. The only systematic GF-baseline study (Hansen) and the only non-BV t₊ (Cha) are INT.
 
@@ -94,7 +95,7 @@ j in mA cm⁻², Q in mAh cm⁻²; life = modified (GF control) h. BV = Bruce–
 - 10.1002/adma.202003425 (Li 2020), 10.1002/adfm.202204306 (Su 2022), 10.1002/adfm.202112936 (Liang 2022), 10.1021/acs.nanolett.5c01125 (Zhao 2025) — whether and how E-field is simulated; σ, t₊, GF control
 - 10.1007/s12274-021-3957-z (Yang 2022), 10.1002/adma.202205175 (Zhang 2022) — Zn thickness behind the 42.7 / 56 % DOD (42.7 % probably 20 µm at 5 mAh cm⁻², cf. Shao 2025); t₊, σ
 - 10.1016/j.jechem.2023.03.007 (Sun 2023), 10.1016/j.jechem.2024.09.047 (Gou 2025), 10.1039/d3ta06268f (Lee 2024) — t₊/σ, j/Q
-- 10.1002/aenm.202502652 (Gu 2025), 10.1016/j.scib.2024.01.011 (Li 2024) — comparison tables and metrics
+- 10.1016/j.scib.2024.01.011 (Li 2024) — comparison tables and metrics
 SI of full-text papers:
 - 10.1016/j.cclet.2023.109332 (Zhao, OA) — SI: σ (the † 10.1 → 13.7 mS cm⁻¹), GF grade, Zn thickness, Q of the 0.5 mA cm⁻² run
 - 10.1002/cey2.701 (Shao, OA) — SI: COMSOL setup (Fig. 3L–O), GF grade, Zn thickness, GF life @1/1 (Fig. 2E), Eq. S1–S4
@@ -109,7 +110,7 @@ SI of full-text papers:
 
 ## §2.3 Nanodiamonds and carbon nanomaterials in Zn batteries
 
-**State (10 Nov):** 20 items tagged `lr-2.3` (10 existing + 9 new + Zhang 2024 ACS AMI from §2.2): 11 full text, 5 abstract only, 4 needs access (Volkov → full text, 11 Nov). 9 CN / 9 INT / 2 unknown. "via X" = number read in source X, not in the paper itself.
+**State (10 Nov):** 20 items tagged `lr-2.3` (10 existing + 9 new + Zhang 2024 ACS AMI from §2.2): 12 full text, 5 abstract only, 3 needs access (Volkov, Mochalin → full text, 11 Nov). 9 CN / 9 INT / 2 unknown. "via X" = number read in source X, not in the paper itself.
 
 ### ND surface chemistry, termination, zeta potential
 | Ref | CN | What | Key numbers (location) | Rel. | Status |
@@ -121,7 +122,7 @@ SI of full-text papers:
 | [Molavi 2018 J. Colloid Interface Sci.](https://doi.org/10.1016/j.jcis.2018.03.088) | INT | Thermal oxidation raises COOH and makes ζ more negative | DND 4–6 nm, 282 m² g⁻¹; as-received ζ −2.58 mV (Fig. 7a) | medium | full-text-read |
 | [Shalumon 2026 ACS AMI](https://doi.org/10.1021/acsami.6c11549) (review) | INT | ND in filtration/adsorption: termination, ζ, salt sensitivity, metal-ion uptake | O-NDs ζ < −30 mV near neutral pH (§2.2.1); aggregation ≥ 10⁻³ M (H-DND) vs ≥ 10⁻² M (O-DND) (via Bradac 2018); O-DND binds Zn²⁺ via carboxylates, 8–12 kJ mol⁻¹ (via Volkov 2020) | high | full-text-read |
 | [Zhang 2026 ACS Nano](https://doi.org/10.1021/acsnano.6c05022) | CN | **Group's own ND synthesis** (laser shock of coal/Si) | crystallite ~5 nm (Fig. 2A); C 1s with sp², sp³, C–O, C=O components (Fig. 2D), fractions only in SI; no ζ, no battery data | high | full-text-read |
-| [Mochalin 2012 Nat. Nanotechnol.](https://doi.org/10.1038/nnano.2011.209) (review) | INT | Standard ND properties/applications review | not read | high | needs-access |
+| [Mochalin 2012 Nat. Nanotechnol.](https://doi.org/10.1038/nnano.2011.209) (review) | INT | Standard ND properties/applications review | primary DND 4–5 nm, aggregates survive ultrasound (text); ozone-purified ND ζ −50 mV (polydisperse) to −100 mV (20–30 nm), constant over pH 2–12 (text); sp³ core with possible graphitic/amorphous shell (Fig. 2); –COOH forms metal salts by ion exchange (Fig. 6a); high electrical resistivity (text) | high | full-text-read |
 | [Bradac 2018 Diamond Relat. Mater.](https://doi.org/10.1016/j.diamond.2018.01.022) | ? | DND colloidal stability vs surface composition and ionic strength | aggregation thresholds above (via Shalumon) | high | needs-access |
 | [Volkov 2020 Diamond Relat. Mater.](https://doi.org/10.1016/j.diamond.2020.108121) | INT | DND (pristine, HNO₃-sintered at 250 °C → more –COOH) as regenerable adsorbents for Cu, Ni, Zn, Cd | > 100 µmol g⁻¹ for all four (abs); isotherm Langmuir-type up to 10–15 mmol L⁻¹ (chemisorption, 8–12 kJ mol⁻¹), linear above (physisorption, 4–6 kJ mol⁻¹) (abs); tests at pH 2.5 (Tab. 6); ≥ 10 regeneration cycles (abs) | high | full-text-read |
 
@@ -140,7 +141,7 @@ SI of full-text papers:
 | [Li 2024 Energy Storage Mater.](https://doi.org/10.1016/j.ensm.2024.103300) (review) | ? | Carbon nanomaterials for Zn anodes | not read | medium | needs-access |
 
 ### Synthesis
-- **The sign of the ND surface charge is set by termination and any sp² shell, not by "diamond".** O-terminated/oxidised ND is negative (−35 to −55 mV, Ginés; −45 mV, Girard; −41 mV, Ding); positive ζ needs H-termination plus sp² (Ginés) or specific cleaning (+60 mV, Paci); as-received DND can be ~0 (Molavi). Literature can't give the sign for the group's coal-derived ND (sp² present per Zhang 2026 XPS) → the group's ζ of ND@GF (~−38.8 mV, `../notes/parameters.md`) has no stated medium/pH and is almost certainly not in 2 M ZnSO₄ (inference).
+- **The sign of the ND surface charge is set by termination and any sp² shell, not by "diamond".** O-terminated/oxidised ND is negative (−35 to −55 mV, Ginés; −45 mV, Girard; −41 mV, Ding; −50 to −100 mV for ozone-purified ND, pH 2–12, Mochalin — all in water); positive ζ needs H-termination plus sp² (Ginés) or specific cleaning (+60 mV, Paci); as-received DND can be ~0 (Molavi). Literature can't give the sign for the group's coal-derived ND (sp² present per Zhang 2026 XPS) → the group's ζ of ND@GF (~−38.8 mV, `../notes/parameters.md`) has no stated medium/pH and is almost certainly not in 2 M ZnSO₄ (inference).
 - **In 2 M ZnSO₄ the double layer is collapsed and the charge may invert.** Debye length ~0.1 nm (estimate, ideal); ND dispersions aggregate from 10⁻³–10⁻² M (Bradac via Shalumon). Ding 2026 is the only Zn paper with ζ in electrolyte: ~−10 mV at 0.5 m, ~0 at ~1.5 m, positive above — Zn²⁺ adsorption inverts the charge. → a fixed *negative* charge on NDs at 2 M is not supported; specific Zn²⁺ adsorption (Kulakova: cation exchange; Volkov: Zn²⁺ uptake > 100 µmol g⁻¹, chemisorption sites saturated by 10–15 mmol L⁻¹ — far below 2 M, so the ND surface should be fully Zn²⁺-loaded in the cell, inference) is the more defensible surface model. Consistent with models 03/04 (fixed charge negligible).
 - **Claims rest on DFT, not measurement.** Zincophilicity, low barriers and "field homogenisation by carboxyl groups" come from DFT/MD or are asserted (Liu 2024, Wang 2024, Zhu 2026, Zhang 2024 ACS AMI); hardness only in Chen 2024 (Zn) and Li papers (Cheng 2017, Zhou 2021). Measured: t₊, Eₐ, nucleation overpotential, cycle life — ζ only in Ding 2026.
 - **Same electrolyte, different t₊ baselines:** 0.13 (Zhang 2024), 0.20 (Zhu 2026), 0.52 (Ding 2026), plus the group's 0.51 — all BV; "t₊ gains" from ND are method-dependent (cf. §2.2, §2.4).
@@ -154,11 +155,10 @@ SI of full-text papers:
 - 10.1002/aenm.202401479 (Liu 2024, OA copy at PolyU) — ND layer thickness, ζ, calculation method
 - 10.1002/adfm.202315757 (Wang 2024) — j of the 4100 h test, ND size, any simulation
 - 10.1016/j.diamond.2018.01.022 (Bradac 2018) — ζ vs ionic strength
-- 10.1038/nnano.2011.209 (Mochalin 2012) — standard ND values for the §2.3 intro
 
 ## §2.4 Simulation of Zn deposition and separators
 
-**State (10 Nov):** 26 items tagged `lr-2.4` (15 existing + 11 new): 19 full text, 7 abstract only, 0 needs access (Jana, Balsara → full text, 11 Nov). 7 CN / 19 INT / 0 unknown. COMSOL use *inside* separator papers: see §2.2 (Song, Tan, Yuan, Shao, Zhang 2023).
+**State (10 Nov):** 26 items tagged `lr-2.4` (15 existing + 11 new): 20 full text, 6 abstract only, 0 needs access (Jana, Balsara, Lagadec → full text, 11 Nov). 7 CN / 19 INT / 0 unknown. COMSOL use *inside* separator papers: see §2.2 (Song, Tan, Yuan, Shao, Zhang 2023).
 
 ### Continuum models, charged pores, separator microstructure
 | Ref | CN | What | Model / key numbers (location) | Rel. | Status |
@@ -172,7 +172,7 @@ SI of full-text papers:
 | [Tikekar 2016 Sci. Adv.](https://doi.org/10.1126/sciadv.1600320) | INT | Linear stability: immobilised anions + elasticity stabilise deposition | theory (abs) | medium | abstract-only |
 | [Galama 2013 J. Membr. Sci.](https://doi.org/10.1016/j.memsci.2013.04.022) | INT | Validity of Boltzmann/Donnan in charged membranes | NaCl 0.01–3 M; charge must refer to pore-water volume + volume exclusion (abs) | medium | full-text-read |
 | [Vezzani 2002 Desalination](https://doi.org/10.1016/s0011-9164(02)00784-1) | INT | Extended NP + Donnan + steric + dielectric exclusion (NF) | dielectric exclusion > Donnan for **bivalent** ions (abs) | medium | full-text-read |
-| [Lagadec 2018 Energy Environ. Sci.](https://doi.org/10.1039/c8ee00875b) | INT | Tomography-based separator networks | equal ε/τ but different connectivity → different gradients (abs) | high | abstract-only (OA) |
+| [Lagadec 2018 Energy Environ. Sci.](https://doi.org/10.1039/c8ee00875b) | INT | Tomography-based separator networks (Li-ion PE vs PP) | porosity 40.82 vs 40.19 % with similar TP tortuosity (Tab. 1), yet different concentration broadening in diffusion simulations (abs); connectivity density as the missing descriptor; 2D artificial structure only intermediate (~40–100 µm⁻³, text) | high | full-text-read |
 | [Jana 2015 J. Power Sources](https://doi.org/10.1016/j.jpowsour.2014.11.056) | INT | Phase-field Li growth through a separator drawn as 2D layers of inert fibre circles (Fig. 2) | 4 regimes vs pore size and rate — suppression, permeable, penetration, short (Fig. 6, abs); critical current e.g. 0.10 mA cm⁻² (Fig. 5b); analytical I_c(pore radius, channel angle) (conclusions); dendrite detachment → "dead Li" (Fig. 8); no quantitative validation stated | high | full-text-read |
 
 ### Phase-field models (Zn; Li with separator/coating)
@@ -201,14 +201,13 @@ SI of full-text papers:
 ### Synthesis
 - **Dendrite onset theory is analytical and 1D, and none of it is for 2 M ZnSO₄.** Sand-type models with kinetic (Yang 2025), SEI (Ma JES) or HER-bubble (Ma JPS, alkaline) corrections; short-circuit times are far longer than onset times and propagation through the separator is not modelled. Validated Zn sulfate continuum models are rare (Shan 2023 flow cell, Telmasre 2025) → a 2D tertiary model of a GF/ND@GF cell at the measured operating point would be new.
 - **Charged-pore physics exists but isn't used by Zn separator papers.** Surface conduction in charged nanopores (Han 2014) and immobilised anions (Tikekar 2016) can stabilise deposition, but only with nm pores or dilute electrolytes; Donnan partitioning is weak for bivalent ions and needs high charge per pore volume (Vezzani 2002, Galama 2013). With Debye ~0.1 nm at 2 M and ND charge inversion (§2.3), a fixed-charge ND layer should have small effects — what models 03/04 found.
-- **Microstructure matters beyond ε and τ.** Pore connectivity changes concentration gradients at equal porosity/tortuosity (Lagadec 2018); separator pore size sets dendrite regimes in Li PF models (Jana 2015: fibres as inert circles, 4 regimes, analytical critical current; Li 2022 CCL) — the fibre-as-circle geometry is the same idealisation as the group's "hollow circles" for NDs. No image-based or pore-resolved model of a GF separator for Zn exists (in this search) → the 2D pore-structure step targets a real gap.
+- **Microstructure matters beyond ε and τ.** Pore connectivity changes concentration gradients at equal porosity/tortuosity (Lagadec 2018: PE vs PP, both ~40 %; a 2D structure reaches only intermediate connectivity → a 2D pore model of GF will understate 3D bypass paths, inference); separator pore size sets dendrite regimes in Li PF models (Jana 2015: fibres as inert circles, 4 regimes, analytical critical current; Li 2022 CCL) — the fibre-as-circle geometry is the same idealisation as the group's "hollow circles" for NDs. No image-based or pore-resolved model of a GF separator for Zn exists (in this search) → the 2D pore-structure step targets a real gap.
 - **Phase-field in Zn: borrowed parameters, qualitative validation, no separator.** γ = 0.5 J m⁻² and ω = 6 are reused from Cogswell; anisotropy strength (0.01–0.4), i₀ (28 A m⁻² to unsourced mA cm⁻²) and even D (10⁻¹¹ vs 3.7×10⁻¹⁰ m² s⁻¹) vary between papers; only Cogswell validates quantitatively (zincate). The closest analogue to an ND layer is Pant 2023 (coating as a region with its own anisotropic D). → phase field is at most an optional qualitative add-on here (own assessment).
 - **Atomistic results don't reach the continuum.** DFT/MD papers report adsorption and desolvation energies (Jin 2026; §2.2/§2.3 papers) but none passes them to i₀ or D — consistent with the decision against DFT.
 - **BV t₊ is not a calibration target.** BV is exact only at infinite dilution (Shao 2023); multivalent salts: i_ss/i₀ = t₊ only when dilute, otherwise a parameter Ne from all transport coefficients (Balsara 2015) and a common reference frame (Gao 2022); Zn interfaces drift during the test (Yang 2024) and sampling times bias the result (Lin 2024); BV for near-identical Zn electrolytes spans 0.2–0.7 (Gomez Vazquez 2025). → use Hittorf/EMF electrolyte data (Purser & Stokes 1951, Dye 1960) as input and simulate the BV protocol itself (model 04), comparing only trends.
 - **Who:** 7 CN / 19 INT / 0 unknown — method development (Sand's time, PF quantification, t₊ methodology) is mostly INT; Zn PF applications in COMSOL are mostly CN.
 
 ### Needs access — §2.4
-- 10.1039/c8ee00875b (Lagadec 2018, OA) — connectivity metrics, gradient results
 - 10.1149/1945-7111/acf4c2 (Shan 2023) — COMSOL setup and validation
 - 10.1021/acsami.3c11936 (Pant 2023) — published version (accepted MS read)
 - 10.1016/j.cclet.2022.03.065 (Li 2022 CCL) — Tab. 1 (PF parameters, image)
@@ -264,9 +263,9 @@ CN = corresponding (lead) author's institution in mainland China/HK/Macau — th
 |---|---|---|---|---|---|
 | §1 | 8 | 1 | 6 | 1 | 0 / 5 / 3 |
 | §2.1 | 13 | 6 | 6 | 1 | 4 / 8 / 1 |
-| §2.2 | 46 | 34 | 7 | 5 | 17 / 24 / 5 (matrix 18 / 23: Shao = DML59VLW, tag not swapped) |
-| §2.3 | 20 | 9 | 9 | 2 | 11 / 5 / 4 |
-| §2.4 | 26 | 7 | 19 | 0 | 19 / 7 / 0 |
+| §2.2 | 46 | 34 | 7 | 5 | 18 / 23 / 5 (matrix 19 / 22: Shao = DML59VLW, tag not swapped) |
+| §2.3 | 20 | 9 | 9 | 2 | 12 / 5 / 3 |
+| §2.4 | 26 | 7 | 19 | 0 | 20 / 6 / 0 |
 | **unique** | **112** | **56** | **47** | **9** | (Zhang 2024 ACS AMI counted in §2.2 and §2.3) |
 
 Trend for the review: experimental separator/ND work is CN-dominated; GF-baseline studies, ND surface chemistry, method development (Sand's time, phase-field validation, t₊ methodology) and the grid-storage framing are mostly INT. Counting rule for refs cited in the proposal: re-count from the final bibliography.
