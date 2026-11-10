@@ -69,8 +69,8 @@ Findings: (1) Ohm's law needs ~47–51 / ~14–16 mV, not 10 mV → F13 confirme
 
 ## Next steps
 Proposal first (deadline Mon 14 Dec; structure, timeline: `../Thesis Proposal/proposal-plan.md`):
-1. Literature search for the review: reviews first, literature matrices (separators, simulation studies), motivation literature (student searches; PDFs into `Literature/Potential`).
-After the proposal draft (optional before): i₀ calibration (Fig. 3c/3d) · verify group model in COMSOL · first 2D step. New models: set T = 298.15 K in Default Model Inputs.
+1. WeChat to the supervisor: (a) form questions, length, "Chinese literature"; (b) short results summary (models 01–05) + proposed research question · 2. Literature search for the review (main block until ~24 Nov): reviews first, literature matrices (separators, simulation studies), motivation literature (PDFs into `Literature/Potential`) · 3. Write §4 (methods + preliminary results 01–05) in parallel.
+After the proposal draft: i₀ calibration (Fig. 3c/3d) · first 2D step (C in the comparison plan). No postdoc data needed before then. New models: set T = 298.15 K in Default Model Inputs.
 
 ## Data
 Parameters with sources and status: `notes/parameters.md`. Requested from the group: see Supervisor. **Requests to the former postdoc: keep minimal** (student, 9 Nov — the model files came from the professor; no request for further models). Only if easy: raw voltage data Fig. 3c/3d (i₀ calibration; otherwise read off the figure, marked ~). Optional: original SEM images (S3 histograms are enough to start), raw Tafel data Fig. 2f, S5 raw data. Note: SI §1.6 uses the **separator** area A in σ = L/(R·A) (size not stated) → raw S5 data give the area-specific resistance directly, independent of their L and A.
