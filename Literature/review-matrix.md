@@ -156,7 +156,63 @@ SI of full-text papers:
 - 10.1038/nnano.2011.209 (Mochalin 2012) — standard ND values for the §2.3 intro
 
 ## §2.4 Simulation of Zn deposition and separators
-*Pending.*
+
+**State (10 Nov):** 26 items tagged `lr-2.4` (15 existing + 11 new): 17 full text, 7 abstract only, 2 needs access. 7 CN / 18 INT / 1 unknown. COMSOL use *inside* separator papers: see §2.2 (Song, Tan, Yuan, Zhang 2023).
+
+### Continuum models, charged pores, separator microstructure
+| Ref | CN | What | Model / key numbers (location) | Rel. | Status |
+|---|---|---|---|---|---|
+| [Yang 2025 ACS Energy Lett.](https://doi.org/10.1021/acsenergylett.5c02663) | CN | Generalised Sand's time with BV kinetics | analytical 1D, τ shorter than classical Sand near j ≈ j₀ (eq. 8, p. 5042); checked vs Li and Zn(OTf)₂ data (Fig. 2b,c) | high | full-text-read |
+| [Ma 2025 J. Power Sources](https://doi.org/10.1016/j.jpowsour.2025.238026) | INT | HER bubbles delay Zn dendrite onset | analytical 1D, **alkaline zincate**; onset 840 vs Sand 44 s @15 mA cm⁻² (Fig. 2a); ≈ Sand at 5 mA cm⁻²; qualitative agreement (p. 7) | high | full-text-read |
+| [Ma 2025 J. Electrochem. Soc.](https://doi.org/10.1149/1945-7111/adba94) | INT | Modified Sand's time with transport through the SEI (Li) | short circuit ≫ onset time (Fig. 6b, text) | medium | full-text-read |
+| [Shan 2023 J. Electrochem. Soc.](https://doi.org/10.1149/1945-7111/acf4c2) | INT | ZnSO₄ flow through Cu mesh; COMSOL flow + dilute species + secondary CD | Zn–Cu life 18 → 1300 cyc @50 mA cm⁻²; benefit at Pe > 1 (abs) | medium | abstract-only |
+| [Telmasre 2025 ECS Adv.](https://doi.org/10.1149/2754-2734/ae06b5) | INT | 2D moving-boundary Zn morphology vs cycling protocol | validated vs symmetric cells (abs) | medium | abstract-only |
+| [Han 2014 Sci. Rep.](https://doi.org/10.1038/srep07056) | INT | Surface conduction in charged nanopores → over-limiting current, dendrite control | wall-charge sign decides dendrite path (abs); continuum theory + Cu/AAO experiment | high | abstract-only |
+| [Tikekar 2016 Sci. Adv.](https://doi.org/10.1126/sciadv.1600320) | INT | Linear stability: immobilised anions + elasticity stabilise deposition | theory (abs) | medium | abstract-only |
+| [Galama 2013 J. Membr. Sci.](https://doi.org/10.1016/j.memsci.2013.04.022) | INT | Validity of Boltzmann/Donnan in charged membranes | NaCl 0.01–3 M; charge must refer to pore-water volume + volume exclusion (abs) | medium | full-text-read |
+| [Vezzani 2002 Desalination](https://doi.org/10.1016/s0011-9164(02)00784-1) | INT | Extended NP + Donnan + steric + dielectric exclusion (NF) | dielectric exclusion > Donnan for **bivalent** ions (abs) | medium | full-text-read |
+| [Lagadec 2018 Energy Environ. Sci.](https://doi.org/10.1039/c8ee00875b) | INT | Tomography-based separator networks | equal ε/τ but different connectivity → different gradients (abs) | high | abstract-only (OA) |
+| [Jana 2015 J. Power Sources](https://doi.org/10.1016/j.jpowsour.2014.11.056) | ? | Li dendrite–separator regimes vs pore radius | 4 regimes (suppression → short)† | high | needs-access |
+
+### Phase-field models (Zn; Li with separator/coating)
+| Ref | CN | What | Model / key numbers (location) | Rel. | Status |
+|---|---|---|---|---|---|
+| [Cogswell 2015 Phys. Rev. E](https://doi.org/10.1103/physreve.92.011301) | INT | Thin-interface PF with Marcus kinetics, first quantitative Zn PF | γ 0.5 J m⁻², i₀ 28 A m⁻², t₊ 0.4 (Tab. I); interface widened to 1 µm; fractal dimension 1.67 vs 1.60–1.75 measured — **only quantitative validation** (zincate, 0.1 M) | high | full-text-read |
+| [Wang 2019 J. Electrochem. Soc.](https://doi.org/10.1149/2.0541910jes) | CN | PF Zn in COMSOL 4.3 | all parameters normalised (Tab. I); qualitative SEM check | medium | full-text-read |
+| [Yurkiv 2020 J. Electrochem. Soc.](https://doi.org/10.1149/1945-7111/ab7e91) | INT | PF + elasto-plasticity, Zn morphologies vs j | MOOSE 2D 5×5 µm; rate constant *adjusted* (p. 10); 2 M ZnSO₄ SEM, qualitative | medium | full-text-read |
+| [Jian 2024 Int. J. Heat Mass Transf.](https://doi.org/10.1016/j.ijheatmasstransfer.2024.125252) | CN | PF Zn, static vs flowing electrolyte | HER neglected; dendrite length 1.89 → 2.66 µm for κ₀ 0.75 → 1.5×10⁻⁷ J m⁻¹, unstable at 2.5×10⁻⁷ (§3.3) | high | full-text-read |
+| [Jing 2025 Chem. Eng. J.](https://doi.org/10.1016/j.cej.2024.158318) | CN | PF–lattice-Boltzmann Zn under flow | δ 0.3; i₀ 15–45 A m⁻² (Tab. 1); validation n/r | medium | full-text-read |
+| [Sun 2026 Electrochim. Acta](https://doi.org/10.1016/j.electacta.2025.147887) | CN | PF Zn in **COMSOL 6.2**: noise, η, nucleation spacing | 2D 50×50 µm, 1 M ZnSO₄ as dilute; i₀ 28 A m⁻², δ 0.1 (Tab. 1); qualitative vs literature image | high (template) | full-text-read |
+| [Pant 2023 ACS AMI](https://doi.org/10.1021/acsami.3c11936) | INT | **COMSOL PF Zn with a protective layer as a region of own (anisotropic) D** | 2D 500 µm, layer 50 µm; D⊥ ↑ suppresses, D∥ ↑ promotes dendrites (Fig. 6); parameters "estimated" (Tab. 1); no experiment | high | full-text-read |
+| [Li 2022 Chin. Chem. Lett.](https://doi.org/10.1016/j.cclet.2022.03.065) | CN | PF Li with separator as a third phase | pores 0.21–6 µm at constant ε: ≥ 2.1 µm punctured, 0.21 worse than 0.42 µm (Fig. 3); no validation | high | full-text-read |
+
+### Atomistic context and t₊ measurement
+| Ref | CN | What | Key numbers (location) | Rel. | Status |
+|---|---|---|---|---|---|
+| [Jin 2026 J. Mater. Chem. A](https://doi.org/10.1039/d5ta06106g) | CN | DFT + MD screening of oxide coatings for Zn²⁺ desolvation | SiO₂ strongest desolvation (abs); no hand-over to continuum stated | medium | abstract-only |
+| [Gomez Vazquez 2025 Adv. Mater.](https://doi.org/10.1002/adma.202502245) | INT | Modified Hittorf + ICP for t_Zn | BV for near-identical Zn electrolytes 0.2 vs 0.7 (p. 2); Hittorf 0.533 ± 0.117 (Fig. 1c) | high | full-text-read |
+| [Yang 2024 Matter](https://doi.org/10.1016/j.matt.2024.03.014) | INT | Critical review of t_Zn methods | BV in Zn cells: HER during rest raises R_ct; rest-time trade-off (p. 1942, Fig. 6A–B); alternatives: galvanostatic polarisation, EMF, ⁶⁷Zn NMR | high | full-text-read |
+| [Lin 2024 J. Power Sources](https://doi.org/10.1016/j.jpowsour.2024.234236) | INT | Transmission-line reanalysis of BV errors | I₀ sampled early → t₊ low, late → high; contact resistance ≈ R_b → t₊ high (Fig. 5, 6a) | medium | full-text-read |
+| [Shao 2023 J. Chem. Phys.](https://doi.org/10.1063/5.0146608) | INT | BV t₊,ss via Onsager coefficients (MD) | BV exact only at infinite dilution; t₊,ss ≠ t₊ in concentrated solutions (abs, Fig. 2) | medium | full-text-read |
+| [Balsara 2015 J. Electrochem. Soc.](https://doi.org/10.1149/2.0651514jes) | INT | Steady-state current ↔ t₊ for uni- and multivalent salts | needs D and thermodynamic factor | high | needs-access |
+| [Gao 2022 Energy Environ. Mater.](https://doi.org/10.1002/eem2.12359) | INT | Approximate vs rigorous t₊; reference frames | values must be converted to one frame (abs) | high | abstract-only |
+
+### Synthesis
+- **Dendrite onset theory is analytical and 1D, and none of it is for 2 M ZnSO₄.** Sand-type models with kinetic (Yang 2025), SEI (Ma JES) or HER-bubble (Ma JPS, alkaline) corrections; short-circuit times are far longer than onset times and propagation through the separator is not modelled. Validated Zn sulfate continuum models are rare (Shan 2023 flow cell, Telmasre 2025) → a 2D tertiary model of a GF/ND@GF cell at the measured operating point would be new.
+- **Charged-pore physics exists but isn't used by Zn separator papers.** Surface conduction in charged nanopores (Han 2014) and immobilised anions (Tikekar 2016) can stabilise deposition, but only with nm pores or dilute electrolytes; Donnan partitioning is weak for bivalent ions and needs high charge per pore volume (Vezzani 2002, Galama 2013). With Debye ~0.1 nm at 2 M and ND charge inversion (§2.3), a fixed-charge ND layer should have small effects — what models 03/04 found.
+- **Microstructure matters beyond ε and τ.** Pore connectivity changes concentration gradients at equal porosity/tortuosity (Lagadec 2018); separator pore size sets dendrite regimes in Li PF models (Jana 2015, Li 2022 CCL). No image-based or pore-resolved model of a GF separator for Zn exists (in this search) → the 2D pore-structure step targets a real gap.
+- **Phase-field in Zn: borrowed parameters, qualitative validation, no separator.** γ = 0.5 J m⁻² and ω = 6 are reused from Cogswell; anisotropy strength (0.01–0.4), i₀ (28 A m⁻² to unsourced mA cm⁻²) and even D (10⁻¹¹ vs 3.7×10⁻¹⁰ m² s⁻¹) vary between papers; only Cogswell validates quantitatively (zincate). The closest analogue to an ND layer is Pant 2023 (coating as a region with its own anisotropic D). → phase field is at most an optional qualitative add-on here (own assessment).
+- **Atomistic results don't reach the continuum.** DFT/MD papers report adsorption and desolvation energies (Jin 2026; §2.2/§2.3 papers) but none passes them to i₀ or D — consistent with the decision against DFT.
+- **BV t₊ is not a calibration target.** BV is exact only at infinite dilution (Shao 2023); multivalent salts need D and the thermodynamic factor (Balsara 2015) and a common reference frame (Gao 2022); Zn interfaces drift during the test (Yang 2024) and sampling times bias the result (Lin 2024); BV for near-identical Zn electrolytes spans 0.2–0.7 (Gomez Vazquez 2025). → use Hittorf/EMF electrolyte data (Purser & Stokes 1951, Dye 1960) as input and simulate the BV protocol itself (model 04), comparing only trends.
+- **Who:** 7 CN / 18 INT / 1 unknown — method development (Sand's time, PF quantification, t₊ methodology) is mostly INT; Zn PF applications in COMSOL are mostly CN.
+
+### Needs access — §2.4
+- 10.1149/2.0651514jes (Balsara & Newman 2015) — the multivalent t₊,ss–t₊ relation and its inputs
+- 10.1016/j.jpowsour.2014.11.056 (Jana 2015) — regime map vs pore radius
+- 10.1039/c8ee00875b (Lagadec 2018, OA) — connectivity metrics, gradient results
+- 10.1149/1945-7111/acf4c2 (Shan 2023) — COMSOL setup and validation
+- 10.1021/acsami.3c11936 (Pant 2023) — published version (accepted MS read)
+- 10.1016/j.cclet.2022.03.065 (Li 2022 CCL) — Tab. 1 (PF parameters, image)
 
 ## §2.1 AZIBs and Zn anode failure modes
 *Pending.*
