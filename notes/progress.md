@@ -18,7 +18,7 @@
 **Framing of critique (student, 30 Oct):** the group's t₊ = 0.69 is questioned only through our own simulation results (model 04) — never as "miscalculated". The S6 raw-data check (below) is background, not a thesis statement.
 Later, for the thesis: switch electrolyte to COMSOL 6.3 "Concentrated Electrolyte Transport" (2 M ZnSO₄ is too non-ideal for dilute Nernst–Planck) and compare both.
 
-**Comparison with the paper's model:** group's geometry (Fig. 2h/i files); A = as in paper · B = equal separator conductivity in both (isolates the ND row) · C = + electrode kinetics (Secondary Current Distribution) at constant 2 mA/cm² · D = + concentration (tertiary) and NDs as charged layer. Metric: current density along the anode (max/mean). Note: in the purely ohmic model, constant voltage vs constant current only rescales — the operating point matters only from C on.
+**Comparison with the paper's model:** group's geometry (Fig. 2h/i files); A = as in paper · B = equal separator conductivity in both (isolates the ND row) — A and B done (model 05) · C = + electrode kinetics (Secondary Current Distribution) at constant 2 mA/cm² · D = + concentration (tertiary) and NDs as charged layer. Metric: current density along the anode (max/mean). Note: in the purely ohmic model, constant voltage vs constant current only rescales — the operating point matters only from C on.
 
 **Proposed (17 Oct), not yet discussed with supervisor — RWTH link:** one thesis chapter on manufacturing tolerances / process window for the ND coating (UQ Module); automation only as method.
 
@@ -53,13 +53,22 @@ Later, for the thesis: switch electrolyte to COMSOL 6.3 "Concentrated Electrolyt
 Findings: (1) Ohm's law needs ~47–51 / ~14–16 mV, not 10 mV → F13 confirmed. (2) ND@GF t₊ is ill-conditioned and not reproducible → 0.69 unusable as calibration target. (3) Transport alone (measured R_bulk, t₊ 0.2–0.5) gives only 0.5–4 % decay → measured decay is interfacial (GF R_total +85 %, ND@GF +6 %). (4) ND@GF R_bulk 1.85 Ω with σ = 2.94 S/m, A = 0.785 cm² → L ≤ ~430 µm, consistent with the compressed-thickness estimate; the GF cell's 7.3 Ω implies extra series resistance (cell-to-cell scatter, F15). Single cells, no repeats.
 → Consequences: see Approach (agreed 30 Oct). Why Bruce–Vincent fails here (own): R_interface is 50–200× R_bulk, so the transport signal is only ~1–4 % of the current and is buried by interface changes.
 - Group's models `Old models/GF(1).mph`, `ND@GF(1).mph` — read from the file history (9 Nov), details in `paper-summary.md` F5: only Electric Currents (Secondary Current Distribution created, then removed), 0.5 V, geometry = Fig. 2h/i; **separator σ 2.15 S/m (GF) vs 0.5 S/m (ND@GF)** + row of 100 ND holes. GF file reproduces Fig. 2h (checked in COMSOL 9 Nov); re-run = model 05.
-- `05_group_NDGF.mph` / `05_group_GF.mph` — re-run of the group's Fig. 2h/i model (guide `comsol-guide-05.md`). Metric: |E| on the Zn surface (5 arcs + 6 flat pieces), Line Maximum / Line Average. **ND@GF (9 Nov):** σ_sep 0.5 → 731 / 348 V/m, ratio 2.10 · 2.15 → 2066 / 972, 2.13 · 2.94 → 2427 / 1138, 2.13. → the separator conductivity changes the level (×0.36 at 0.5 vs 2.15 = less current, matches the 37 % estimate), not the uniformity. **GF: pending.**
+- `05_group_GF.mph` / `05_group_NDGF.mph` — **done (10 Nov): re-run of the group's Fig. 2h/i model** (copies of the originals; ND@GF: parameter `sig_sep` replaces the typed-in separator conductivity, sweep 0.5 / 2.15 / 2.94 S/m; selection "Zn surface" = 5 arcs + 6 flat pieces; Line Maximum / Line Average of `ec.normE`).
+
+  | |E| on the Zn surface | max (V/m) | average (V/m) | max/average |
+  |---|---|---|---|
+  | GF (original, σ_sep 2.15) | 2144 | 994 | **2.16** |
+  | ND@GF original (σ_sep 0.5) | 731 | 348 | **2.10** |
+  | ND@GF, σ_sep 2.15 (only the ND row differs) | 2066 | 972 | **2.13** |
+  | ND@GF, σ_sep 2.94 (measured) | 2427 | 1138 | **2.13** |
+
+  Findings: (1) Fig. 2h → 2i: peak field −66 %, but average −65 % → the visible difference is almost entirely **less total current** from the lower separator conductivity at fixed 0.5 V. (2) The relative non-uniformity changes only by ~2.5 % (2.16 → 2.10); the ND row alone (equal σ) ~1.4 % — within the likely mesh uncertainty of a line maximum (not checked). (3) → the existing model does not show a substantial homogenisation by the NDs; testing that claim needs our own 2D model (kinetics, concentration, separator in contact with the Zn, realistic ND/pore structure). Purely ohmic (primary) model.
 - Office PC has COMSOL 5.6: model 01 rebuilt there (results after geometry fix not yet checked); 6.3 files can't be opened there.
 - i₀ = 5 A/m² still a start value → calibrate on Fig. 3c/3d.
 
 ## Next steps
 Proposal first (deadline Mon 14 Dec; structure, timeline: `../Thesis Proposal/proposal-plan.md`):
-0. Model 05: group model, variants A/B (~1 h, guide `notes/comsol-guide-05.md`) · 1. Literature search for the review: reviews first, literature matrices (separators, simulation studies), motivation literature (student searches; PDFs into `Literature/Potential`).
+1. Literature search for the review: reviews first, literature matrices (separators, simulation studies), motivation literature (student searches; PDFs into `Literature/Potential`).
 After the proposal draft (optional before): i₀ calibration (Fig. 3c/3d) · verify group model in COMSOL · first 2D step. New models: set T = 298.15 K in Default Model Inputs.
 
 ## Data
