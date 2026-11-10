@@ -44,11 +44,11 @@ Earlier:
 Bimetallic MOF glass fiber (Li–S) · Current density driven texture evolution in zinc powder anodes · Multifunctional pH-Controlling Electrolyte · The magnetohydrodynamic effect (alkaline) · Flexible electrodes review · Scalable Manufacturing of (MXene films) · Validating Computational Models (social-science models) · Transverse Number Measurement (**scanned OneNote notes, no text**)
 
 ## Gaps still open (updated 10 Nov after the literature search → `review-matrix.md`)
-- **"Chinese literature"**: 53 CN / 44 INT / 11 unknown of 108 tagged items (CN = Chinese corresponding institution); all English-language — meaning still to clarify with the supervisor
+- **"Chinese literature"**: 54 CN / 45 INT / 12 unknown of 111 tagged items (CN = Chinese corresponding institution); all English-language — meaning still to clarify with the supervisor
 - **Continuum/FEM models of separators in metal batteries** — theory and Li analogues found (charged pores, immobilised anions, phase field with separator/coating); still **no Zn separator model with surface properties** (= the thesis gap, not a search gap)
 - **Pore-scale / 2D GF models** — only Li-ion/Li-metal analogues (tomography networks, phase field vs pore size); none for GF/Zn
 - **Thermodynamic factor ZnSO₄** (Pitzer & Mayorga 1974) — for CET
 - *(option)* Zn corrosion/HER modelling in mildly acidic electrolytes — only an electrowinning model screened, not added
-- **§1 motivation** — 5 items; missing a Li-ion/BESS safety (thermal runaway) source and one agency report (IEA/NREL/PNNL) for cost and cycle life
+- **§1 motivation** — 8 items incl. BESS safety review and PNNL cost/performance paper; their numbers still need the full texts
 - **Full texts** — needs-access lists per section in `review-matrix.md` (Phase 2)
 - Oberkampf & Roy book chapters, main paper of the Li-separator SI

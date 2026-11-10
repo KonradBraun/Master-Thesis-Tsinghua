@@ -241,7 +241,7 @@ SI of full-text papers:
 
 ## §1 Background
 
-**State (10 Nov):** 5 items tagged `lr-1`, all INT; 3 abstract only, 2 needs access. Still missing: a Li-ion/BESS safety (thermal runaway) source and one agency report (IEA/NREL/PNNL) for cost and cycle-life numbers.
+**State (10 Nov):** 8 items tagged `lr-1`: 1 CN / 6 INT / 1 unknown; 5 abstract only, 3 needs access. Cost/cycle-life numbers still need a full text (Mongird 2020, OA).
 
 | Ref | CN | What | Key numbers (location) | Rel. | Status |
 |---|---|---|---|---|---|
@@ -250,20 +250,23 @@ SI of full-text papers:
 | [Ziegler 2019 Joule](https://doi.org/10.1016/j.joule.2019.06.012) | INT | Storage costs for wind/solar baseload | ~US$20 kWh⁻¹ target (abs) | medium | abstract-only |
 | [Olivetti 2017 Joule](https://doi.org/10.1016/j.joule.2017.08.019) | INT | Li-ion supply-chain bottlenecks (Li, Co, Ni) | n/r | medium | needs-access |
 | [Liang 2022 Nat. Rev. Mater.](https://doi.org/10.1038/s41578-022-00511-3) | INT | Designing modern aqueous batteries | n/r | high | needs-access |
+| [Mongird 2020 Energies](https://doi.org/10.3390/en13133307) | INT | PNNL/ANL/ORNL cost and performance of 6 battery types (incl. Li-ion, zinc-hybrid cathode) + non-battery storage, 2018 → 2025 | n/r in abs; $/kWh and cycle-life tables in the OA full text | high | abstract-only (OA) |
+| [Wang 2025 Energy Rev.](https://doi.org/10.1016/j.enrev.2024.100117) | CN | Li-ion safety in energy storage: thermal runaway, propagation, vent gas, fire/explosion, suppression | n/r (no consensus on BESS suppression strategies) | medium | abstract-only (OA) |
+| [Feng 2018 Energy Storage Mater.](https://doi.org/10.1016/j.ensm.2017.05.013) | ? | Standard review of the Li-ion thermal-runaway mechanism (EV focus) | 4215 Crossref citations (10 Nov 2026) | medium | needs-access |
 
 ### Synthesis (argument chain)
-- Grid and long-duration storage need very low energy-capacity cost, ≤ US$20 kWh⁻¹ (Sepulveda 2021; Ziegler 2019), plus safety and long life (Dunn 2011). Li-ion faces resource limits and flammable electrolytes (Olivetti 2017, needs access; Dong 2022 p. 1). AZIBs offer cheap Zn (US$2 vs 19 kg⁻¹ Li, Cui 2025), water-based electrolyte and air assembly, at 60–80 Wh kg⁻¹ (Dong 2022) → stationary, not EV. The Zn anode is the bottleneck (Dong 2022; Yu 2023; Li 2022) → §2.1.
+- Grid and long-duration storage need very low energy-capacity cost, ≤ US$20 kWh⁻¹ (Sepulveda 2021; Ziegler 2019), plus safety and long life (Dunn 2011). Li-ion faces resource limits and flammable electrolytes (Olivetti 2017, needs access; Dong 2022 p. 1); thermal runaway, vent-gas and fire hazards in stationary BESS lack an agreed suppression strategy (Wang 2025; Feng 2018 for the mechanism). Cost and cycle life per technology: Mongird 2020 (full text needed). AZIBs offer cheap Zn (US$2 vs 19 kg⁻¹ Li, Cui 2025), water-based electrolyte and air assembly, at 60–80 Wh kg⁻¹ (Dong 2022) → stationary, not EV. The Zn anode is the bottleneck (Dong 2022; Yu 2023; Li 2022) → §2.1.
 
 ## CN vs international (Zotero tags, 10 Nov, end of Phase 1)
 CN = corresponding (lead) author's institution in mainland China/HK/Macau — the student's interpretation of "Chinese literature", not yet confirmed by the supervisor. All items are English-language; no Chinese-language papers so far.
 
 | Section | Items | CN | INT | unknown | full text / abstract / needs access |
 |---|---|---|---|---|---|
-| §1 | 5 | 0 | 5 | 0 | 0 / 3 / 2 |
+| §1 | 8 | 1 | 6 | 1 | 0 / 5 / 3 |
 | §2.1 | 12 | 5 | 6 | 1 | 3 / 8 / 1 |
 | §2.2 | 46 | 33 | 7 | 6 | 15 / 24 / 7 |
 | §2.3 | 20 | 9 | 8 | 3 | 10 / 5 / 5 |
 | §2.4 | 26 | 7 | 18 | 1 | 17 / 7 / 2 |
-| **unique** | **108** | **53** | **44** | **11** | (Zhang 2024 ACS AMI counted in §2.2 and §2.3) |
+| **unique** | **111** | **54** | **45** | **12** | (Zhang 2024 ACS AMI counted in §2.2 and §2.3) |
 
 Trend for the review: experimental separator/ND work is CN-dominated; GF-baseline studies, ND surface chemistry, method development (Sand's time, phase-field validation, t₊ methodology) and the grid-storage framing are mostly INT. Counting rule for refs cited in the proposal: re-count from the final bibliography.
