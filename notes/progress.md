@@ -1,4 +1,4 @@
-# Current State — 9 Nov 2026 (model 04 done)
+# Current State — 10 Nov 2026 (models 04–05 done; literature search running)
 
 ## Supervisor
 - **Decided (14 Oct):** COMSOL only, no DFT. Start by getting familiar with COMSOL.
@@ -12,7 +12,7 @@
 ## Approach — agreed with the student 30 Oct, not yet discussed with the supervisor
 **Goal:** find out in simulation why ND@GF cells perform so much better (Zn//Zn 47 h → 3738 h at 2 mA/cm²) — rank candidate mechanisms by how much of the improvement each can explain, not predict cycle life.
 1. **Done:** 1D baseline GF (models 01–02), ND layer with fixed charge (03) → fixed-charge/Donnan effect negligible at realistic loading.
-2. **Done (9 Nov), model 04:** virtual Bruce–Vincent — a thin charged layer can't raise the measured t₊ (0.506 → 0.511 at local t₊ 0.72), and the method is ill-conditioned with realistic kinetics. t₊ = 0.69 is cited, not used as calibration target; t₊ only as scenario parameter; fixed charge X estimated physically (loading, surface groups, zeta).
+2. **Done (9 Nov), model 04:** virtual Bruce–Vincent — a thin charged layer can't raise the measured t₊ (0.506 → 0.511 at local t₊ 0.72), and the method is ill-conditioned with realistic kinetics. t₊ = 0.69 is cited, not used as calibration target; t₊ only as scenario parameter; fixed charge X estimated physically (loading, surface groups, zeta). **Model 05 (10 Nov):** the paper's own field model (Fig. 2h/i) shows only ~1–3 % change in current uniformity → the homogenisation claim is open → our 2D work. Overall: both simulation-testable mechanisms give small effects; the measured improvement (real, not doubted) must come mainly from elsewhere or from combined effects — results are phrased as "insufficient as modelled", not "impossible".
 3. **Main work: recreate the processes in the cell (2D)** — pore structure / current distribution (GF pores up to 14 µm vs NDs filling the voids; metric: uniformity of current density at the anode) · interface (nucleation, kinetics, passivation; parametric) · corrosion/HER (option; Tafel I_corr halves, Fig. 2f; COMSOL "Water-Based with Electroneutrality" + HER). Mechanics (puncture +18 %) only discussed. Optional: dendrite onset via Sand's time or phase field.
 4. **If time is left:** full cells (open) · design study (ND loading/distribution) / manufacturing tolerances (RWTH link, below) · DFT only with the supervisor's OK (excluded 14 Oct).
 
@@ -69,7 +69,7 @@ Findings: (1) Ohm's law needs ~47–51 / ~14–16 mV, not 10 mV → F13 confirme
 
 ## Next steps
 Proposal first (deadline Mon 14 Dec; structure, timeline: `../Thesis Proposal/proposal-plan.md`):
-1. WeChat to the supervisor: (a) form questions, length, "Chinese literature"; (b) short results summary (models 01–05) + proposed research question · 2. Literature search for the review (main block until ~24 Nov): reviews first, literature matrices (separators, simulation studies), motivation literature (PDFs into `Literature/Potential`) · 3. Write §4 (methods + preliminary results 01–05) in parallel.
+1. WeChat to the supervisor: (a) form questions + length; (b) short results summary (models 01–05) + proposed research question · 2. Literature search for the review (main block until ~24 Nov) — **running in a separate Claude session** ("Deep literature search for the proposal review", 10 Nov): results in `Literature/review-matrix.md` (§2.2 from 10 full texts committed; partial results for §2.1, §1, §2.4 and 14 §2.2 candidates being merged; Zotero adds, §2.3, refs.bib, CN counts open); capped at 60 % of the 5-hour limit per run; PDFs for its "needs access" list → Zotero Connector / `Literature/Potential` · 3. Write §4 (methods + preliminary results 01–05) in parallel.
 After the proposal draft: i₀ calibration (Fig. 3c/3d) · first 2D step (C in the comparison plan). No postdoc data needed before then. New models: set T = 298.15 K in Default Model Inputs.
 
 ## Data
@@ -83,6 +83,7 @@ Not requested (nice to have): zeta potential of the NDs, ND distribution through
 - **Zotero 10 + MCP server** (v0.14.1, local writes): 105 top-level items (local API, 30 Oct) sorted into chapter collections + "Parameter sources (ZnSO4, GF)" + "Manufacturing (option)"; DFT papers in "4 Continuum Modelling / DFT (likely not needed)". MCP reads can be stale → query local API (see claude-notes). Small open items: Ma PhD thesis → item type Dissertation; Hess 2018 without PDF (arXiv version available); Cytiva catalog → type Report, number CY53855.
 - PDFs: `bash tools/pdf2txt.sh "Literature/Potential"` (Git Bash) → `txt/`.
 - Python via `py`; Remote Control on; sleep on mains power disabled.
+- **Claude Pro plan:** 5-hour and weekly usage limits (check with `get_usage`); long runs get a cap (literature session: 60 % of the 5-hour window). Overnight runs: see `claude-notes.md`.
 - **Git repository:** private, `github.com/KonradBraun/Master-Thesis-Tsinghua`, branch `main` (set up 30 Oct). Tracks all notes and the LaTeX sources (`.tex` = latest text incl. formatting; PDF is rebuilt, not tracked). `.gitignore` excludes `.mph`/`.exe`, `Literature/Potential/`, the group's confidential files (`Literature/*.pdf|docx|png`, `data/` — the group's raw data go there) and LaTeX build output → **back up `.mph` and group files separately.** Push: done by the student (Claude's push is blocked by the permission check).
 
 ## To pass on to the group

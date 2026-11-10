@@ -62,7 +62,7 @@
 ## 6. Research Gap and Objectives — ~2 p
 - Starting point: the ND@GF separator and its reported performance
 - Gap: the group's COMSOL model represents NDs as "hollow circles" without properties (SI §1.7)
-- **Research question — not decided.** Student's working draft (20 Oct, wording open): *Which mechanisms explain the improved cell performance with the ND@GF separator, and how can they be represented in a simulation model?* (Earlier idea "how much ND is needed" dropped after model 03: fixed charge too weak.)
+- **Research question — not decided.** Student's working draft (20 Oct, wording open): *Which mechanisms explain the improved cell performance with the ND@GF separator, and how can they be represented in a simulation model?* (Earlier idea "how much ND is needed" dropped after model 03: fixed charge too weak.) Sharpened proposal after models 04–05 (10 Nov, not decided): ion selectivity is quantitatively insufficient and the group's field model shows no substantial homogenisation → *Can the ND-modified pore structure in contact with the Zn anode homogenise Zn deposition, and how do interface and corrosion effects compare?* — answered by a mechanism ranking, not a cycle-life prediction.
 - Sub-objectives and explicit out-of-scope list — *option:* derive manufacturing tolerances / process window for the ND coating
 
 ## 7. Methodology — ~4–5 p *(write last)*

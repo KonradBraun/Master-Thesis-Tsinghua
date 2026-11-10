@@ -31,7 +31,8 @@
 **COMSOL:** version 6.3 runs on the laptop this project runs on. The office PC has **5.6** (cannot open 6.3 files; GUI differs, e.g. no separate Species Charges node — charges probably in the Electrolyte node, unverified). Full licence — includes Electrochemistry, Electrodeposition, Battery Design, Corrosion, Optimization and Uncertainty Quantification.
 
 ## Key files
-- `notes/progress.md` — current state, proposed plan (not agreed), setup, pending tasks
+- `notes/progress.md` — current state, approach (agreed with the student, not yet with the supervisor), model results, setup, pending tasks
+- `Literature/review-matrix.md` — literature matrix and synthesis per proposal section (built by the literature-search session)
 - `Literature/paper-summary.md` — group paper + SI: methods, measured data, critical findings
 - `notes/comsol-guide-NN.md` — temporary step-by-step guide for the COMSOL model currently being built
 - `notes/parameters.md` — model parameter table with sources and status (living file, becomes the parameter table in proposal §4)

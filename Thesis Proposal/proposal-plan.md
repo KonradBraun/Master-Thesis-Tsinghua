@@ -48,11 +48,12 @@ As of 4 Nov: no chapter text yet. Main effort: the literature review (reading an
 - **25 – 29 Nov:** §1, 3, 5, 6 → full draft to supervisor ~29 Nov
 - **30 Nov – 14 Dec:** revision · Word form · slides for the oral presentation (date unknown) · buffer · submission
 
-Moved after the draft (optional for the proposal): i₀ calibration · verify group model in COMSOL.
+Moved after the draft (optional for the proposal): i₀ calibration · first 2D step. (Group model verified and re-run = model 05, 10 Nov.)
 
 ## Questions for the supervisor
 - [ ] Expected length? (form: ≥ 3000 words minimum)
-- [ ] "Chinese literature": Chinese-language papers or work by Chinese groups? Expected counts?
+- [x] "Chinese literature" = work by groups in China (student, 10 Nov; easily met in this field — optionally 1–2 papers from Chinese journals); counts reported by the literature search
+- WeChat message (b) — results + research question: constructive ("I tested the proposed mechanisms one by one"), 3–4 sentences + one figure, end with a concrete question ("Is this direction okay for the proposal?").
 - [ ] Date and length of the oral presentation; project category and thesis type for the form; interdisciplinary supervision needed?
 - [ ] Citation style? Example proposals from previous students?
 - [ ] Depth on simulation fundamentals vs electrochemistry?
