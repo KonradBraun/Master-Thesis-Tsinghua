@@ -107,7 +107,53 @@ SI of full-text papers:
 ---
 
 ## §2.3 Nanodiamonds and carbon nanomaterials in Zn batteries
-*Pending — search agent results not yet merged.*
+
+**State (10 Nov):** 20 items tagged `lr-2.3` (10 existing + 9 new + Zhang 2024 ACS AMI from §2.2): 10 full text, 5 abstract only, 5 needs access. 9 CN / 8 INT / 3 unknown. "via X" = number read in source X, not in the paper itself.
+
+### ND surface chemistry, termination, zeta potential
+| Ref | CN | What | Key numbers (location) | Rel. | Status |
+|---|---|---|---|---|---|
+| [Kulakova 2004 Phys. Solid State](https://doi.org/10.1134/1.1711440) | INT | Detonation ND (DND) core–shell model; surface groups, acidity; charge depends on pH and electrolyte | DND ~4 nm, ~15 % surface atoms (p. 636); acid groups 0.548 → 1.467 mmol g⁻¹ after air 673 K (Tab. 3); protogenic groups 0.34–2.52 µeq m⁻² (p. 640); SSA 150–450 m² g⁻¹; cation exchange (p. 641) | high | full-text-read |
+| [Girard 2011 PCCP](https://doi.org/10.1039/c1cp20424f) | INT | H-plasma HPHT ND; hydroxylation flips ζ | ζ −45 → +30 mV after UV hydroxylation, neutral pH (p. 11519); OH ~1 nm⁻² ("rough estimate") | high | full-text-read |
+| [Paci 2013 J. Phys. Chem. C](https://doi.org/10.1021/jp404311a) | INT | Titration + ζ + DFTB model of DND surface groups | ζ ~+60 mV, > 30 mV over pH ~2.5–8.5 (Fig. 1, 2); 1 titratable H⁺ per ~30 Å² ≈ 3.3 nm⁻² (p. 17260, calc); pKa 7.6–10 (model) | high | full-text-read |
+| [Ginés 2017 Nanoscale](https://doi.org/10.1039/c7nr03200e) | INT | Positive ζ needs an sp² shell + H; O-terminated ND is negative | air-annealed ND ζ −35 (pH 3) to −55 mV (pH 11) (Fig. 3a); positive only after 1000 °C vacuum + H₂; bulk diamond negative for H and O termination (via Härtl 2007) | high | full-text-read |
+| [Molavi 2018 J. Colloid Interface Sci.](https://doi.org/10.1016/j.jcis.2018.03.088) | INT | Thermal oxidation raises COOH and makes ζ more negative | DND 4–6 nm, 282 m² g⁻¹; as-received ζ −2.58 mV (Fig. 7a) | medium | full-text-read |
+| [Shalumon 2026 ACS AMI](https://doi.org/10.1021/acsami.6c11549) (review) | INT | ND in filtration/adsorption: termination, ζ, salt sensitivity, metal-ion uptake | O-NDs ζ < −30 mV near neutral pH (§2.2.1); aggregation ≥ 10⁻³ M (H-DND) vs ≥ 10⁻² M (O-DND) (via Bradac 2018); O-DND binds Zn²⁺ via carboxylates, 8–12 kJ mol⁻¹ (via Volkov 2020) | high | full-text-read |
+| [Zhang 2026 ACS Nano](https://doi.org/10.1021/acsnano.6c05022) | CN | **Group's own ND synthesis** (laser shock of coal/Si) | crystallite ~5 nm (Fig. 2A); C 1s with sp², sp³, C–O, C=O components (Fig. 2D), fractions only in SI; no ζ, no battery data | high | full-text-read |
+| [Mochalin 2012 Nat. Nanotechnol.](https://doi.org/10.1038/nnano.2011.209) (review) | INT | Standard ND properties/applications review | not read | high | needs-access |
+| [Bradac 2018 Diamond Relat. Mater.](https://doi.org/10.1016/j.diamond.2018.01.022) | ? | DND colloidal stability vs surface composition and ionic strength | aggregation thresholds above (via Shalumon) | high | needs-access |
+| [Volkov 2020 Diamond Relat. Mater.](https://doi.org/10.1016/j.diamond.2020.108121) | ? | DND as regenerable adsorbents for divalent cations incl. Zn²⁺ | > 100 µmol g⁻¹ after HNO₃ 250 °C; ≥ 10 cycles (via Shalumon) | high | needs-access |
+
+### ND (and diamond) in batteries
+| Ref | CN | What | Key numbers (location) | Rel. | Status |
+|---|---|---|---|---|---|
+| Zhang 2024 ACS AMI (→ §2.2) | CN (co-corr. UK) | DND (5–10 nm, –OH/–COOH) dip-coated on GF | t₊ 0.13 → 0.45; ~1800 (110) h @5/1; no ζ, no simulation | high | full-text-read |
+| [Ding 2026 Adv. Sci.](https://doi.org/10.1002/advs.202518714) | CN | Oxidised ND as electrolyte additive; **ζ vs ZnSO₄ concentration**; COMSOL cell-level | ζ ~−41 mV in water (Fig. S3), ~−10 mV at 0.5 m, ~0 at ~1.5 m, positive above (Fig. 2f); t₊ 0.52 → 0.73 (Fig. S9); σ 43.9 → 41.2 mS cm⁻¹ (Fig. S7); Zn//Zn 1800 h @1/1 (Fig. 5c) | high | full-text-read |
+| [Zhu 2026 Adv. Sci.](https://doi.org/10.1002/advs.202516623) | CN | DND additive (0.1 wt%) in ZnSO₄/Zn(OTf)₂ | t₊ 0.20 → 0.87 (Fig. 2I); DFT −1.11 vs −0.67 eV (Fig. 3D,E); Zn//Zn > 3300 (1000) h @5 mA cm⁻² (Fig. 4C) | medium | full-text-read |
+| [Liu 2024 Adv. Energy Mater.](https://doi.org/10.1002/aenm.202401479) | CN | ND interfacial layer on Zn and Cu; nucleation sites | ~10¹² nucleation sites cm⁻²; Zn//Zn > 3600 h @1 mA cm⁻² (abs) | high | abstract-only (OA copy exists) |
+| [Wang 2024 Adv. Funct. Mater.](https://doi.org/10.1002/adfm.202315757) | CN | ND rolled into Zn foil as seeds; carboxyl groups | Zn//Zn > 4100 h; Zn//Cu 99.7 % (abs) | high | abstract-only |
+| [Chen 2024 ACS Nano](https://doi.org/10.1021/acsnano.4c01054) | CN | Amorphous–crystalline diamond coating: hardness + Zn affinity | Zn//Zn > 3200 h @5/1† | high | needs-access |
+| [Cheng 2017 Nat. Commun.](https://doi.org/10.1038/s41467-017-00519-2) | INT | ND electrolyte additive vs Li dendrites | Li‖Li 150 h @2, 200 h @1 mA cm⁻² (abs) | medium | abstract-only |
+| [Zhou 2021 J. Mater. Chem. A](https://doi.org/10.1039/d1ta03533a) | CN | ND-sprayed separator for Li metal | modulus > 11 GPa†; LFP‖Li > 90 % after 1400 cyc† | medium | abstract-only |
+| [Jiang 2022 Front. Chem.](https://doi.org/10.3389/fchem.2022.899810) | CN | O-plasma carbon cloth: C=O as zincophilic sites | > 530 h @0.5 mA cm⁻², 15 % DOD; 480 h at 60 % DOD (abs) | medium | abstract-only |
+| [Li 2024 Energy Storage Mater.](https://doi.org/10.1016/j.ensm.2024.103300) (review) | ? | Carbon nanomaterials for Zn anodes | not read | medium | needs-access |
+
+### Synthesis
+- **The sign of the ND surface charge is set by termination and any sp² shell, not by "diamond".** O-terminated/oxidised ND is negative (−35 to −55 mV, Ginés; −45 mV, Girard; −41 mV, Ding); positive ζ needs H-termination plus sp² (Ginés) or specific cleaning (+60 mV, Paci); as-received DND can be ~0 (Molavi). Literature can't give the sign for the group's coal-derived ND (sp² present per Zhang 2026 XPS) → the group's ζ of ND@GF (~−38.8 mV, `../notes/parameters.md`) has no stated medium/pH and is almost certainly not in 2 M ZnSO₄ (inference).
+- **In 2 M ZnSO₄ the double layer is collapsed and the charge may invert.** Debye length ~0.1 nm (estimate, ideal); ND dispersions aggregate from 10⁻³–10⁻² M (Bradac via Shalumon). Ding 2026 is the only Zn paper with ζ in electrolyte: ~−10 mV at 0.5 m, ~0 at ~1.5 m, positive above — Zn²⁺ adsorption inverts the charge. → a fixed *negative* charge on NDs at 2 M is not supported; specific Zn²⁺ adsorption (Kulakova: cation exchange; Volkov: Zn²⁺ uptake > 100 µmol g⁻¹) is the more defensible surface model. Consistent with models 03/04 (fixed charge negligible).
+- **Claims rest on DFT, not measurement.** Zincophilicity, low barriers and "field homogenisation by carboxyl groups" come from DFT/MD or are asserted (Liu 2024, Wang 2024, Zhu 2026, Zhang 2024 ACS AMI); hardness only in Chen 2024 (Zn) and Li papers (Cheng 2017, Zhou 2021). Measured: t₊, Eₐ, nucleation overpotential, cycle life — ζ only in Ding 2026.
+- **Same electrolyte, different t₊ baselines:** 0.13 (Zhang 2024), 0.20 (Zhu 2026), 0.52 (Ding 2026), plus the group's 0.51 — all BV; "t₊ gains" from ND are method-dependent (cf. §2.2, §2.4).
+- **Surface-site densities for a boundary condition** (order of magnitude): acid groups 0.55–1.47 mmol g⁻¹ (Kulakova), ~3.3 sites nm⁻² (Paci, calc), OH ~1 nm⁻² (Girard), Zn²⁺ uptake > 100 µmol g⁻¹ (Volkov via Shalumon).
+- **Gap:** no continuum model resolves an ND layer or ND-coated fibres; the nearest analogue (Zhang 2024 ACS AMI) has no simulation; Ding 2026 uses COMSOL only at cell level. Zn–ND work is CN-dominated (one Jilin superhard-materials group accounts for 2 of the ND papers here plus Zhang 2024 Commun. Chem., not added); the ND surface-chemistry basics are all INT.
+
+### Needs access — §2.3
+- 10.1021/acsnano.6c05022 (Zhang 2026, group's ND) — SI: sp²/sp³/C–O/C=O fractions (Fig. 2D, S4A) → inputs for the group's ND surface
+- 10.1002/advs.202518714 (Ding 2026) — SI: ζ at 2 m (Fig. 2f), COMSOL geometry/BCs
+- 10.1021/acsnano.4c01054 (Chen 2024) — hardness values, termination, ζ, conditions
+- 10.1002/aenm.202401479 (Liu 2024, OA copy at PolyU) — ND layer thickness, ζ, calculation method
+- 10.1002/adfm.202315757 (Wang 2024) — j of the 4100 h test, ND size, any simulation
+- 10.1016/j.diamond.2018.01.022 (Bradac 2018), 10.1016/j.diamond.2020.108121 (Volkov 2020) — ζ vs ionic strength; Zn²⁺ isotherm
+- 10.1038/nnano.2011.209 (Mochalin 2012) — standard ND values for the §2.3 intro
 
 ## §2.4 Simulation of Zn deposition and separators
 *Pending.*
