@@ -32,10 +32,11 @@
 
 ## Key files
 - `notes/progress.md` — current state, approach (agreed with the student, not yet with the supervisor), model results, setup, pending tasks
-- `Literature/review-matrix.md` — literature matrix and synthesis per proposal section (built by the literature-search session)
+- `Literature/review-matrix.md` — literature matrix and synthesis per proposal section (built by the literature-search session); Zotero tags `use-core` / `use-context` / `use-drop` mark what gets cited (criteria in its header)
 - `Literature/paper-summary.md` — group paper + SI: methods, measured data, critical findings
 - `notes/comsol-guide-NN.md` — temporary step-by-step guide for the COMSOL model currently being built
 - `notes/parameters.md` — model parameter table with sources and status (living file, becomes the parameter table in proposal §4)
+- `Literature/lit-review-todo.md` — open literature-review tasks and the student's to-dos (missing SI, Zotero fixes)
 - `Literature/triage.md` — triage of the student's PDF collection (`Literature/Potential/`, text versions in `txt/`) and open literature gaps
 - `Thesis Proposal/proposal/` — the proposal in LaTeX (ThuThesis v7.7.1, Tsinghua 选题报告 format, English, XeLaTeX); `ref/refs.bib` from Zotero via `tools/zotero2bib.ps1` (PowerShell; `bash` in PowerShell hits WSL) or `tools/zotero2bib.sh` (Git Bash)
 - `Thesis Proposal/proposal-plan.md` — proposal: form requirements, proposed structure with page budget, Word-form checklist, timeline, supervisor questions
