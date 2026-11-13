@@ -36,9 +36,9 @@ The broad search is done; this round closes specific gaps, in the order the prop
 - [x] **T6 (§4/§5, = D2 part 1):** done 13 Nov — Pitzer & Mayorga 1974 Table I (published PDF via Zotero) → thermodynamic factor ≈ 1.04 at 2 M (0.73–1.36 over 1.5–2.5 mol/kg); row in `notes/parameters.md`; Miladinović 2003 (0.1–4.3 mol/kg) added, not read.
 - [x] **T7 (= C2):** done 13 Nov — only Zhao 2024 CCL (`use-core`) had a † number; σ 10.1 → 13.7 mS cm⁻¹ found in its main text (Fig. 2f,g) → σ–t₊ count now 4 vs 8. Remaining † items (Luo 2025, Si, Wang 2024 Small, Cao, Lin, Liu 2022, Zhou 2021) carry neither `use-core` nor `use-context` — verify only if they get promoted.
 - [x] **T8 (= C3):** done 13 Nov — 4 unknowns among the 46 cited items (all parameter sources) → INT; cited subset 31 CN / 15 INT, table under "CN vs international" in the matrix.
-- [ ] **T9 (optional):** 1–2 clearly relevant papers from Chinese-language journals (Zn separators, ND, or Zn deposition modelling), tagged `CN` — only if they add content.
+- [x] **T9 (optional):** done 13 Nov, nothing added — Chinese-language hits were two reviews (化工学报 76 (2025) 40, DOI 10.11949/0438-1157.20240741, carbon nanomaterials in ZIBs: no diamond, separator part only recaps English papers; 高等学校化学学报 2026, DOI 10.7503/cjcu20260032, Zn anode strategies) and CSDN blog COMSOL models without sources. CNKI search by the student would be the next step if the supervisor wants Chinese-language citations.
 
-When all tasks are ticked: one summary line here ("Targeted round finished <date>: …") and stop the loop.
+**Targeted round finished 13 Nov 2026:** 10 papers added (T1 4 critique/V&V, T2 4 HER/pH/ZHS models, T6 2 activity data), 4 rows upgraded to full text (Han, Tikekar, Liu 2024, Mongird), thermodynamic factor ≈ 1.04 at 2 M in `notes/parameters.md`, B1 synthesis written, † check and CN/INT for the cited subset done. Open for the student: downloads in "For the student" (Rana 2025 Joule first) and decisions on the proposed `use-*` tags (matrix §1, §2.3, §2.4).
 
 ## Open tasks (priority first)
 B1, C2, D2 done (T1, T2, T6, T7 — 13 Nov); C1 and C3 are scheduled in the targeted round above (T1–T8).
