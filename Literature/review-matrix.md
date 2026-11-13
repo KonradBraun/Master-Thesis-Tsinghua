@@ -160,7 +160,7 @@ SI of full-text papers:
 
 ## §2.4 Simulation of Zn deposition and separators
 
-**State (13 Nov):** 34 items tagged `lr-2.4` (15 existing + 11 new + 4 B1 papers, 11 Nov; + 4 T1 critique/V&V papers, 13 Nov): 30 full text, 4 abstract only, 0 needs access. 10 CN / 23 INT / 1 unknown. COMSOL use *inside* separator papers: subsection below (B1).
+**State (13 Nov):** 38 items tagged `lr-2.4` (15 existing + 11 new + 4 B1 papers, 11 Nov; + 4 T1 critique/V&V + 4 T2 HER/pH papers, 13 Nov): 32 full text, 5 abstract only, 1 needs access. 10 CN / 27 INT / 1 unknown. COMSOL use *inside* separator papers: subsection below (B1).
 
 ### Continuum models, charged pores, separator microstructure
 | Ref | CN | What | Model / key numbers (location) | Rel. | Status |
@@ -233,6 +233,17 @@ Checked, no simulation: Wang 2021 Nano-Micro Lett. (Janus MOF/rGO), Lin 2023 RSC
 **Synthesis (B1 final):** Zn separator/coating papers use COMSOL as an illustration, not as a verified model: of 14, none reports a mesh study or quantitative validation, one states BCs, three give parameters (two implausible). Against the reporting minimum (equations, BCs, sourced parameters, sensitivity — Mistry 2021) they fail on almost every item; their key output, the field maximum at a sharp protrusion, sits at a geometric singularity whose value is mesh-dependent (Shah 2020), and in 3D the tip effect matters much less than 2D models suggest (Jang 2021, Li, inference for Zn). Validation in neighbouring fields is also thin (Cornish 2022: ~1 in 5 Li-S models separates calibration from validation data). → The thesis can claim a methodological contribution with modest means: stated BCs and sourced parameter table, mesh study around protrusions, sensitivity of the ND-layer effect to uncertain inputs, and comparison with the measured operating point (own assessment).
 Proposed `use-*` (T1): Shah 2020 `use-core`, Mistry 2021 `use-core`, Jang 2021 `use-context`, Cornish 2022 `use-context`.
 
+### HER, local pH and ZHS precipitation — continuum models (T2 = D2 part 2, 13 Nov)
+Same columns as the B1 table. All INT. Read: Herrmann (arXiv 2308.03352v1, main text), Zhang 2018 (OA). Rana 2025/2026 → student list.
+| Paper | Software · interface | Geometry | Separator/coating represented as | BCs · operating point (vs experiment) | Parameters | Time | Outputs | Mesh · validation |
+|---|---|---|---|---|---|---|---|---|
+| [Herrmann 2023 Adv. Energy Mater.](https://doi.org/10.1002/aenm.202302553) (Zn/MnO₂ full cell) | own code n/r · P2D, quasi-particle transport (Clark et al.) + algebraic equilibrium speciation | 1D cell + particle dimension (P2D) | porous separator, homogeneous | galvanostatic 100–300 mA g⁻¹ (Fig. 6); 2 m ZnSO₄ + 0.5 m MnSO₄, initial pH ~4.3 (Fig. 7 caption) | stability constants (SI Tab. S1); activities = concentrations; ZHS via K_sp(pH, SO₄²⁻), nucleation at 105 % supersaturation (text, Sec. II); **no HER at the anode** | cycling | V(t), pH(t), ZHS volume fraction (Fig. 5, 7) | n/r · qualitative vs literature cycling, CV, in-situ pH (Fig. S3, Sec. IV A) |
+| [Zhang 2018 J. Electrochem. Soc.](https://doi.org/10.1149/2.0321815jes) (Zn electrowinning) | COMSOL (5.2 docs cited) · tertiary current distribution (Nernst–Planck) + bubbly two-phase flow | 2D cell section (Fig. 1c) | — | inflow 3.2 × 10⁻⁴ m s⁻¹, pressure outlet, no-slip walls; 500 A m⁻², 55 g L⁻¹ Zn, 110 g L⁻¹ H₂SO₄, 35 °C (Tab. II, Fig. 9) | concentration-dependent BV: i₀ Zn 12.261, HER 1.58 × 10⁻⁷ A m⁻² (Tab. I) | 210 s to pseudo-steady state | j_Zn, j_HER (~50 of 500 A m⁻²), CE ~93 % (Fig. 8) | refined at cathode + boundary layers, no convergence study · **quantitative**: CE vs Zn concentration against Scott 1988 data, trend agrees, too low at 20 g L⁻¹ (Fig. 9) |
+| [Rana 2025 Joule](https://doi.org/10.1016/j.joule.2025.102167) | needs access — interfacial pH gradient vs current, HER suppression at high j | | | | | | | |
+| [Rana 2026 Adv. Energy Mater.](https://doi.org/10.1002/aenm.202503630) (perspective) | abstract only — HER vs Zn plating kinetics, interfacial pH; resting HER/corrosion loses 12–37 % Zn inventory (abs) | | | | | | | |
+**Synthesis (T2):** no continuum model found that couples HER, local pH and ZHS precipitation *at a Zn anode in ZnSO₄*. The pieces exist separately: HER as a concentration-dependent BV side reaction in COMSOL, validated on current efficiency (Zhang 2018, but strong acid, no pH dynamics); pH-dependent ZHS precipitation with equilibrium speciation and pH buffering (Herrmann 2023, but at the MnO₂ cathode, no anode HER). → For the thesis: HER can be added to model 04 as a second BV reaction producing OH⁻, with ZHS as a pH ceiling (Herrmann: precipitation pins pH near saturation); parameters for HER on Zn in ZnSO₄ are still missing — Zhang's i₀ is for acid electrowinning (own assessment). Interfacial pH measurement vs current (Rana 2025) would be the validation target, once read.
+Proposed `use-*` (T2): Herrmann 2023 `use-core` (ZHS/pH modelling precedent), Zhang 2018 `use-context`, Rana 2025 decide after reading, Rana 2026 `use-context`.
+
 ### Synthesis
 - **Dendrite onset theory is analytical and 1D, and none of it is for 2 M ZnSO₄.** Sand-type models with kinetic (Yang 2025), SEI (Ma JES) or HER-bubble (Ma JPS, alkaline) corrections; short-circuit times are far longer than onset times and propagation through the separator is not modelled. Validated Zn sulfate continuum models are rare (Shan 2023 flow cell; Telmasre 2025, ohmic-only, validated visually) → a 2D tertiary model of a GF/ND@GF cell at the measured operating point would be new.
 - **Charged-pore physics exists but isn't used by Zn separator papers.** Surface conduction in charged nanopores (Han 2014) and immobilised anions (Tikekar 2016) can stabilise deposition, but only with nm pores or dilute electrolytes; Donnan partitioning is weak for bivalent ions and needs high charge per pore volume (Vezzani 2002, Galama 2013). With Debye ~0.1 nm at 2 M and ND charge inversion (§2.3), a fixed-charge ND layer should have small effects — what models 03/04 found.
@@ -241,9 +252,12 @@ Proposed `use-*` (T1): Shah 2020 `use-core`, Mistry 2021 `use-core`, Jang 2021 `
 - **Atomistic results don't reach the continuum.** DFT/MD papers report adsorption and desolvation energies (Jin 2026; §2.2/§2.3 papers) but none passes them to i₀ or D — consistent with the decision against DFT.
 - **BV t₊ is not a calibration target.** BV is exact only at infinite dilution (Shao 2023); multivalent salts: i_ss/i₀ = t₊ only when dilute, otherwise a parameter Ne from all transport coefficients (Balsara 2015) and a common reference frame (Gao 2022); Zn interfaces drift during the test (Yang 2024) and sampling times bias the result (Lin 2024); BV for near-identical Zn electrolytes spans 0.2–0.7 (Gomez Vazquez 2025). → use Hittorf/EMF electrolyte data (Purser & Stokes 1951, Dye 1960) as input and simulate the BV protocol itself (model 04), comparing only trends.
 - **Field maps in Zn papers are unverified illustrations** (B1 synthesis above: no mesh study or quantitative validation in 14 papers; tip maxima are mesh-dependent singularities, Shah 2020; tip effect overstated in 2D, Jang 2021) → reporting BCs, parameters, mesh study and sensitivity is itself a contribution.
-- **Who:** 10 CN / 23 INT / 1 unknown — method development (Sand's time, PF quantification, t₊ methodology) is mostly INT; Zn PF applications in COMSOL are mostly CN.
+- **HER, pH and ZHS are modelled only in pieces** (T2 table: HER as BV side reaction in acid electrowinning, Zhang 2018; ZHS/pH equilibria at the cathode, Herrmann 2023) — no coupled anode model in ZnSO₄ found → optional extension of model 04; HER kinetics on Zn in ZnSO₄ still unsourced.
+- **Who:** 10 CN / 27 INT / 1 unknown — method development (Sand's time, PF quantification, t₊ methodology) is mostly INT; Zn PF applications in COMSOL are mostly CN.
 
 ### Needs access — §2.4
+- 10.1016/j.joule.2025.102167 (Rana 2025 Joule) — interfacial pH vs current, HER model and parameters
+- 10.1002/aenm.202503630 (Rana 2026 AEM, optional) — HER kinetic values on Zn in ZnSO₄
 - 10.1016/j.cclet.2022.03.065 (Li 2022 CCL) — Tab. 1 (PF parameters, image)
 
 ## §2.1 AZIBs and Zn anode failure modes
@@ -299,7 +313,7 @@ CN = corresponding (lead) author's institution in mainland China/HK/Macau — th
 | §2.1 | 13 | 6 | 6 | 1 | 6 / 7 / 0 |
 | §2.2 | 46 | 36 | 7 | 3 | 28 / 16 / 2 |
 | §2.3 | 20 | 9 | 10 | 1 | 15 / 4 / 1 |
-| §2.4 | 34 | 10 | 23 | 1 | 30 / 4 / 0 |
-| **unique** | **120** | **61** | **52** | **7** | (Zhang 2024 ACS AMI counted in §2.2 and §2.3) |
+| §2.4 | 38 | 10 | 27 | 1 | 32 / 5 / 1 |
+| **unique** | **124** | **61** | **56** | **7** | (Zhang 2024 ACS AMI counted in §2.2 and §2.3) |
 
 Trend for the review: experimental separator/ND work is CN-dominated; GF-baseline studies, ND surface chemistry, method development (Sand's time, phase-field validation, t₊ methodology) and the grid-storage framing are mostly INT. Counting rule for refs cited in the proposal: re-count from the final bibliography.

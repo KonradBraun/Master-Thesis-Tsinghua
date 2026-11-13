@@ -4,7 +4,8 @@ Living list, carried over from the night loop of 10 Nov 2026. Results go into `r
 
 ## For the student — next steps (11 Nov)
 1. **Optional SI downloads** (only if B1 needs more detail): Su 2022 AFM https://doi.org/10.1002/adfm.202204306 (Wiley → "Supporting Information" at the end) · Gou 2025 https://doi.org/10.1016/j.jechem.2024.09.047 (Elsevier → "Appendix A. Supplementary data").
-2. **Ask the group (WeChat, low priority):** sp²/sp³/C–O/C=O fractions from the XPS fit behind Zhang 2026 ACS Nano Fig. 2D — only needed if ND surface chemistry becomes a model parameter.
+2. **Download (T2, 13 Nov) into `manual download/`:** Rana 2025 Joule https://doi.org/10.1016/j.joule.2025.102167 (main text + SI: interfacial pH model, HER parameters) · optional Rana 2026 AEM https://doi.org/10.1002/aenm.202503630 (HER kinetic values on Zn).
+3. **Ask the group (WeChat, low priority):** sp²/sp³/C–O/C=O fractions from the XPS fit behind Zhang 2026 ACS Nano Fig. 2D — only needed if ND surface chemistry becomes a model parameter.
 
 Done 11 Nov: Zotero cleanup (62 misplaced PDF copies on Shao DML59VLW → Trash; all had their own items with PDFs; Shao's own PDF attached); filtering scheme decided (`use-*` tags, criteria in `review-matrix.md` header).
 
@@ -27,7 +28,7 @@ The broad search is done; this round closes specific gaps, in the order the prop
 
 **Tasks**
 - [x] **T1 (§2.3, = B1):** done 13 Nov — Mistry 2021 (reporting checklist), Shah 2020 (grid convergence at singularities), Cornish 2022 (validation survey), Jang 2021 (tip effect weak in 3D); no Zn-specific critique found; B1 synthesis + proposed `use-*` in matrix §2.4.
-- [ ] **T2 (§2.3, = D2 part 2):** 2–4 continuum models of HER, local pH, corrosion and zinc hydroxide sulfate / hydroxide precipitation at Zn anodes in mildly acidic electrolyte; per paper: software, physics, BCs, operating point, parameters, validation (same columns as the B1 table).
+- [x] **T2 (§2.3, = D2 part 2):** done 13 Nov — Herrmann 2023 (ZHS/pH speciation, cathode), Zhang 2018 (HER as BV side reaction, COMSOL, acid), Rana 2025 Joule + Rana 2026 AEM (paywalled → student list); no coupled HER–pH–ZHS anode model in ZnSO₄ found; table + synthesis in matrix §2.4.
 - [ ] **T3 (§2.3, part of C1):** OA full texts of Han 2014 (10.1038/srep07056) and Tikekar 2016 (10.1126/sciadv.1600320): electrolyte concentration, pore size, charge density, conditions under which the charged-pore effect matters → upgrade their matrix rows.
 - [ ] **T4 (§2.4, part of C1):** OA repository copy of Liu 2024 AEM (10.1002/aenm.202401479): ND layer thickness, ζ, how the nucleation-site density was calculated.
 - [ ] **T5 (§1, part of C1):** Mongird 2020 (10.3390/en13133307, OA): $/kWh and cycle life per technology incl. Li-ion and zinc; Wang 2025 Energy Rev. (10.1016/j.enrev.2024.100117, OA): key safety statements; Olivetti 2017 and Feng 2018 → student list if paywalled. Update the matrix §1 synthesis.
@@ -47,7 +48,7 @@ B1 done (T1, 13 Nov); C1–C3 and D2 are scheduled in the targeted round above (
 - [ ] **C2 — verify every † number** in the matrix against abstract or full text.
 - [ ] **C3 — resolve `origin-unknown` items** (10 left) → CN/INT; recount the table.
 - [ ] **D1 — LaTeX draft of the §2.2 comparison table** (`Thesis Proposal/drafts/tab-separators.tex`, full-text rows, keys from `refs.bib`).
-- [ ] **D2 — gaps from `triage.md`:** activity/thermodynamic-factor data for ZnSO₄ (Pitzer & Mayorga 1974 and newer); modelling of HER, corrosion, ZHS precipitation (2–4 papers).
+- [ ] **D2 — gaps from `triage.md`:** activity/thermodynamic-factor data for ZnSO₄ (Pitzer & Mayorga 1974 and newer) → T6; HER/ZHS modelling done (T2).
 - [ ] **D3 — paragraph outline §2.1–§2.6** (claim · evidence with numbers · citation keys; ends with the gap statement; §2 order changed 12 Nov, mapping in the matrix header). In `../Thesis Proposal/drafts/outline-sec2.md`, one section at a time with student review: §2.1 (12 Nov) and §2.2 (13 Nov) reviewed and tagged; §2.3–§2.6 only as one-line paragraph plans, then prose.
 - [ ] **D4 — consistency audit:** matrix vs `notes/parameters.md` and `paper-summary.md`.
 - [ ] **D5 — σ–t₊ figure** (GF → modified, full-text rows), optional.
