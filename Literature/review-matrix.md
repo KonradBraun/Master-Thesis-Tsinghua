@@ -117,7 +117,7 @@ SI of full-text papers:
 
 ## §2.3 Nanodiamonds and carbon nanomaterials in Zn batteries
 
-**State (10 Nov):** 20 items tagged `lr-2.3` (10 existing + 9 new + Zhang 2024 ACS AMI from §2.2): 15 full text, 4 abstract only, 1 needs access (Volkov, Mochalin, Bradac, Wang 2024, Chen 2024 → full text, 11 Nov). 9 CN / 10 INT / 1 unknown. "via X" = number read in source X, not in the paper itself.
+**State (10 Nov):** 20 items tagged `lr-2.3` (10 existing + 9 new + Zhang 2024 ACS AMI from §2.2): 16 full text, 3 abstract only, 1 needs access (Volkov, Mochalin, Bradac, Wang 2024, Chen 2024 → full text, 11 Nov; Liu 2024, 13 Nov). 9 CN / 10 INT / 1 unknown. "via X" = number read in source X, not in the paper itself.
 
 ### ND surface chemistry, termination, zeta potential
 | Ref | CN | What | Key numbers (location) | Rel. | Status |
@@ -139,7 +139,7 @@ SI of full-text papers:
 | Zhang 2024 ACS AMI (→ §2.2) | CN (co-corr. UK) | DND (5–10 nm, –OH/–COOH) dip-coated on GF | t₊ 0.13 → 0.45; ~1800 (110) h @5/1; no ζ, no simulation | high | full-text-read |
 | [Ding 2026 Adv. Sci.](https://doi.org/10.1002/advs.202518714) | CN | Oxidised ND as electrolyte additive; **ζ vs ZnSO₄ concentration**; COMSOL cell-level | ζ ~−41 mV in water (Fig. S3), ~−10 mV at 0.5 m, ~0 at ~1.5 m, positive above (Fig. 2f); t₊ 0.52 → 0.73 (Fig. S9); σ 43.9 → 41.2 mS cm⁻¹ (Fig. S7); Zn//Zn 1800 h @1/1 (Fig. 5c); SI: GF/D, 100 µm Zn, ζ method only — no value at 2 m beyond Fig. 2f; COMSOL setups see §2.4 B1 | high | full-text-read (SI read) |
 | [Zhu 2026 Adv. Sci.](https://doi.org/10.1002/advs.202516623) | CN | DND additive (0.1 wt%) in ZnSO₄/Zn(OTf)₂ | t₊ 0.20 → 0.87 (Fig. 2I); DFT −1.11 vs −0.67 eV (Fig. 3D,E); Zn//Zn > 3300 (1000) h @5 mA cm⁻² (Fig. 4C) | medium | full-text-read |
-| [Liu 2024 Adv. Energy Mater.](https://doi.org/10.1002/aenm.202401479) | CN | ND interfacial layer on Zn and Cu; nucleation sites | ~10¹² nucleation sites cm⁻²; Zn//Zn > 3600 h @1 mA cm⁻² (abs) | high | abstract-only (OA copy exists) |
+| [Liu 2024 Adv. Energy Mater.](https://doi.org/10.1002/aenm.202401479) | CN | ND interfacial layer on Zn and Cu; nucleation sites | H-terminated ND (Raman, Fig. S1 per text) blade-cast with PVDF, microchannels (Fig. 1c); **layer 5.8 µm** chosen over 1.6 / 14 µm by symmetric-cell life (Fig. 1d, S2, S3); insulating — no Zn on top even at 10 mA cm⁻² (Fig. S8); contact angle 93.4 → 53° (text); "~10¹² nucleation sites cm⁻²" **asserted, derivation not in the main text** (appears next to DFT surface/adsorption energies, Fig. 1f — basis unclear, inference); **ζ not reported**; Zn//Zn > 3600 h @1 mA cm⁻², > 1000 h @10 mA cm⁻²; Zn//Cu-ND CE 99.5 % over 1100 cyc (abs, conclusions); electrolyte and Experimental section only in the SI (not read) | high | full-text-read (published version, PolyU repository) |
 | [Wang 2024 Adv. Funct. Mater.](https://doi.org/10.1002/adfm.202315757) | CN | ND rolled into Zn foil as seeds; carboxyl groups; COMSOL with ND particles resolved | Zn//Zn > 4100 (bare 628) h @1/0.5 (Fig. 2a); CE 99.7 % (abs); COMSOL: Zn bumps d 0.25 µm, **ND particles d 100 nm**, Maxwell + Nernst–Planck over 10 min (Methods) | high | full-text-read (SI not) |
 | [Chen 2024 ACS Nano](https://doi.org/10.1021/acsnano.4c01054) | CN | Amorphous–crystalline dual-phase ND coating (NDPD) on Zn: hardness + Zn affinity | hardness 77.8 GPa (Fig. 1f); Zn//Zn > 3200 h @5/1 (abs); NDPD‖Cu-MnO₂ 110.5 mAh g⁻¹ after 1000 cyc (text); ζ, termination not found in text | high | full-text-read (SI not) |
 | [Cheng 2017 Nat. Commun.](https://doi.org/10.1038/s41467-017-00519-2) | INT | ND electrolyte additive vs Li dendrites | Li‖Li 150 h @2, 200 h @1 mA cm⁻² (abs) | medium | abstract-only |
@@ -155,8 +155,10 @@ SI of full-text papers:
 - **Surface-site densities for a boundary condition** (order of magnitude): acid groups 0.55–1.47 mmol g⁻¹ (Kulakova), ~3.3 sites nm⁻² (Paci, calc), OH ~1 nm⁻² (Girard), Zn²⁺ uptake > 100 µmol g⁻¹ (Volkov via Shalumon).
 - **Gap:** no continuum model resolves an ND layer or ND-coated fibres; the nearest analogue (Zhang 2024 ACS AMI) has no simulation; Ding 2026 uses COMSOL only at cell level. Zn–ND work is CN-dominated (one Jilin superhard-materials group accounts for 2 of the ND papers here plus Zhang 2024 Commun. Chem., not added); the ND surface-chemistry basics are all INT.
 
+Proposed `use-*` (T4): Liu 2024 `use-core` (closest ND-coating precedent: thickness optimum 5.8 µm, but no ζ and an underived site density — a gap the model can address).
+
 ### Needs access — §2.3
-- 10.1002/aenm.202401479 (Liu 2024, OA copy at PolyU) — ND layer thickness, ζ, calculation method
+- 10.1002/aenm.202401479 (Liu 2024) — main text read 13 Nov; SI (Wiley, blocked for Claude) only if the electrolyte or the 10¹² cm⁻² derivation is needed
 
 ## §2.4 Simulation of Zn deposition and separators
 
@@ -313,7 +315,7 @@ CN = corresponding (lead) author's institution in mainland China/HK/Macau — th
 | §1 | 8 | 1 | 6 | 1 | 1 / 5 / 2 |
 | §2.1 | 13 | 6 | 6 | 1 | 6 / 7 / 0 |
 | §2.2 | 46 | 36 | 7 | 3 | 28 / 16 / 2 |
-| §2.3 | 20 | 9 | 10 | 1 | 15 / 4 / 1 |
+| §2.3 | 20 | 9 | 10 | 1 | 16 / 3 / 1 |
 | §2.4 | 38 | 10 | 27 | 1 | 34 / 3 / 1 |
 | **unique** | **124** | **61** | **56** | **7** | (Zhang 2024 ACS AMI counted in §2.2 and §2.3) |
 
