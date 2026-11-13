@@ -34,19 +34,18 @@ The broad search is done; this round closes specific gaps, in the order the prop
 - [x] **T4 (§2.4, part of C1):** done 13 Nov (PolyU repository, published version) — layer 5.8 µm (1.6/14 µm worse); ζ not reported; 10¹² cm⁻² sites asserted without derivation in the main text; SI not read.
 - [x] **T5 (§1, part of C1):** done 13 Nov — Mongird Tab. 7 read (Li-ion 271 $/kWh, 3500 cyc; Zn hybrid 265 $/kWh, RTE 0.72, TRL 5); Wang 2025, Olivetti, Feng blocked → student list; §1 synthesis updated.
 - [x] **T6 (§4/§5, = D2 part 1):** done 13 Nov — Pitzer & Mayorga 1974 Table I (published PDF via Zotero) → thermodynamic factor ≈ 1.04 at 2 M (0.73–1.36 over 1.5–2.5 mol/kg); row in `notes/parameters.md`; Miladinović 2003 (0.1–4.3 mol/kg) added, not read.
-- [ ] **T7 (= C2):** verify every † number, but only for items tagged `use-core` or `use-context`.
+- [x] **T7 (= C2):** done 13 Nov — only Zhao 2024 CCL (`use-core`) had a † number; σ 10.1 → 13.7 mS cm⁻¹ found in its main text (Fig. 2f,g) → σ–t₊ count now 4 vs 8. Remaining † items (Luo 2025, Si, Wang 2024 Small, Cao, Lin, Liu 2022, Zhou 2021) carry neither `use-core` nor `use-context` — verify only if they get promoted.
 - [ ] **T8 (= C3):** resolve `origin-unknown` for `use-core`/`use-context` items; recount the CN/INT table for those items only.
 - [ ] **T9 (optional):** 1–2 clearly relevant papers from Chinese-language journals (Zn separators, ND, or Zn deposition modelling), tagged `CN` — only if they add content.
 
 When all tasks are ticked: one summary line here ("Targeted round finished <date>: …") and stop the loop.
 
 ## Open tasks (priority first)
-B1, D2 done (T1, T2, T6 — 13 Nov); C1–C3 are scheduled in the targeted round above (T1–T8).
+B1, C2, D2 done (T1, T2, T6, T7 — 13 Nov); C1 and C3 are scheduled in the targeted round above (T1–T8).
 - [ ] **PDF processing (ongoing).** New files in `Literature/manual download/` → `bash tools/pdf2txt.sh "Literature/manual download"`; check for "Figure S1" captions before assuming an SI is included. Per paper: matrix row, §2.2 comparison-table fields (GF grade, Zn thickness → DOD, σ/t₊ with method and ΔV, Zn//Zn life at j/Q with GF control, CE, simulation setup), needs-access list, Zotero tag + note. Processed: everything in the folder as of 11 Nov (31 PDFs incl. 2 duplicate SI files, 2 Wiley .docx SI — read via `zipfile`, no conversion needed).
 - [x] **B2 — test-condition practice for Zn anodes:** Li 2022 Joule, Yu 2023 (full text 11 Nov), Li 2022 soft shorts, Wu 2024, Dong 2022, Guo 2025 → covered in §2.1 ¶4 and §2.2 ¶6.
 - [ ] **B3 — alternatives to GF (context, 5–8 papers):** cellulose, polymer membranes, ultrathin separators vs a GF control. Unverified leads: 10.1016/j.ensm.2021.10.002, 10.1002/adma.202304667, 10.1002/adfm.202316619, 10.1002/aenm.202101299, 10.1063/5.0214281. → short subsection in §2.2.
 - [ ] **C1 — OA full texts of abstract-only items:** 10.1039/d5nh00172b · 10.1039/d5eb00142k · 10.3390/batteries9070387 · 10.1038/s41467-017-00519-2 · 10.3389/fchem.2022.899810.
-- [ ] **C2 — verify every † number** in the matrix against abstract or full text.
 - [ ] **C3 — resolve `origin-unknown` items** (10 left) → CN/INT; recount the table.
 - [ ] **D1 — LaTeX draft of the §2.2 comparison table** (`Thesis Proposal/drafts/tab-separators.tex`, full-text rows, keys from `refs.bib`).
 - [ ] **D3 — paragraph outline §2.1–§2.6** (claim · evidence with numbers · citation keys; ends with the gap statement; §2 order changed 12 Nov, mapping in the matrix header). In `../Thesis Proposal/drafts/outline-sec2.md`, one section at a time with student review: §2.1 (12 Nov) and §2.2 (13 Nov) reviewed and tagged; §2.3–§2.6 only as one-line paragraph plans, then prose.
