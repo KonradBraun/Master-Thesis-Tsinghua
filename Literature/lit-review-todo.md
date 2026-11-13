@@ -5,7 +5,8 @@ Living list, carried over from the night loop of 10 Nov 2026. Results go into `r
 ## For the student — next steps (11 Nov)
 1. **Optional SI downloads** (only if B1 needs more detail): Su 2022 AFM https://doi.org/10.1002/adfm.202204306 (Wiley → "Supporting Information" at the end) · Gou 2025 https://doi.org/10.1016/j.jechem.2024.09.047 (Elsevier → "Appendix A. Supplementary data").
 2. **Download (T2, 13 Nov) into `manual download/`:** Rana 2025 Joule https://doi.org/10.1016/j.joule.2025.102167 (main text + SI: interfacial pH model, HER parameters) · optional Rana 2026 AEM https://doi.org/10.1002/aenm.202503630 (HER kinetic values on Zn).
-3. **Ask the group (WeChat, low priority):** sp²/sp³/C–O/C=O fractions from the XPS fit behind Zhang 2026 ACS Nano Fig. 2D — only needed if ND surface chemistry becomes a model parameter.
+3. **Download for §1 (T5, 13 Nov)** — gold/bronze OA but publishers block Claude: Wang 2025 https://doi.org/10.1016/j.enrev.2024.100117 (BESS accident counts, vent gas, suppression) · Olivetti 2017 https://doi.org/10.1016/j.joule.2017.08.019 (Li/Co supply numbers) · Feng 2018 https://doi.org/10.1016/j.ensm.2017.05.013 (paywalled; thermal-runaway temperatures, only if §1 needs them).
+4. **Ask the group (WeChat, low priority):** sp²/sp³/C–O/C=O fractions from the XPS fit behind Zhang 2026 ACS Nano Fig. 2D — only needed if ND surface chemistry becomes a model parameter.
 
 Done 11 Nov: Zotero cleanup (62 misplaced PDF copies on Shao DML59VLW → Trash; all had their own items with PDFs; Shao's own PDF attached); filtering scheme decided (`use-*` tags, criteria in `review-matrix.md` header).
 
@@ -31,7 +32,7 @@ The broad search is done; this round closes specific gaps, in the order the prop
 - [x] **T2 (§2.3, = D2 part 2):** done 13 Nov — Herrmann 2023 (ZHS/pH speciation, cathode), Zhang 2018 (HER as BV side reaction, COMSOL, acid), Rana 2025 Joule + Rana 2026 AEM (paywalled → student list); no coupled HER–pH–ZHS anode model in ZnSO₄ found; table + synthesis in matrix §2.4.
 - [x] **T3 (§2.3, part of C1):** done 13 Nov (Europe PMC) — Han: 10 mM CuSO₄, 300–400 nm pores, effect only above limiting current, none at 1 M; Tikekar: needs fixed-anion fraction ~0.1 of salt, Li solid electrolyte theory; rows + §2.4 synthesis upgraded.
 - [x] **T4 (§2.4, part of C1):** done 13 Nov (PolyU repository, published version) — layer 5.8 µm (1.6/14 µm worse); ζ not reported; 10¹² cm⁻² sites asserted without derivation in the main text; SI not read.
-- [ ] **T5 (§1, part of C1):** Mongird 2020 (10.3390/en13133307, OA): $/kWh and cycle life per technology incl. Li-ion and zinc; Wang 2025 Energy Rev. (10.1016/j.enrev.2024.100117, OA): key safety statements; Olivetti 2017 and Feng 2018 → student list if paywalled. Update the matrix §1 synthesis.
+- [x] **T5 (§1, part of C1):** done 13 Nov — Mongird Tab. 7 read (Li-ion 271 $/kWh, 3500 cyc; Zn hybrid 265 $/kWh, RTE 0.72, TRL 5); Wang 2025, Olivetti, Feng blocked → student list; §1 synthesis updated.
 - [ ] **T6 (§4/§5, = D2 part 1):** ZnSO₄ activity / osmotic coefficients up to ~2–3 mol kg⁻¹ (Pitzer & Mayorga 1974 and newer) → thermodynamic factor at 2 M; new row in `notes/parameters.md` with source and status.
 - [ ] **T7 (= C2):** verify every † number, but only for items tagged `use-core` or `use-context`.
 - [ ] **T8 (= C3):** resolve `origin-unknown` for `use-core`/`use-context` items; recount the CN/INT table for those items only.
@@ -44,7 +45,7 @@ B1 done (T1, 13 Nov); C1–C3 and D2 are scheduled in the targeted round above (
 - [ ] **PDF processing (ongoing).** New files in `Literature/manual download/` → `bash tools/pdf2txt.sh "Literature/manual download"`; check for "Figure S1" captions before assuming an SI is included. Per paper: matrix row, §2.2 comparison-table fields (GF grade, Zn thickness → DOD, σ/t₊ with method and ΔV, Zn//Zn life at j/Q with GF control, CE, simulation setup), needs-access list, Zotero tag + note. Processed: everything in the folder as of 11 Nov (31 PDFs incl. 2 duplicate SI files, 2 Wiley .docx SI — read via `zipfile`, no conversion needed).
 - [x] **B2 — test-condition practice for Zn anodes:** Li 2022 Joule, Yu 2023 (full text 11 Nov), Li 2022 soft shorts, Wu 2024, Dong 2022, Guo 2025 → covered in §2.1 ¶4 and §2.2 ¶6.
 - [ ] **B3 — alternatives to GF (context, 5–8 papers):** cellulose, polymer membranes, ultrathin separators vs a GF control. Unverified leads: 10.1016/j.ensm.2021.10.002, 10.1002/adma.202304667, 10.1002/adfm.202316619, 10.1002/aenm.202101299, 10.1063/5.0214281. → short subsection in §2.2.
-- [ ] **C1 — OA full texts of abstract-only items:** 10.1039/d5nh00172b · 10.1039/d5eb00142k · 10.3390/batteries9070387 · 10.3390/en13133307 (cost/cycle-life for §1) · 10.1016/j.enrev.2024.100117 · 10.1038/s41467-017-00519-2 · 10.3389/fchem.2022.899810.
+- [ ] **C1 — OA full texts of abstract-only items:** 10.1039/d5nh00172b · 10.1039/d5eb00142k · 10.3390/batteries9070387 · 10.1038/s41467-017-00519-2 · 10.3389/fchem.2022.899810.
 - [ ] **C2 — verify every † number** in the matrix against abstract or full text.
 - [ ] **C3 — resolve `origin-unknown` items** (10 left) → CN/INT; recount the table.
 - [ ] **D1 — LaTeX draft of the §2.2 comparison table** (`Thesis Proposal/drafts/tab-separators.tex`, full-text rows, keys from `refs.bib`).
@@ -54,4 +55,4 @@ B1 done (T1, 13 Nov); C1–C3 and D2 are scheduled in the targeted round above (
 - [ ] **D5 — σ–t₊ figure** (GF → modified, full-text rows), optional.
 
 ## Access notes
-Europe PMC `fullTextXML` for OA papers; Springer SI via `static-content.springer.com`; Wiley SI blocked; IOP/ECS OA PDFs via curl — details in `../notes/claude-notes.md`.
+Europe PMC `fullTextXML` for OA papers; Springer SI via `static-content.springer.com`; Wiley SI blocked; IOP/ECS OA PDFs via curl — details in `../notes/claude-notes.md`. MDPI PDFs: `mdpi-res.com/d_attachment/...` with a browser user agent (mdpi.com/.../pdf is blocked). OA status and repository copies: OpenAlex `api.openalex.org/works/doi:<DOI>` (found Liu 2024 at PolyU). Elsevier/Cell (even gold/bronze OA) and DOAJ are blocked for curl and web-fetch → student list (13 Nov).

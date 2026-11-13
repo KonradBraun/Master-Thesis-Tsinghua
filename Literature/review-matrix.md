@@ -291,7 +291,7 @@ Proposed `use-*` (T2): Herrmann 2023 `use-core` (ZHS/pH modelling precedent), Zh
 
 ## §1 Background
 
-**State (10 Nov):** 8 items tagged `lr-1`: 1 CN / 6 INT / 1 unknown; 1 full text (Liang 2022), 5 abstract only, 2 needs access. Cost/cycle-life numbers still need a full text (Mongird 2020, OA).
+**State (10 Nov):** 8 items tagged `lr-1`: 1 CN / 6 INT / 1 unknown; 2 full text (Liang 2022, Mongird 2020 — 13 Nov), 3 abstract only, 3 needs access (Olivetti, Feng, Wang 2025 → student list).
 
 | Ref | CN | What | Key numbers (location) | Rel. | Status |
 |---|---|---|---|---|---|
@@ -300,19 +300,20 @@ Proposed `use-*` (T2): Herrmann 2023 `use-core` (ZHS/pH modelling precedent), Zh
 | [Ziegler 2019 Joule](https://doi.org/10.1016/j.joule.2019.06.012) | INT | Storage costs for wind/solar baseload | ~US$20 kWh⁻¹ target (abs) | medium | abstract-only |
 | [Olivetti 2017 Joule](https://doi.org/10.1016/j.joule.2017.08.019) | INT | Li-ion supply-chain bottlenecks (Li, Co, Ni) | n/r | medium | needs-access |
 | [Liang 2022 Nat. Rev. Mater.](https://doi.org/10.1038/s41578-022-00511-3) | INT | Designing modern aqueous batteries | Ni–Cd phased out for toxicity and stagnating energy density (35 Wh kg⁻¹); Zn metal named as next alkaline anode, higher energy and cheaper (text) | high | full-text-read |
-| [Mongird 2020 Energies](https://doi.org/10.3390/en13133307) | INT | PNNL/ANL/ORNL cost and performance of 6 battery types (incl. Li-ion, zinc-hybrid cathode) + non-battery storage, 2018 → 2025 | n/r in abs; $/kWh and cycle-life tables in the OA full text | high | abstract-only (OA) |
-| [Wang 2025 Energy Rev.](https://doi.org/10.1016/j.enrev.2024.100117) | CN | Li-ion safety in energy storage: thermal runaway, propagation, vent gas, fire/explosion, suppression | n/r (no consensus on BESS suppression strategies) | medium | abstract-only (OA) |
+| [Mongird 2020 Energies](https://doi.org/10.3390/en13133307) | INT | PNNL/ANL/ORNL cost and performance of 6 battery types (incl. Li-ion, zinc-hybrid cathode) + non-battery storage, 2018 → 2025 | Tab. 7 (p. 11), 2018 (2025), E/P 4 h: **Li-ion** capital 271 (189) $/kWh, total project 469 (362) $/kWh, RTE 0.86, 3500 cycles at 80 % DoD, 10 yr, TRL 8 (9); **zinc-hybrid cathode** (EoS "Znyth", near-neutral aqueous, non-flammable, §5.7) 265 (192), total 551 (433) $/kWh, RTE 0.72, 3500 cycles, 10 yr, TRL 5 (7); lead acid 900 cycles, total 549 (464); redox flow 10 000 cycles, total 858 (650) $/kWh | high | full-text-read |
+| [Wang 2025 Energy Rev.](https://doi.org/10.1016/j.enrev.2024.100117) | CN | Li-ion safety in energy storage: thermal runaway, propagation, vent gas, fire/explosion, suppression | n/r (no consensus on BESS suppression strategies) | medium | needs-access (gold OA, but Elsevier blocks automated download, 13 Nov) |
 | [Feng 2018 Energy Storage Mater.](https://doi.org/10.1016/j.ensm.2017.05.013) | ? | Standard review of the Li-ion thermal-runaway mechanism (EV focus) | 4215 Crossref citations (10 Nov 2026) | medium | needs-access |
 
 ### Synthesis (argument chain)
-- Grid and long-duration storage need very low energy-capacity cost, ≤ US$20 kWh⁻¹ (Sepulveda 2021; Ziegler 2019), plus safety and long life (Dunn 2011). Li-ion faces resource limits and flammable electrolytes (Olivetti 2017, needs access; Dong 2022 p. 1); thermal runaway, vent-gas and fire hazards in stationary BESS lack an agreed suppression strategy (Wang 2025; Feng 2018 for the mechanism). Cost and cycle life per technology: Mongird 2020 (full text needed). AZIBs offer cheap Zn (US$2 vs 19 kg⁻¹ Li, Cui 2025), water-based electrolyte and air assembly, at 60–80 Wh kg⁻¹ (Dong 2022) → stationary, not EV. The Zn anode is the bottleneck (Dong 2022; Yu 2023; Li 2022) → §2.1.
+- Grid and long-duration storage need very low energy-capacity cost, ≤ US$20 kWh⁻¹ (Sepulveda 2021; Ziegler 2019), plus safety and long life (Dunn 2011). Li-ion faces resource limits and flammable electrolytes (Olivetti 2017, needs access; Dong 2022 p. 1); thermal runaway, vent-gas and fire hazards in stationary BESS lack an agreed suppression strategy (Wang 2025; Feng 2018 for the mechanism). Cost and cycle life per technology (Mongird 2020, Tab. 7, 2018 values, 4 h systems): Li-ion US$271 kWh⁻¹ capital / 469 total, RTE 0.86, 3500 cycles at 80 % DoD; the only Zn system (near-neutral aqueous Zn hybrid, EoS) is about as cheap per kWh (265 / 551) but less efficient (RTE 0.72) and much less mature (TRL 5 vs 8) → all battery capital costs are ≥ 13× the ≤ US$20 kWh⁻¹ long-duration target (calc; different cost bases — Sepulveda's energy-capacity cost vs Mongird's capital cost, inference); AZIB appeal is safety and materials, not yet cost (own assessment).
+Proposed `use-*` (T5): Mongird 2020 `use-core`. AZIBs offer cheap Zn (US$2 vs 19 kg⁻¹ Li, Cui 2025), water-based electrolyte and air assembly, at 60–80 Wh kg⁻¹ (Dong 2022) → stationary, not EV. The Zn anode is the bottleneck (Dong 2022; Yu 2023; Li 2022) → §2.1.
 
 ## CN vs international (Zotero tags, recounted 11 Nov)
 CN = corresponding (lead) author's institution in mainland China/HK/Macau — the student's interpretation of "Chinese literature", not yet confirmed by the supervisor. All items are English-language; no Chinese-language papers so far.
 
 | Section | Items | CN | INT | unknown | full text / abstract / needs access |
 |---|---|---|---|---|---|
-| §1 | 8 | 1 | 6 | 1 | 1 / 5 / 2 |
+| §1 | 8 | 1 | 6 | 1 | 2 / 3 / 3 |
 | §2.1 | 13 | 6 | 6 | 1 | 6 / 7 / 0 |
 | §2.2 | 46 | 36 | 7 | 3 | 28 / 16 / 2 |
 | §2.3 | 20 | 9 | 10 | 1 | 16 / 3 / 1 |
