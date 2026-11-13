@@ -47,7 +47,7 @@ Bimetallic MOF glass fiber (Li–S) · Current density driven texture evolution 
 - **"Chinese literature"**: 54 CN / 45 INT / 12 unknown of 111 tagged items (CN = Chinese corresponding institution); all English-language — meaning still to clarify with the supervisor
 - **Continuum/FEM models of separators in metal batteries** — theory and Li analogues found (charged pores, immobilised anions, phase field with separator/coating); still **no Zn separator model with surface properties** (= the thesis gap, not a search gap)
 - **Pore-scale / 2D GF models** — only Li-ion/Li-metal analogues (tomography networks, phase field vs pore size); none for GF/Zn
-- **Thermodynamic factor ZnSO₄** (Pitzer & Mayorga 1974) — for CET
+- ~~Thermodynamic factor ZnSO₄~~ — closed 13 Nov (T6): Pitzer & Mayorga 1974 → ≈ 1.04 at 2 M, in `notes/parameters.md`
 - *(option)* Zn corrosion/HER modelling in mildly acidic electrolytes — searched 13 Nov (T2): Zhang 2018 electrowinning + Herrmann 2023 ZHS/pH added; no coupled anode model found; Rana 2025 Joule pending download
 - **§1 motivation** — 8 items incl. BESS safety review and PNNL cost/performance paper; their numbers still need the full texts
 - **Full texts** — needs-access lists per section in `review-matrix.md` (Phase 2)

@@ -162,7 +162,7 @@ Proposed `use-*` (T4): Liu 2024 `use-core` (closest ND-coating precedent: thickn
 
 ## §2.4 Simulation of Zn deposition and separators
 
-**State (13 Nov):** 38 items tagged `lr-2.4` (15 existing + 11 new + 4 B1 papers, 11 Nov; + 4 T1 critique/V&V + 4 T2 HER/pH papers, 13 Nov): 34 full text, 3 abstract only, 1 needs access. 10 CN / 27 INT / 1 unknown. COMSOL use *inside* separator papers: subsection below (B1).
+**State (13 Nov):** 40 items tagged `lr-2.4` (15 existing + 11 new + 4 B1 papers, 11 Nov; + 4 T1 critique/V&V + 4 T2 HER/pH + 2 T6 activity-data papers, 13 Nov): 35 full text, 4 abstract only, 1 needs access. 10 CN / 29 INT / 1 unknown. T6 numbers (thermodynamic factor) live in `notes/parameters.md`, not here. COMSOL use *inside* separator papers: subsection below (B1).
 
 ### Continuum models, charged pores, separator microstructure
 | Ref | CN | What | Model / key numbers (location) | Rel. | Status |
@@ -256,7 +256,7 @@ Proposed `use-*` (T2): Herrmann 2023 `use-core` (ZHS/pH modelling precedent), Zh
 - **BV t₊ is not a calibration target.** BV is exact only at infinite dilution (Shao 2023); multivalent salts: i_ss/i₀ = t₊ only when dilute, otherwise a parameter Ne from all transport coefficients (Balsara 2015) and a common reference frame (Gao 2022); Zn interfaces drift during the test (Yang 2024) and sampling times bias the result (Lin 2024); BV for near-identical Zn electrolytes spans 0.2–0.7 (Gomez Vazquez 2025). → use Hittorf/EMF electrolyte data (Purser & Stokes 1951, Dye 1960) as input and simulate the BV protocol itself (model 04), comparing only trends.
 - **Field maps in Zn papers are unverified illustrations** (B1 synthesis above: no mesh study or quantitative validation in 14 papers; tip maxima are mesh-dependent singularities, Shah 2020; tip effect overstated in 2D, Jang 2021) → reporting BCs, parameters, mesh study and sensitivity is itself a contribution.
 - **HER, pH and ZHS are modelled only in pieces** (T2 table: HER as BV side reaction in acid electrowinning, Zhang 2018; ZHS/pH equilibria at the cathode, Herrmann 2023) — no coupled anode model in ZnSO₄ found → optional extension of model 04; HER kinetics on Zn in ZnSO₄ still unsourced.
-- **Who:** 10 CN / 27 INT / 1 unknown — method development (Sand's time, PF quantification, t₊ methodology) is mostly INT; Zn PF applications in COMSOL are mostly CN.
+- **Who:** 10 CN / 29 INT / 1 unknown — method development (Sand's time, PF quantification, t₊ methodology) is mostly INT; Zn PF applications in COMSOL are mostly CN.
 
 ### Needs access — §2.4
 - 10.1016/j.joule.2025.102167 (Rana 2025 Joule) — interfacial pH vs current, HER model and parameters
@@ -317,7 +317,7 @@ CN = corresponding (lead) author's institution in mainland China/HK/Macau — th
 | §2.1 | 13 | 6 | 6 | 1 | 6 / 7 / 0 |
 | §2.2 | 46 | 36 | 7 | 3 | 28 / 16 / 2 |
 | §2.3 | 20 | 9 | 10 | 1 | 16 / 3 / 1 |
-| §2.4 | 38 | 10 | 27 | 1 | 34 / 3 / 1 |
-| **unique** | **124** | **61** | **56** | **7** | (Zhang 2024 ACS AMI counted in §2.2 and §2.3) |
+| §2.4 | 40 | 10 | 29 | 1 | 35 / 4 / 1 |
+| **unique** | **126** | **61** | **58** | **7** | (Zhang 2024 ACS AMI counted in §2.2 and §2.3) |
 
 Trend for the review: experimental separator/ND work is CN-dominated; GF-baseline studies, ND surface chemistry, method development (Sand's time, phase-field validation, t₊ methodology) and the grid-storage framing are mostly INT. Counting rule for refs cited in the proposal: re-count from the final bibliography.
