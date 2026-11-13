@@ -320,4 +320,6 @@ CN = corresponding (lead) author's institution in mainland China/HK/Macau — th
 | §2.4 | 40 | 10 | 29 | 1 | 35 / 4 / 1 |
 | **unique** | **126** | **61** | **58** | **7** | (Zhang 2024 ACS AMI counted in §2.2 and §2.3) |
 
+**Cited subset (`use-core` + `use-context`, recounted 13 Nov, T8):** 46 items — **31 CN / 15 INT / 0 unknown**. By section: §2.1 5 CN / 5 INT · §2.2 25 CN / 5 INT · §2.3 1 CN · §2.4 1 CN / 1 INT (section counts sum to 47: one item carries two `lr-*` tags, probably Zhang 2024 ACS AMI, inference) · parameter sources without `lr-*` tag 4 INT (Purser & Stokes 1951, Albright & Miller 1975, Price & Weingärtner 1991, Bešter-Rogač 2008 — affiliations from the PDFs / OpenAlex). The T1–T6 additions carry only *proposed* `use-*` tags and are not in this count yet.
+
 Trend for the review: experimental separator/ND work is CN-dominated; GF-baseline studies, ND surface chemistry, method development (Sand's time, phase-field validation, t₊ methodology) and the grid-storage framing are mostly INT. Counting rule for refs cited in the proposal: re-count from the final bibliography.
