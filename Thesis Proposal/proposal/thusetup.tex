@@ -38,6 +38,11 @@
 \usepackage{longtable}
 \usepackage{booktabs}
 \usepackage{siunitx}
+\usepackage{xcolor}
+
+% Draft marker for claims that still need a source (listed in Literature/lit-review-todo.md, T10).
+% Remove all uses before submission: grep for \citeneeded.
+\newcommand{\citeneeded}{\textsuperscript{\textcolor{red}{[source?]}}}
 
 % Bibliography: biblatex + biber, numeric (order of citation)
 \usepackage[backend=biber, style=thuthesis-numeric]{biblatex}

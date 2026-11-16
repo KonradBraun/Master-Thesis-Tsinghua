@@ -1,0 +1,121 @@
+% Long version of proposal Section 2.2 (14 Nov 2026), replaced in the proposal by the ~2-page version (page budget, student 14 Nov).
+% Kept only as material for the thesis literature chapter. Not reviewed by the student: do not reuse wording without review.
+% Every cited statement was checked against the full texts on 14 Nov (locations in ../../../Literature/review-matrix.md).
+
+\section{Separators for zinc metal anodes}
+\label{sec:separators}
+% Draft 14 Nov, unreviewed. Outline: ../drafts/outline-sec2.md §2.2. Every cited statement checked against the full text on 14 Nov
+% (locations in ../../Literature/review-matrix.md). Table: Song 2022 and Cha 2024 left out until their values are re-checked
+% (Cha: no full text at hand); the group's manuscript row waits for the supervisor's OK.
+
+This section first describes what a separator has to achieve in a zinc cell and through which transport quantities it acts on the anode.
+It then turns to the glass fibre separator that serves as the common baseline, to the ways in which it has been modified and to the mechanisms proposed for the resulting improvements, and finally asks what the reported values allow one to conclude.
+
+A separator keeps the two electrodes apart and prevents electronic contact between them, while the electrolyte in its pores carries the ionic current\cite{gu_role_2025}.
+For zinc cells, it should in addition offer a low resistance to ion transport and a high Zn$^{2+}$ transference number, remain chemically stable in the electrolyte, be wetted by it and be strong enough to withstand growing zinc dendrites\cite{gu_role_2025}.
+Three of these properties act directly on the conditions at the anode: the effective ionic conductivity, the transference number $t_+$ and the pore structure, which determines how uniformly the Zn$^{2+}$ flux is distributed over the anode surface\cite{gu_role_2025}.
+In a purely geometric picture, the conductivity of the electrolyte-filled separator equals the bulk conductivity of the electrolyte scaled by the ratio of porosity to tortuosity\cite{zahn_improving_2016}, so that a separator can only lower it.
+
+The transference number matters because the depletion of Zn$^{2+}$ in front of the anode during plating grows with the fraction of the current carried by the anions, $1-t_+$\cite{yang_dendrite_2025}.
+In the classical analysis, dendrites start to grow once the Zn$^{2+}$ concentration at the surface reaches zero, after the so-called Sand's time, which therefore increases with $t_+$\cite{yang_dendrite_2025}.
+For \SI{2}{M} ZnSO$_4$ with its bulk diffusion coefficient\cite{albright_mutual_1975} and transference number\cite{purser_transference_1951}, the classical Sand's time at \SI{2}{mA.cm^{-2}} is of the order of \SI{40}{h} (own estimate), far longer than the half hour of a plating step at \SI{1}{mAh.cm^{-2}}.
+Accordingly, one separator study lowered the concentration to \SI{0.01}{m} ZnSO$_4$ in order to test its separator under conditions in which Sand's time becomes short\cite{su_printingscalable_2022}.
+Dendrites are nevertheless often observed well before Sand's time, especially at low current densities, which has been attributed mainly to the interfacial kinetics neglected in the classical model\cite{yang_dendrite_2025}.
+At low current densities and areal capacities, the conditions are often below the transport limit, and dendrites have instead been described as a secondary consequence of hydrogen evolution and of the local precipitation of by-products it causes\cite{rana_electroanalytical_2025}.
+At the operating point of this work, the classical argument for a high $t_+$, the prevention of depletion, therefore does not apply directly.
+An effect of $t_+$ would rather have to act locally, for example where the current concentrates in individual pores, which is examined with the models of this work (Chapter~\ref{chap:methods}).
+
+The GF separator mentioned in Section~\ref{sec:zn-anode} consists of commercial glass microfibre filters, such as the widely used Whatman grades, which have become the benchmark in aqueous zinc battery research because of their good wettability, high porosity and chemical stability\cite{gu_role_2025}.
+These filters were, however, designed for filtration rather than for batteries\cite{gu_role_2025}.
+Their deficits have been summarised as a non-uniform pore size distribution, which leads to a heterogeneous Zn$^{2+}$ flux, a low mechanical strength because of weak bonding between the fibres, a thickness above \SI{250}{\um} and a high water retention that raises the amount of free water in the cell\cite{gu_role_2025}.
+A systematic comparison of four common grades in a zinc triflate electrolyte found that smaller pores increased the zinc capacity that symmetric cells accumulated before failure, by keeping zinc from depositing within the pores, whereas thicker grades extended the mean cycle life but increased the scatter between nominally identical cells\cite{hansen_role_2023}.
+Nearly all cells in that study, 79 out of 80, failed with a voltage collapse that indicates an internal short circuit by zinc dendrites rather than consumption of the electrolyte\cite{hansen_role_2023}.
+A result obtained with a GF separator is therefore defined only together with the grade and thickness that were used, which becomes important when results from different studies are compared.
+
+To overcome these deficits, the GF is coated, filled or replaced by other materials, which are grouped here into four families according to the property they mainly change.
+Charged or ion-selective layers, such as a sulfonated polymer laminated onto the GF\cite{sun_janus_2023} or negatively charged titanium oxide nanosheets\cite{tan_multiscale_2025}, are intended to hinder the transport of sulfate anions and water to the anode.
+Inorganic fillers, such as a metal--organic framework layer\cite{shao_selfrecognition_2025} or barium titanate particles that also fill the spaces between the fibres\cite{liang_novel_2022}, modify the fibre surfaces and the pore space.
+Carbon-based modifiers range from functional coatings such as graphitic carbon nitride\cite{luo_regulating_2024} to electronically conductive layers, which provide additional electron pathways, so that zinc is deposited on the separator itself\cite{lee_hydrophilic_2024}.
+Structural modifications, finally, change the thickness or the mechanics of the separator, as in a blend of glass fibres and bacterial cellulose about a quarter as thick as the GF it replaces\cite{huang_bacterial_2025} or a polymer coating that raises the tensile strength of the GF several times\cite{kim_mechanically_2025}.
+Nanodiamonds, the modifier studied in this work, belong to the carbon-based family and are treated separately in Section~\ref{sec:nanodiamonds}.
+For a model, the family determines what has to be represented: a fixed charge, a modified pore geometry, an electronically conducting phase or a changed structure of the separator as a whole (Section~\ref{sec:simulation}).
+
+Across these families, the improvements are explained with a small set of recurring mechanisms: a more uniform electric field and Zn$^{2+}$ flux at the anode, ion sieving, a preferred crystallographic orientation of the deposited zinc and a faster desolvation of Zn$^{2+}$\cite{gu_role_2025}.
+In many of the studies reviewed, these mechanisms are supported by density functional theory (DFT) calculations of adsorption energies\cite{luo_regulating_2024,yuan_synergistic_2025} and by simulated field distributions (Section~\ref{sec:simulation}), and a recent critical review concludes that the underlying mechanisms are often not fully elucidated\cite{gu_role_2025}.
+Ion sieving, for example, rests on a surface charge, which some studies report as a zeta potential\cite{tan_multiscale_2025,shao_selfrecognition_2025}.
+In \SI{2}{M} ZnSO$_4$, however, the Debye length is only about \SI{0.1}{nm} (own estimate for an ideal solution), much shorter than the micrometre-sized pores of GF\cite{hansen_role_2023}, so that a surface charge can act on the ions only in a thin layer at the pore walls or in very small pores, such as the subnanometre pores formed by vacancies in the titanium oxide nanosheets\cite{tan_multiscale_2025}.
+Surface charges of either sign have moreover been credited with a higher $t_+$: a negatively charged layer by restricting the passage of sulfate\cite{shao_selfrecognition_2025}, and a positively charged nanocellulose by binding sulfate to its cationic groups, which in that study gave a higher $t_+$ than a negatively charged nanocellulose with similar mesopores\cite{zhang_cationic_2023}.
+Where a modified separator is reported to suppress hydrogen evolution or corrosion, the evidence consists mainly of linear sweep voltammetry and Tafel plots of cells with the plain and the modified separator\cite{zhao_separator_2024,shao_selfrecognition_2025}, in one case complemented by in situ pH monitoring\cite{shao_selfrecognition_2025}.
+In another study, the suppression of hydrogen evolution was shown in a zinc-free sodium sulfate solution\cite{yuan_synergistic_2025}, a type of measurement that has been questioned because hydrogen evolution and zinc deposition are coupled and should be measured together\cite{rana_electroanalytical_2025}.
+Such measurements show the combined effect of a modified separator on the anode; which of its properties causes the change is not isolated by them.
+
+Almost all studies that report $t_+$ find a higher value with the modified separator and present it as one reason for the longer cycle life\cite{luo_regulating_2024,yuan_synergistic_2025}.
+Since every modification also changes the pore structure, the wettability or the mechanics of the separator, the effect of $t_+$ on the cycle life cannot be separated from these changes in such comparisons.
+The closest attempt to isolate the effect of the surface charge kept the mesopore size of a nanocellulose separator unchanged, but its porosity, thickness and tensile strength changed as well\cite{zhang_cationic_2023}.
+For lithium-ion separators, the surface chemistry has been modified without changing the microstructure, and simulations attributed the better rate capability mainly to the higher $t_+$\cite{zahn_improving_2016}.
+A comparable separation for zinc separators was not found in the literature reviewed here.
+
+Table~\ref{tab:separators} compiles the conductivities $\sigma$ and transference numbers that studies of modified GF separators report for their own GF control and for the modified separator.
+The values for the GF control alone differ widely between studies: $t_+$ ranges from about 0.13 to 0.55, although most of these studies use the same \SI{2}{M} ZnSO$_4$ electrolyte.
+Part of this spread may come from different GF grades, which most studies do not state, and part from the measurement itself: for concentrated zinc chloride electrolytes of almost identical composition, Bruce--Vincent measurements have given transference numbers that differ by more than a factor of three\cite{gomez_vazquez_measuring_2025}.
+Even for the bulk electrolyte, published values of $t_+$ differ\cite{purser_transference_1951,cui_revealing_2025}.
+Improvement factors computed against the GF control therefore refer to different baselines, and only comparisons within one study are meaningful.
+The limitations of the Bruce--Vincent method are taken up again with the results of this work in Chapters~\ref{chap:methods} and~\ref{chap:difficulties}.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Ionic conductivity $\sigma$ and Zn$^{2+}$ transference number $t_+$ reported for the glass fibre control (GF) and the modified separator (mod.) in studies of modified GF separators, grouped by family. Values as reported in the main text or its figures.}
+  \label{tab:separators}
+  \small
+  \begin{threeparttable}
+  \begin{tabular}{@{}l>{\raggedright\arraybackslash}p{4.5cm}lll@{}}
+    \toprule
+    Study & Modification & Electrolyte & $\sigma$ GF $\to$ mod. (\si{mS.cm^{-1}}) & $t_+$ GF $\to$ mod. \\
+    \midrule
+    \multicolumn{5}{@{}l}{\emph{Charged or ion-selective layers}} \\
+    \parencite{sun_janus_2023} & Sulfonated polymer layer on GF/A & \SI{2}{M} ZnSO$_4$ & 24.99 $\to$ 17.17 & 0.33 $\to$ 0.58 \\
+    \parencite{tan_multiscale_2025} & Bacterial cellulose interlayer and Ti$_{0.87}$O$_2$ nanosheets & \SI{2}{M} ZnSO$_4$ & -- & 0.35 $\to$ 0.51 \\
+    \multicolumn{5}{@{}l}{\emph{Inorganic fillers}} \\
+    \parencite{shao_selfrecognition_2025} & Bismuth-based MOF (CAU-17) layer & \SI{2}{M} ZnSO$_4$ & 6.88 $\to$ 9.83 & 0.54 $\to$ 0.81 \\
+    \parencite{zhao_separator_2024} & Kaolin & n/s & 10.1 $\to$ 13.7 & 0.27 $\to$ 0.37 \\
+    \parencite{liu_ion-sieving_2024} & Halloysite nanotubes with PVDF, drop-cast & \SI{2}{M} ZnSO$_4$ & 66.61\tnote{a} $\to$ 49.81\tnote{a} & 0.22 $\to$ 0.71 \\
+    \parencite{liang_novel_2022} & BaTiO$_3$ particles on and between the fibres & \SI{2}{m} ZnSO$_4$ & -- & 0.24 $\to$ 0.69 \\
+    \parencite{yuan_synergistic_2025} & HfO$_2$/PVDF coating & \SI{2}{M} ZnSO$_4$ & 11.71 $\to$ 13.83 & 0.287 $\to$ 0.729 \\
+    \parencite{zhao_gradient_2025} & CeF$_3$ nanoparticles, gradient structure & \SI{2}{M} ZnSO$_4$ & -- & 0.28 $\to$ 0.57 \\
+    \multicolumn{5}{@{}l}{\emph{Carbon-based modifiers}} \\
+    \parencite{luo_regulating_2024} & Graphitic carbon nitride coating & n/s & 3.82 $\to$ 5.78 & 0.38 $\to$ 0.64 \\
+    \parencite{su_printingscalable_2022} & Ti$_3$C$_2$T$_x$ MXene on one side & n/s & 3.0 $\to$ 14.4 & -- \\
+    \parencite{zhang_ionsieving_2022} & Graphene sheets with sulfonated cellulose on one side & \SI{3}{m} ZnSO$_4$ & 19.7 $\to$ 23.9 & 0.553 $\to$ 0.826 \\
+    \parencite{zhang_modulating_2024} & Nanodiamonds & \SI{2}{M} ZnSO$_4$ & -- & 0.13 $\to$ 0.45 \\
+    \multicolumn{5}{@{}l}{\emph{Structural modifications}} \\
+    \parencite{huang_bacterial_2025} & Glass fibre and bacterial cellulose blend, replaces GF & \SI{2}{M} ZnSO$_4$ & 21 $\to$ 17 & 0.19 $\to$ 0.23 \\
+    \parencite{kim_mechanically_2025} & PVDF coating and plasma treatment on GF/C & \SI{2}{M} ZnSO$_4$ & 22.44 $\to$ 67.43\tnote{b} & 0.35 $\to$ 0.49\tnote{b} \\
+    \bottomrule
+  \end{tabular}
+  \begin{tablenotes}
+    \footnotesize
+    \item M = mol\,L$^{-1}$, m = mol\,kg$^{-1}$, as printed; n/s = not stated in the main text; -- = not reported in the main text.
+    \item[a] Unit printed as mS\,cm$^{-2}$.
+    \item[b] The conclusion of the same study gives \SI{67.43}{S.cm^{-1}} and $t_+ = 0.92$.
+  \end{tablenotes}
+  \end{threeparttable}
+\end{table}
+
+The conductivities show two further features.
+In two studies, the reported value exceeds the conductivity of the bulk \SI{2}{M} ZnSO$_4$ electrolyte\cite{cui_revealing_2025,bester-rogac_electrical_2008}, which is implausible for a porous separator with micrometre-sized pores and points to measurement or reporting errors\cite{liu_ion-sieving_2024,kim_mechanically_2025}.
+Moreover, the reported pairs of $\sigma$ and $t_+$ follow no consistent pattern.
+In some studies $\sigma$ falls while $t_+$ rises\cite{sun_janus_2023,huang_bacterial_2025}, as would be expected if the modification holds back the anions, but in more studies both rise together\cite{luo_regulating_2024,shao_selfrecognition_2025}.
+In the geometric picture, a coating that occupies part of the pore space should lower $\sigma$.
+For lithium-ion separators, a simultaneous rise of $\sigma$ and $t_+$ has been traced to the surface chemistry of the separator\cite{zahn_improving_2016}, while for the zinc separators changes in wetting and electrolyte uptake may contribute as well (own interpretation).
+One study even reports a much longer cycle life with a modified separator whose product $\sigma t_+$, the part of the conductivity carried by Zn$^{2+}$, is practically unchanged (own calculation from the reported values)\cite{huang_bacterial_2025}, which suggests that in this case structural changes rather than ion transport account for the improvement.
+
+% Overlap with §2.1 (test conditions) marked for the student's review (13 Nov): keep, shorten to a back-reference, or merge.
+The headline results of these studies are mostly obtained in symmetric cells at a few \si{mA.cm^{-2}} and about \SI{1}{mAh.cm^{-2}}.
+In two studies that state the zinc thickness, this corresponds to only about 2 and \SI{3}{\percent} of the zinc per cycle (own calculation)\cite{sun_janus_2023,kim_mechanically_2025}.
+Tests at a high DOD are rare: one study proposes a DOD of at least \SI{31}{\percent} as a benchmark, by analogy with commercial nickel--zinc and lithium-ion batteries\cite{zhang_ionsieving_2022}, and only a few studies report cycling under such conditions\cite{zhang_ionsieving_2022,shao_selfrecognition_2025}.
+A recent review accordingly notes that most studies have not tested separators under harsh conditions, often relying on thick zinc foils, and calls for standardised test protocols\cite{gu_role_2025}.
+Long symmetric-cell lifetimes can, moreover, also arise from soft shorts, small local electronic contacts between the electrodes that let part of the current bypass the interfacial reaction and that are hard to identify in symmetric cells\cite{li_soft_2022}.
+
+The separator literature thus offers comparisons within individual studies and a set of plausible mechanisms, but it rarely isolates or quantifies the contribution of a single mechanism.
+The same review calls for in situ techniques and theoretical simulations to explore these mechanisms\cite{gu_role_2025}; how zinc deposition and separators have been simulated so far is the subject of the next section.
+
