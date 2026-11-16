@@ -19,6 +19,7 @@ Short, only things a fresh session would otherwise get wrong. Not a log.
 - Run `tools\zotero2bib.ps1` from the PowerShell tool — `powershell -File` from Git Bash only opens a shell.
 - Student downloads named "SI …" can be main texts: check for "Figure S1" captions before assuming the SI is there.
 - PDFs: convert with `bash tools/pdf2txt.sh <folder>` → `<folder>/txt/`, read the .txt, not the PDF (far cheaper). Render single pages only when figures matter.
+- `pdf2txt.sh` deletes every `.txt` in `<folder>/txt/` without a same-named PDF. Texts from other routes (Europe PMC XML, Zotero-only PDFs, SI `.docx`) therefore live in `Literature/txt-extra/`; include it when searching all papers.
 
 ## COMSOL (tcd, 6.3)
 - Physics: "Tertiary Current Distribution, Nernst-Planck" is a group; pick the variant "Tertiary, Electroneutrality".

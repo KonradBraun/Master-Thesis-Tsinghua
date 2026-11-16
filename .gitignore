@@ -7,6 +7,7 @@
 # Literature PDFs and their text versions (copyright; kept in Zotero)
 Literature/Potential/
 Literature/manual download/
+Literature/txt-extra/
 
 # Group's confidential files (manuscript under review, SI, raw data)
 Literature/*.pdf
@@ -14,6 +15,7 @@ Literature/*.docx
 Literature/*.png
 Literature/group-data/
 data/
+!/Thesis Proposal/proposal/data/
 
 # LaTeX build output
 build/
