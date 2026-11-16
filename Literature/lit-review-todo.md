@@ -4,11 +4,13 @@ Living list, carried over from the night loop of 10 Nov 2026. Results go into `r
 
 ## For the student — next steps (11 Nov)
 1. **Delete** `manual download/d3ta06268f.pdf` (0 bytes; Lee 2024 JMCA is already there as "A hydrophilic Janus-faced separator with.pdf"). All other requested downloads arrived and were processed 13 Nov.
-2. **Ask the group (WeChat, low priority):** sp²/sp³/C–O/C=O fractions from the XPS fit behind Zhang 2026 ACS Nano Fig. 2D — only needed if ND surface chemistry becomes a model parameter.
+2. Done 14 Nov: Cha 2024, Zhang 2024 AEM, Zheng 2019, Blanc 2020, Tang 2019 downloaded, read and used (Cha row in Table 2.1, ζ point in §2.3); all sources cited in §2.1–§2.3 are now full text.
+3. **Download (16 Nov), into `manual download/`:** Kao et al., ACS Nano 17 (2023) 3948 — primary source of the ~1 % HER charge loss per cycle (in situ GC, Zn‖Zn, 2 m ZnSO₄, 1 mA cm⁻²) now cited via Rana AEM in §2.1; add to Zotero (DOI not yet looked up, Zotero MCP was offline) and cite directly.
+4. **Ask the group (WeChat, low priority):** sp²/sp³/C–O/C=O fractions from the XPS fit behind Zhang 2026 ACS Nano Fig. 2D — only needed if ND surface chemistry becomes a model parameter.
 
 Done 11 Nov: Zotero cleanup (62 misplaced PDF copies on Shao DML59VLW → Trash; all had their own items with PDFs; Shao's own PDF attached); filtering scheme decided (`use-*` tags, criteria in `review-matrix.md` header).
 
-Claude's side next: §2 prose section by section (§2.1 written 13 Nov); remaining searches only as targeted gaps right before the section that needs them (B1/D2 → §2.3, C1 → §1/§2.4).
+Claude's side next: §2 prose section by section (§2.1 written 13 Nov, §2.2 14 Nov); remaining searches only as targeted gaps right before the section that needs them (B1/D2 → §2.3, C1 → §1/§2.4).
 
 ## Targeted search round (from 13 Nov) — brief for the separate `/loop` session
 The broad search is done; this round closes specific gaps, in the order the proposal needs them (§2.3 writing 18–24 Nov, §1 25–29 Nov).
@@ -39,13 +41,15 @@ The broad search is done; this round closes specific gaps, in the order the prop
 **Targeted round finished 13 Nov 2026:** 10 papers added (T1 4 critique/V&V, T2 4 HER/pH/ZHS models, T6 2 activity data), 4 rows upgraded to full text (Han, Tikekar, Liu 2024, Mongird), thermodynamic factor ≈ 1.04 at 2 M in `notes/parameters.md`, B1 synthesis written, † check and CN/INT for the cited subset done. Downloads arrived and were processed the same evening (Rana ×2, Wang, Olivetti, Feng, Su + Gou SI, B3 papers). Open for the student: decisions on the proposed `use-*` tags (matrix §1, §2.2 B3, §2.3, §2.4).
 
 ## Open tasks (priority first)
+- [x] **T10 — sources for the 3 uncited claims in §2.1** (14 Nov; sentences rephrased to match the sources, no `\citeneeded` left): (1) Zn metal anode in mildly acidic electrolytes → `rana_electroanalytical_2025` intro p. 1; (2) HER thermodynamically favoured, Zn plating kinetically, high HER overpotential "limits its kinetics to some extent" → `cui_revealing_2025` (Pourbaix discussion near Fig. 1, Fig. S8) + `rana_electroanalytical_2025` Fig. 2e caption; (3) strategy levels (electrolyte, additives, SEI, separator, current collector) → `rana_electroanalytical_2025` intro p. 2. Rana AEM has no `use-*` tag yet (proposed: `use-core`).
+
 B1, C2, D2 done (T1, T2, T6, T7 — 13 Nov); C1 and C3 are scheduled in the targeted round above (T1–T8).
 - [ ] **PDF processing (ongoing).** New files in `Literature/manual download/` → `bash tools/pdf2txt.sh "Literature/manual download"`; check for "Figure S1" captions before assuming an SI is included. Per paper: matrix row, §2.2 comparison-table fields (GF grade, Zn thickness → DOD, σ/t₊ with method and ΔV, Zn//Zn life at j/Q with GF control, CE, simulation setup), needs-access list, Zotero tag + note. Processed: everything in the folder as of 13 Nov (11 Nov batch + 11 PDFs and the Gou SI .docx on 13 Nov; .docx SI read via `zipfile`, strip EndNote base64 lines).
 - [x] **B2 — test-condition practice for Zn anodes:** Li 2022 Joule, Yu 2023 (full text 11 Nov), Li 2022 soft shorts, Wu 2024, Dong 2022, Guo 2025 → covered in §2.1 ¶4 and §2.2 ¶6.
 - [ ] **B3 — alternatives to GF:** subsection in matrix §2.2 started 13 Nov (Zhou 2022, Zheng 2023, reviews Nian 2025 and Lee 2025). Optional further leads (unverified): 10.1002/adfm.202316619, 10.1002/aenm.202101299, 10.1063/5.0214281.
 - [ ] **C1 — OA full texts of abstract-only items:** 10.3390/batteries9070387 · 10.1038/s41467-017-00519-2 · 10.3389/fchem.2022.899810.
 - [ ] **C3 — remaining `origin-unknown` items** — cited subset done (T8); the rest only if they get a `use-core`/`use-context` tag.
-- [ ] **D1 — LaTeX draft of the §2.2 comparison table** (`Thesis Proposal/drafts/tab-separators.tex`, full-text rows, keys from `refs.bib`).
+- [ ] **D1 — §2.2 comparison table:** first version in `chap02.tex` (Table 2.1, 14 Nov): 16 rows (Song, Cha added; Su t₊ 0.24 → 0.35 added in the 14 Nov re-audit), σ and t₊ GF → mod. and electrolyte, each value checked in the text or figure. Still open: group row (supervisor OK), whether life/DOD columns are added.
 - [ ] **D3 — paragraph outline §2.1–§2.6** (claim · evidence with numbers · citation keys; ends with the gap statement; §2 order changed 12 Nov, mapping in the matrix header). In `../Thesis Proposal/drafts/outline-sec2.md`, one section at a time with student review: §2.1 (12 Nov) and §2.2 (13 Nov) reviewed and tagged; §2.3–§2.6 only as one-line paragraph plans, then prose.
 - [ ] **D4 — consistency audit:** matrix vs `notes/parameters.md` and `paper-summary.md`.
 - [ ] **D5 — σ–t₊ figure** (GF → modified, full-text rows), optional.
