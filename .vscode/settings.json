@@ -15,5 +15,8 @@
     "latex-workshop.latex.recipes": [
         { "name": "latexmk (xelatex)", "tools": ["latexmk-xelatex"] },
         { "name": "latexmk (pdflatex)", "tools": ["latexmk-pdflatex"] }
-    ]
+    ],
+    // main.tex has "% !TEX program = xelatex"; without this, LaTeX Workshop runs a single xelatex pass
+    // into the source folder (no biber, PDF not in build/), so the viewer tab (build/main.pdf) stays old.
+    "latex-workshop.latex.build.forceRecipeUsage": true
 }

@@ -1,19 +1,78 @@
 % !TEX root = ../main.tex
 
-\chapter{Separators in Aqueous Zinc-Ion Batteries}
+\chapter{Objectives, Research Content and Expected Outcomes}
+\label{chap:objectives}
 
-\section{Function and requirements}
+% Draft 13 Nov, first student comments applied 14 Nov. NOT FINAL: kept in main.tex as a proposal,
+% structure and wording open to change (e.g. layout of 3.2). Text lives only in this file (student, 13/14 Nov).
 
-\section{Lithium-ion separators for contrast}
+The improved cycling of zinc cells with a nanodiamond-modified glass fibre separator has been attributed to several mechanisms at once, among them a higher Zn$^{2+}$ transference number, a more uniform electric field and Zn$^{2+}$ flux at the anode, faster desolvation, fewer side reactions and a mechanically stronger separator, without their contributions being weighed against one another (Sections~\ref{sec:nanodiamonds} and~\ref{sec:starting-point}).
+Preliminary simulations carried out for this proposal (Chapter~\ref{chap:methods}) have examined the first two mechanisms in simplified form.
+In one-dimensional models of a symmetric zinc cell with an ideal electrolyte description, a surface charge of realistic magnitude on the nanodiamond layer changed the Zn$^{2+}$ concentration at the anode by only about one per cent.
+Even a strongly cation-selective thin layer changed the transference number that a simulated Bruce--Vincent measurement would report only marginally.
+In a re-run of the existing two-dimensional field model, the nanodiamond layer changed the non-uniformity of the electric field at the zinc surface by only a few per cent.
+As modelled, these effects are small.
+They do not rule out these mechanisms, since the models are simplified, and the other proposed mechanisms have not yet been examined.
+Which of them contribute to the improvement, alone or in combination, therefore remains open.
+This motivates the research question of this work.
 
-\section{Glass fibre separators}
+\section{Research question}
 
-\section{Ion transport in porous separators}
-\subsection{Porosity, tortuosity and effective transport properties}
-\subsection{Transference number and ion selectivity}
-\subsection{Sand's time and dendrite onset}
+The work addresses the following question:
+\begin{quote}
+\itshape
+How strongly does each of the mechanisms attributed to the nanodiamond layer change the current density and the Zn$^{2+}$ concentration at the anode at the experimental operating point, and how do their effects compare?
+\end{quote}
 
-\section{Modification strategies}
-% Comparison table of modified GF separators.
+The question deliberately targets these conditions for zinc deposition and not the cycle life itself.
+Cycle life results from dendrite growth, by-product formation and eventual short-circuiting over hundreds to thousands of hours, which the continuum models planned here cannot predict with confidence.
+A more uniform current distribution and smaller concentration gradients at the anode, in contrast, can be computed, and non-uniform current is one of the conditions under which zinc grows preferentially on protrusions (Section~\ref{sec:zn-anode}).
 
-\section{Nanodiamonds}
+The question is divided into three sub-questions and one optional extension:
+\begin{enumerate}
+  \item \textbf{Ion transport.} Can a nanodiamond layer with physically estimated surface properties noticeably change the Zn$^{2+}$ concentration and the current distribution at the anode, and what does a Bruce--Vincent measurement on such a cell actually capture?
+  \item \textbf{Pore structure.} Does the filling of the large pores of the glass fibre separator with nanodiamonds make the current density at the anode more uniform once electrode kinetics and concentration gradients are taken into account?
+  \item \textbf{Interface.} How sensitive are these results to interfacial parameters that are only roughly known, in particular the exchange current density and, as an option, hydrogen evolution and the local pH?
+  \item \textbf{Layer design (optional).} Which properties of the nanodiamond layer, such as its loading, thickness and distribution through the separator, control the effects found in the first three sub-questions?
+\end{enumerate}
+
+\section{Objectives and research content}
+
+The research content is organised into four work packages, one for each objective.
+The methods are described in Chapter~\ref{chap:methods} and the schedule in Chapter~\ref{chap:schedule}.
+
+\begin{enumerate}
+  \item \textbf{A transport model of the cell that is consistent with the measurements.}
+  The one-dimensional models of symmetric Zn$\|$Zn cells with the plain and the modified separator are extended from the dilute description used so far to a concentrated-electrolyte formulation: with the measured salt diffusion coefficient and transference number of \SI{2}{M} ZnSO$_4$, the dilute description overestimates its conductivity about fivefold (own calculation from\cite{albright_mutual_1975,purser_transference_1951,bester-rogac_electrical_2008}), and the salt is partly present as ion pairs\cite{buchner_ion_2023}.
+  The model is calibrated on the measured ionic conductivity and on the cell voltage at \SI{2}{mA.cm^{-2}}.
+  The Bruce--Vincent measurement is simulated as well, so that measured and modelled transference numbers are compared on the same basis instead of using the measured value as an input.
+  \item \textbf{Two-dimensional models of the separator and the anode surface.}
+  The glass fibres are represented as circles in cross-section, and the nanodiamond layer either as a porous region with effective properties or as resolved aggregates in the pores.
+  Starting from the geometry of the existing model, electrode kinetics and concentration gradients are added step by step at constant current, and geometries based on the measured pore-size distributions follow.
+  The current distribution is evaluated with quantitative measures, such as the standard deviation and the ratio of maximum to mean current density along the anode, instead of colour maps alone, and the mesh dependence of these measures is checked.
+  \item \textbf{Interfacial processes as parametric studies.}
+  Since the interfacial parameters are uncertain, they are varied over plausible ranges rather than fixed.
+  As an option, hydrogen evolution is added as a second electrode reaction together with the local pH, which links the model to the coupling described in Section~\ref{sec:zn-anode}.
+  \item \textbf{Comparison of the mechanisms.}
+  Each mechanism is switched on separately and in combination, and a sensitivity analysis over the uncertain parameters shows how robust the resulting order is.
+  The mechanisms are then compared by their effect on the deposition conditions, together with the uncertainty of that comparison.
+\end{enumerate}
+
+If time permits, the calibrated model is used for the optional sub-question on layer design, for example to estimate how variations in nanodiamond loading and distribution, as they may arise during coating, affect the uniformity of the current density.
+
+Several aspects are deliberately left out of the core work.
+Atomistic calculations are not performed; surface properties of the nanodiamonds enter the continuum model as effective parameters estimated from measurements and the literature.
+Dendrite growth itself is not simulated in the core work, although an estimate of dendrite onset or a phase-field model remains an option.
+The mechanical reinforcement of the separator by the nanodiamonds is discussed qualitatively, and the work concentrates on symmetric cells (Section~\ref{sec:zn-anode}).
+
+\section{Expected outcomes}
+
+The work is expected to deliver the following results:
+\begin{itemize}
+  \item a documented continuum model of symmetric zinc cells with the plain and the nanodiamond-modified glass fibre separator, including governing equations, boundary conditions, parameters with their sources and a mesh study, set up at the experimental operating point and compared with the measurements of the host group;
+  \item a comparison of the candidate mechanisms by their effect on the current and concentration distribution at the anode, which indicates which of them can plausibly contribute to the improvement under the model assumptions and which appear too weak as modelled;
+  \item an assessment of what the Bruce--Vincent transference number represents in such cells and to what extent it can serve as a target for calibrating a model;
+  \item indications of which properties of the nanodiamond layer matter most, as a starting point for targeted experiments.
+\end{itemize}
+
+These outcomes are statements about mechanisms and trends under stated assumptions; they are not predictions of cycle life.

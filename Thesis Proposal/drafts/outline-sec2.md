@@ -2,7 +2,7 @@
 
 Outline notation: "(Dong, Fig. 3a)" only points to the source. In the prose, claims carry the citation; papers as sentence subjects ("X et al. showed") only in the close-to-topic part (§2.4 end, §2.5, §2.6).
 Per paragraph: **claim** · evidence with numbers (location in source) · citation keys from `refs.bib`. `(calc)` = own calculation, `~` = read off a figure. Written one section at a time; each section is reviewed by the student before the next one.
-Status: structure agreed 12 Nov (§2.1–§2.6, see `../proposal-plan.md`) · §2.1 reviewed 12 Nov (Li-comparison paragraph removed; tags applied), prose written 13 Nov in `../proposal/data/chap02.tex` (with the §2 roadmap), Claude's self-review fixes applied 13 Nov (the prose now deviates from this outline: new paragraph on the measured interfacial pH, Rana 2025), awaiting the student's review · §2.2 drafted 12 Nov, revised after first feedback, tags applied 13 Nov, prose + Table 2.1 written 14 Nov, then condensed to ~2 p + table for the ~20-page budget (unreviewed; source corrections below; long version kept as thesis material in `thesis-material/sec2-2-long-14nov.tex`) · §2.3 prose written 14 Nov directly from the matrix (no outline; ~1.4 p, unreviewed) · §2.4–§2.6 open.
+Status: structure agreed 12 Nov (§2.1–§2.6, see `../proposal-plan.md`) · §2.1 reviewed 12 Nov (Li-comparison paragraph removed; tags applied), prose written 13 Nov in `../proposal/data/chap02.tex` (with the §2 roadmap), Claude's self-review fixes applied 13 Nov (the prose now deviates from this outline: new paragraph on the measured interfacial pH, Rana 2025), awaiting the student's review · §2.2 drafted 12 Nov, revised after first feedback, tags applied 13 Nov, prose + Table 2.1 written 14 Nov, then condensed to ~2 p + table for the ~20-page budget (unreviewed; source corrections below; long version kept as thesis material in `thesis-material/sec2-2-long-14nov.tex`) · §2.3 prose written 14 Nov directly from the matrix (no outline; ~1.4 p, unreviewed) · §2.4 prose written 19 Nov directly from the full texts (no outline; ~1.3 p, unreviewed) · §2.5–§2.6 open.
 Section numbers differ from `review-matrix.md` and the Zotero `lr-*` tags: matrix/`lr-2.3` NDs → §2.4 here; matrix/`lr-2.4` simulation → §2.3 here.
 
 ## §2 opening (roadmap, 3–4 sentences)
@@ -29,7 +29,7 @@ Target ~1.5 pages, 4 paragraphs + roadmap. Function in the argument: set up (a) 
   3. HER consumes H⁺ → local OH⁻ rises → insulating zinc hydroxide sulfate (ZHS, Zn₄SO₄(OH)₆·xH₂O) precipitates (Dong, Fig. 3a; Cui, XRD Fig. 4).
   4. The insulating deposits make the current non-uniform; Zn grows preferentially on protrusions and over the by-products (Cui, Fig. 5); adsorbed OH⁻/O²⁻ also raise Zn surface-diffusion barriers and nucleate dendrites (Zhang 2024, DFT, abstract).
   5. Dendrites and electrically isolated ("dead") Zn lower CE and can short the cell through the separator (Dong; Xu).
-- Closing sentence: the spatial pH field at the anode has not been measured (Dong) → it is a natural target for a continuum model (link to the corrosion/HER option, §4).
+- Closing sentence: resolving the pH next to the anode with high spatial resolution is "still challenging" (Dong; Rana 2025 imaged an interfacial layer by fluorescence in ZnCl₂) → it is a natural target for a continuum model (corrected 19 Nov, was "has not been measured") (link to the corrosion/HER option, §4).
 - Keys: `dong_towards_2022` · `cui_revealing_2025` · `xu_electrolyte_2023` · `zhang_unveiling_2024` · (`yu_unlocking_2024` only if verified).
 
 **¶3 Remedies and what a separator can address.**
@@ -98,7 +98,7 @@ Placement: the group's ND@GF manuscript appears here only as a neutral table row
   (iii) carbon: insulating or functional (g-C₃N₄, Luo 2024; NDs → §2.4) vs electronically conductive (vertical graphene, Li 2020; MXene, Su 2022; graphene Janus, Zhang 2022; nanocarbon, Lee 2024);
   (iv) structural: bacterial-cellulose blend (Huang 2025), PVDF + plasma (Kim 2025).
 - Routes: growth on every fibre (Song; Luo, ≤ 0.01 mg cm⁻²) · one-side coating (Liu drop-cast; Su spray; Yuan spin) · filling the fibre interspace (Zhao 2024; Liang) · vacuum filtration (Tan; Kim) · free-standing replacement (Huang 56 µm instead of 246 µm; Cha).
-- Conductive layers move Zn deposition onto the separator (Lee 2024: Zn plates onto the conductive layers, not onto GF; text, Fig. S4–S6). In the papers read the functional side always faces Zn; none compares orientations (inference).
+- Conductive layers can host Zn deposition themselves (Lee 2024: Zn plates onto the conductive layers, not onto GF; text, Fig. S4–S6). Where the orientation is stated, the functional side faces Zn (Li 2020, Zhang 2022, Lee 2024); Liu 2024 and Sun 2023 do not state it; none compares orientations (corrected 19 Nov, was "always faces Zn").
 - Consequence: the family decides what a continuum model must represent — a fixed charge, a pore geometry, an electronically conducting phase or nothing transport-related (→ §2.3).
 - Citations in the prose (student, 13 Nov: cite the strongest papers, not 20 for a few sentences): 1–2 full-text examples per family; the comparison table carries the rest. Proposed: (i) `sun_janus_2023`, `tan_multiscale_2025` · (ii) `song_metalorganic_2022`, `liang_novel_2022` · (iii) `luo_regulating_2024` (functional), `lee_hydrophilic_2024` (conductive; carries the deposition-shift claim) · (iv) `huang_bacterial_2025`. Routes: cite only where a sentence needs a specific example. The family lists above are the pool, not the citation list.
 
@@ -114,7 +114,7 @@ Placement: the group's ND@GF manuscript appears here only as a neutral table row
 **Table 2.x (placed with ¶5).** 16 full-text papers with a GF control (or GF replacement) and at least a σ or t₊ pair, ordered by family; the group's manuscript as the last row, below a rule.
 - Columns: ref · modification and route · σ GF → mod (mS cm⁻¹) · t₊ GF → mod (method) · Zn//Zn life mod (GF) in h @ j/Q · DOD (calc where the Zn thickness is stated) · simulation. The CE column is dropped (cell types differ).
 - Rows: (i) Sun 2023, Tan 2025 · (ii) Song 2022, Shao 2025, Zhao 2024, Liu 2024, Liang 2022, Yuan 2025, Zhao 2025, Cha · (iii) Luo 2024, Zhang 2024 ACS AMI, Su 2022, Zhang 2022 · (iv) Huang 2025, Kim 2025 · group ND@GF.
-- Left out: Zhang 2023 (control is anionic nanocellulose, not GF), Li 2020, Gou 2025 and Lee 2024 (no σ or t₊ pair; cited in ¶3/§2.3).
+- Left out: Zhang 2023 (control is anionic nanocellulose, not GF), Li 2020 and Lee 2024 (no σ or t₊ pair; cited in ¶3/§2.3). Gou 2025 does have a t₊ pair (0.49 → 0.68, BV, main text) and Yang 2022 Nano Res. too (0.26 → 0.57) — found 19 Nov; adding them to Table 2.1 is open.
 
 **¶5 What the table shows: the GF baseline is not reproducible.**
 - Claim 1: The plain-GF control differs so much between papers that improvement factors refer to different baselines; only differences within one paper are meaningful.
@@ -135,7 +135,7 @@ Placement: the group's ND@GF manuscript appears here only as a neutral table row
 All 46 items tagged `lr-2.2`, plus items from other sections first cited here.
 | Key | Tag | Reason |
 |---|---|---|
-| `hansen_role_2023` | use-core | GF grades, pore sizes, 79/80 penetration failures |
+| `hansen_role_2023` | use-core | GF grades, pore sizes, 79/80 cells with an overpotential collapse consistent with a dendrite short |
 | `gu_role_2025` | use-core | GF deficit list, grade tests, mechanism categories |
 | `li_soft_2022` | use-core | soft shorts and the proposed checks |
 | `kim_mechanically_2025` | use-core | GF/C strength; σ above bulk; table row |

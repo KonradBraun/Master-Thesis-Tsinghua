@@ -13,7 +13,7 @@ Thesis chapter outline (incl. full fundamentals): `outline.md`.
 - No separate fundamentals chapter required → fundamentals only as far as needed for the gap, woven into the review; the full fundamentals come later in the thesis.
 
 ## Proposed structure (4 Nov; §2 order agreed 12 Nov; page budget ~20 p main text agreed 14 Nov)
-**Page budget (student, 14 Nov):** ~20 pages of main text plus references — the proposal carries only the argument to the gap; detail goes to the thesis. Budget: §1 ~1.5 · §2 ~7–8 (§2.1 1.5 · §2.2 2 + table · §2.3 1.5 · §2.4 1 · §2.5 0.75 · §2.6 0.5) · §3 ~2 · §4 ~5 · §5 + §6 ~2. Supervisor's expected length still open (questions below); adjust if she expects more.
+**Page budget (student, 14 Nov):** ~20 pages of main text plus references — the proposal carries only the argument to the gap; detail goes to the thesis. Budget: §1 ~1.5 · §2 ~7–8 (§2.1 1.5 · §2.2 2 + table · §2.3 1.5 · §2.4 1 · §2.5 0.75 · §2.6 0.5) · §3 ~2 · §4 ~5 · §5 + §6 ~2. Supervisor (WeChat, relayed 19 Nov): length not very critical.
 Replaces chapter cut (a) of 30 Oct for the **proposal**; cut (a) stays for the thesis (`outline.md`).
 Funnel (student, 12 Nov): general → very specific → what this work does differently → research question. Simulation literature sits at separator level (§2.3), so §2 narrows without widening again; the group's work gets its own section (§2.5).
 
@@ -33,7 +33,7 @@ Funnel (student, 12 Nov): general → very specific → what this work does diff
 | 6 | **Schedule and expected defence time** — Gantt, milestones | ~1 | — |
 | | References — count Chinese vs international | | |
 
-LaTeX chapters `proposal/data/chap01–06.tex` follow this structure (13 Nov); §2 prose: roadmap + §2.1 written 13 Nov (sources for the 3 "[source?]" markers found 14 Nov), §2.2 + Table 2.1 written 14 Nov and condensed to ~2 p + table (budget), §2.3 written 14 Nov (~1.4 p); all re-audited against full texts 14 Nov; §2.1 and §2.2 reviewed by the student and revised 16 Nov, §2.3 not yet reviewed. Chapter 3: draft 13 Nov, first comments applied 14 Nov; stays in `main.tex` but is not final (open to change).
+LaTeX chapters `proposal/data/chap01–06.tex` follow this structure (13 Nov); §2 prose: roadmap + §2.1 written 13 Nov (sources for the 3 "[source?]" markers found 14 Nov), §2.2 + Table 2.1 written 14 Nov and condensed to ~2 p + table (budget), §2.3 written 14 Nov (~1.4 p); all re-audited against full texts 14 Nov; §2.1 and §2.2 reviewed by the student and revised 16 Nov, §2.3 not yet reviewed; §2.4 written and audited against full texts 19 Nov (~1.3 p against the ~1 p budget, not yet reviewed). Chapter 3: draft 13 Nov, first comments applied 14 Nov; stays in `main.tex` but is not final (open to change).
 
 ## Word form — fields to fill (submitted with the report)
 - [ ] Cover: name, student ID, department, discipline, supervisor + title, enrolment date
@@ -48,17 +48,18 @@ LaTeX chapters `proposal/data/chap01–06.tex` follow this structure (13 Nov); �
 ## Timeline — proposed 4 Nov, replaces the 30 Oct plan (§ numbers = structure above)
 As of 4 Nov: no chapter text yet. Main effort: the literature review (reading and comparing, not writing). Preliminary results = models 01–04; 2D is optional for the proposal.
 - **4 – 10 Nov:** model 04 ✅ (9 Nov) · model 05 = group model re-run ✅ (10 Nov) · literature search not started → starts 11 Nov
-- **11 – 17 Nov:** §2 paragraph outline (§2.1 done 12 Nov, §2.2 13 Nov; §2.3–§2.6 only as one-line paragraph plans, then prose), write §2.1 (13 Nov), §2.2 separators, §2.4 NDs · WeChat to supervisor: (1) form questions + length, (2) short results summary + proposed research question
+- **11 – 17 Nov:** §2 paragraph outline (§2.1 done 12 Nov, §2.2 13 Nov; §2.3–§2.6 only as one-line paragraph plans, then prose), write §2.1 (13 Nov), §2.2 separators, §2.4 NDs · WeChat update to supervisor ✅ (reply relayed 19 Nov)
 - **18 – 24 Nov:** §2.3 simulation, §2.1, §2.5 starting point, §2.6 gap · §4 methodology with preliminary results · first 2D step (group geometry, models A/B) only if on track
 - **25 – 29 Nov:** §1, 3, 5, 6 → full draft to supervisor ~29 Nov
-- **30 Nov – 14 Dec:** revision · Word form · slides for the oral presentation (5–10 min, defence ~17 Dec) · supervisor signature on the form before 14 Dec · buffer · submission
+- **30 Nov – 14 Dec:** short chat with the supervisor (Thu 3 Dec afternoon, to confirm) · revision · Word form · slides for the oral presentation (5–10 min, defence ~17 Dec) · rehearsal with Dr Zhang (offered by the supervisor) · supervisor signature on the form before 14 Dec · buffer · submission
 
 Moved after the draft (optional for the proposal): i₀ calibration · first 2D step. (Group model verified and re-run = model 05, 10 Nov.)
 
 ## Questions for the supervisor
-- [ ] Expected length? (form: ≥ 3000 words minimum)
+Open questions go to the short chat in her Thursday afternoon discussion session (student away 26 Nov, proposing 3 Dec, to confirm).
+- [x] Expected length: not very critical (supervisor, WeChat, relayed 19 Nov); form minimum ≥ 3000 words
 - [x] "Chinese literature" = work by groups in China (student, 10 Nov; easily met in this field — optionally 1–2 papers from Chinese journals); counts reported by the literature search
-- WeChat message (b) — results + research question: constructive ("I tested the proposed mechanisms one by one"), 3–4 sentences + one figure, end with a concrete question ("Is this direction okay for the proposal?").
+- [x] WeChat update (results, research question, proposal plan): she replied "sounds great plan" (relayed 19 Nov)
 - [x] Date and length of the oral presentation: ~17 Dec, 5–10 min + Q&A (WeChat group, 12 Nov)
 - [ ] Project category and thesis type for the form; interdisciplinary supervision needed?
 - [ ] Citation style? Example proposals from previous students?

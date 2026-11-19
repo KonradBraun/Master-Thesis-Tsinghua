@@ -20,6 +20,7 @@ Short, only things a fresh session would otherwise get wrong. Not a log.
 - Student downloads named "SI …" can be main texts: check for "Figure S1" captions before assuming the SI is there.
 - PDFs: convert with `bash tools/pdf2txt.sh <folder>` → `<folder>/txt/`, read the .txt, not the PDF (far cheaper). Render single pages only when figures matter.
 - `pdf2txt.sh` deletes every `.txt` in `<folder>/txt/` without a same-named PDF. Texts from other routes (Europe PMC XML, Zotero-only PDFs, SI `.docx`) therefore live in `Literature/txt-extra/`; include it when searching all papers.
+- Paper .txt files can mislead: some bodies are garbled (shifted characters, e.g. Yang 2022 Nano Res. — only the abstract was readable), and page headers can split a value from its sentence (Gou 2025: GF t₊ 0.49). Before writing "not in the main text", search for synonyms and check the rendered page. Values credited to "via <review>" must be checked in the primary source (Shalumon mislabelled Bradac's samples).
 
 ## COMSOL (tcd, 6.3)
 - Physics: "Tertiary Current Distribution, Nernst-Planck" is a group; pick the variant "Tertiary, Electroneutrality".

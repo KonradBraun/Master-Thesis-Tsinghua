@@ -24,7 +24,9 @@
 
 **Proposal deadline:** Mon 14 Dec 2026 (student, 4 Nov) — report + supervisor-signed form + slides; oral defence ~17 Dec, 5–10 min + Q&A (WeChat group, 12 Nov); formal requirements from the Tsinghua form (V202401) in `Thesis Proposal/proposal-plan.md`. **Thesis deadline:** ~15 Jul 2027 (student, unconfirmed); aim to finish late Jun / early Jul. **RWTH supervisor:** none yet (30 Oct). **AI use:** allowed, no declaration needed (student, 30 Oct).
 
-**Not yet decided:** research question, exact scope (e.g. whether dendrite growth is simulated), proposal length. Earlier suggestions on these are proposals, not decisions.
+**Supervisor's reply to the WeChat update (relayed 19 Nov):** "sounds great plan"; length not very critical; a defence rehearsal with Dr Zhang is possible; short chat in her open discussion session on Thursday afternoons (student away 26 Nov, proposing 3 Dec, to confirm).
+
+**Not yet decided:** final wording of the research question, exact scope (e.g. whether dendrite growth is simulated). Earlier suggestions on these are proposals, not decisions.
 
 **Starting point:** the group's existing COMSOL model represents the nanodiamonds as "hollow circles" with no specified surface properties (SI §1.7).
 

@@ -113,7 +113,7 @@ It therefore remains open whether the higher $t_+$ contributes to the longer cyc
     \parencite{zhao_separator_2024} & Kaolin & n/s & 10.1 $\to$ 13.7 & 0.27 $\to$ 0.37 \\
     \parencite{liu_ion-sieving_2024} & Halloysite nanotubes with PVDF, drop-cast & \SI{2}{M} ZnSO$_4$ & 66.61\tnote{a} $\to$ 49.81\tnote{a} & 0.22 $\to$ 0.71 \\
     \parencite{liang_novel_2022} & BaTiO$_3$ particles on and between the fibres & \SI{2}{m} ZnSO$_4$ & -- & 0.24 $\to$ 0.69 \\
-    \parencite{yuan_synergistic_2025} & HfO$_2$/PVDF coating & \SI{2}{M} ZnSO$_4$ & 11.71 $\to$ 13.83 & 0.287 $\to$ 0.729 \\
+    \parencite{yuan_synergistic_2025} & HfO$_2$/PVDF coating & \SI{2}{M} ZnSO$_4$ & 11.71\tnote{d} $\to$ 13.83\tnote{d} & 0.287\tnote{d} $\to$ 0.729 \\
     \parencite{zhao_gradient_2025} & CeF$_3$ nanoparticles, gradient structure & \SI{2}{M} ZnSO$_4$ & -- & 0.28 $\to$ 0.57 \\
     \multicolumn{5}{@{}l}{\emph{Carbon-based modifiers}} \\
     \parencite{luo_regulating_2024} & Graphitic carbon nitride coating & n/s & 3.82 $\to$ 5.78 & 0.38 $\to$ 0.64 \\
@@ -132,6 +132,7 @@ It therefore remains open whether the higher $t_+$ contributes to the longer cyc
     \item[a] Unit printed as mS\,cm$^{-2}$.
     \item[b] The conclusion of the same study gives \SI{67.43}{S.cm^{-1}} and $t_+ = 0.92$.
     \item[c] Determined from the liquid junction potential.
+    \item[d] Given only in the supporting information.
   \end{tablenotes}
   \end{threeparttable}
 \end{table}
@@ -178,7 +179,33 @@ A continuum model with stated equations, boundary conditions and sourced paramet
 
 \section{Nanodiamonds in zinc batteries}
 \label{sec:nanodiamonds}
-% Claimed roles, ND surface chemistry in 2 M ZnSO4, ND@GF precedent (Zhang 2024 ACS AMI).
+% Draft 19 Nov, unreviewed; budget ~1 p. Read off figures: Bradac Fig. 2 (zeta, size at 1 M), Ding Fig. 2f (+8 mV at 2 M; axis in M,
+% main text prints m), Ding SI Fig. S5 (30 / 300 nm) and S16 (nucleation overpotential 37.5 -> 44.3 mV); Zhu 72 -> 53 mV (text).
+% Volkov: abstract gives 10-15 mmol/L; "1 mg/L" in its Results is a misprint for 1 g/L (Fig. 6 axes in mg/L, caption "above 1 g/L").
+% Own estimate, acid groups: 0.282 mg/cm2 (Zhang SI Tab. S2, medium) x 0.548-1.467 mmol/g (Kulakova Tab. 3) = 0.15-0.41 umol/cm2;
+% OH- from HER: 1 % of 1 mAh/cm2 = 0.036 C/cm2 = 0.37 umol/cm2 per cycle.
+
+Nanodiamonds (NDs) consist of a diamond core, which may be partly covered by graphitic or amorphous carbon, and a surface terminated by functional groups\cite{mochalin_properties_2011}.
+In zinc batteries, they have been rolled into the zinc foil as seeds for deposition\cite{wang_nanodiamond_2024}, applied to it as coatings\cite{liu_multifunctional_2024,chen_coupling_2024}, dispersed in the electrolyte\cite{ding_bioinspired_2025,zhu_nanodiamond_2026} and attached to GF separators\cite{zhang_modulating_2024}.
+All of these studies report a longer life of Zn$\|$Zn cells, but their explanations differ.
+Carboxylated NDs on zinc are described as zinc-attracting\cite{wang_nanodiamond_2024}, whereas another study ascribes only limited zinc affinity to commercial NDs and credits a hydrophobic, partly graphitised coating with keeping water away\cite{chen_coupling_2024}.
+As electrolyte additives, NDs lowered the nucleation overpotential in one study\cite{zhu_nanodiamond_2026} but raised it in another\cite{ding_bioinspired_2025}.
+Since the surfaces range from carboxylated\cite{wang_nanodiamond_2024} to hydrogen-terminated\cite{liu_multifunctional_2024}, findings for one type of ND cannot be assumed to hold for another.
+
+In water, the zeta potential, a common measure of particle charge, is negative for NDs with dissociated carboxyl groups\cite{gines_positive_2017,girard_surface_2011} but positive for several other surfaces\cite{gines_positive_2017,girard_surface_2011,paci_understanding_2013}.
+In NaCl up to an ionic strength of \SI{1}{M}, detonation NDs of either sign lost most of their zeta potential and grew from about \SI{5}{nm} to aggregates larger than \SI{1}{\um}\cite{bradac_influence_2018}.
+In the one measurement found for ZnSO$_4$, the zeta potential of oxygen-enriched NDs rose from \SI{-41}{mV} in water through zero near \SI{1.5}{M} to about \SI[retain-explicit-plus]{+8}{mV} at \SI{2}{M}, which the authors attribute to Zn$^{2+}$ accumulating at the surface\cite{ding_bioinspired_2025}.
+The average size of these NDs grew from about \SI{30}{nm} in water to about \SI{300}{nm} in \SI{2}{M} ZnSO$_4$, although no obvious precipitation occurred\cite{ding_bioinspired_2025}.
+Acid-treated NDs also take up Zn$^{2+}$ at pH 2.5, with uptake assigned to chemisorption levelling off below about 10 to \SI{15}{mmol.L^{-1}} and further uptake, assigned to physisorption, continuing up to 200 to \SI{250}{mmol.L^{-1}}, the highest concentrations studied\cite{volkov_pristine_2020}.
+Although data at \SI{2}{M} are scarce and zeta potentials are uncertain at high ionic strength\cite{bradac_influence_2018}, the negative charge measured in water can therefore not be assumed at this concentration.
+
+The closest published precedent for the present work is the ND-modified GF separator of Zhang et al.\cite{zhang_modulating_2024}, made by immersing GF in an aqueous dispersion of detonation NDs of 5 to \SI{10}{nm}, which left aggregated NDs on the fibres.
+In \SI{2}{M} ZnSO$_4$, Zn$\|$Zn cells with this separator cycled for nearly \SI{1800}{h} at \SI{5}{mA.cm^{-2}} and \SI{1}{mAh.cm^{-2}}, compared with \SI{110}{h} for plain GF.
+The authors attribute this to filled and more uniform pores, a stronger separator, better heat conduction, and hydroxyl and carboxyl groups that are proposed to lower the H$^+$ concentration at the anode and to accelerate the transport and desolvation of Zn$^{2+}$.
+These contributions were not separated, the average pore size from nitrogen adsorption stayed at about \SI{6}{nm}, far below the micrometre-sized pores of GF\cite{hansen_role_2023}, and no zeta potential, thermal measurement or simulation is reported.
+A pH-buffering effect of ND surface groups (Section~\ref{sec:zn-anode}) was measured in the studies reviewed here only without current\cite{ding_bioinspired_2025,zhu_nanodiamond_2026}, and about \SI{0.3}{mg.cm^{-2}} of NDs\cite{zhang_modulating_2024} with 0.5 to \SI{1.5}{mmol.g^{-1}} of acid groups\cite{kulakova_surface_2004} could neutralise at most the hydroxide formed in about one cycle of \SI{1}{mAh.cm^{-2}} if about \SI{1}{\percent} of the charge goes into hydrogen evolution\cite{rana_electroanalytical_2025} (own estimate).
+As at the anode\cite{wang_nanodiamond_2024,liu_multifunctional_2024} and in the electrolyte\cite{zhu_nanodiamond_2026}, an intermediate amount of NDs performed best\cite{zhang_modulating_2024}.
+The study thus shows that NDs on GF can prolong cycling, but not which of the proposed effects is responsible or why larger amounts are less effective.
 
 \section{Starting point of this work}
 \label{sec:starting-point}
