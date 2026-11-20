@@ -1,6 +1,6 @@
-# Thesis — Chapter Outline (DRAFT, 14 Oct 2026)
+# Thesis — Chapter Outline (DRAFT, 14 Oct 2026, pointers updated 20 Nov)
 
-**Status:** draft structure without DFT (COMSOL only, decided 14 Oct). Originally the proposal outline; since 4 Nov the **proposal** has its own structure, requirements, timeline and supervisor questions in `proposal-plan.md` (proposed, not agreed). This file keeps the full chapter outline incl. fundamentals for the thesis.
+**Status:** draft structure without DFT (COMSOL only, decided 14 Oct). Originally the proposal outline; since 4 Nov the **proposal** has its own structure (agreed 12 Nov), requirements, timeline and supervisor questions in `proposal-plan.md`. This file keeps the full chapter outline incl. fundamentals for the thesis.
 
 **Decided (30 Oct):** chapter cut (a) — fundamentals separate from the simulation state of the art, as below; funnel AZIBs → separators/NDs → modelling → state of the art of simulation → gap. Writing directly in English (discussions partly in German). Critique of the group's paper only through our own simulation results — no statements that their measurements/calculations are wrong.
 
@@ -35,8 +35,8 @@
   - porosity, tortuosity, effective properties, MacMullin number
   - **transference number t₊**, ion selectivity, **Donnan exclusion**
   - **Sand's time** — the quantitative link from t₊ to dendrite onset
-- 3.5 Modification strategies — state of the art, **comparison table** of modified GF separators (start: manuscript Fig. 3f and refs [13, 27–33])
-- 3.6 Nanodiamonds: structure and facets, H vs O termination, synthesis (incl. coal/laser shock), prior use in zinc batteries (all anode-focused, refs [17–19])
+- 3.5 Modification strategies — state of the art, **comparison table** of modified GF separators (start: proposal Table 2.1 and the comparison table in `../Literature/review-matrix.md` §2.2)
+- 3.6 Nanodiamonds: structure and facets, H vs O termination, synthesis (incl. coal/laser shock), prior use in zinc batteries (anode coatings and seeds, electrolyte additives, one ND-modified GF separator — proposal §2.4, matrix §2.3)
 
 ## 4. Fundamentals: Continuum Electrochemical Modelling — ~8 p
 - 4.1 Length scales; why atomistic methods (DFT) are out of scope — ~½ page
@@ -57,7 +57,7 @@
 - 5.4 Atomistic studies — brief context only
 - 5.5 The gap: continuum models without physical separator/coating properties
 
-*Needs the most new reading — start early.*
+*Literature for this chapter: proposal §2.3 and `../Literature/review-matrix.md` §2.4.*
 
 ## 6. Research Gap and Objectives — ~2 p
 - Starting point: the ND@GF separator and its reported performance
@@ -80,9 +80,4 @@ Expect 80–150 entries.
 
 ---
 
-# Literature workflow
-1. Zotero + MCP server; PDFs via Zotero Connector through the library access, so they are attached automatically
-2. Per chapter: 1–2 reviews first → their references (backward) → "cited by" (forward) → targeted keyword searches
-3. Tags `must-read` → `read`; a 3-line Zotero note per paper (what, key numbers, relevance)
-4. Literature matrices for 3.5 (modified GF separators) and Ch. 5 (simulation studies)
-5. Reading order: Ch. 3 + 4 first (feed the COMSOL work), Ch. 5 early in parallel, Ch. 2 partly drafted
+Literature workflow and conventions (status and `use-*` tags, notes, downloads): header of `../Literature/review-matrix.md` and `../Literature/lit-review-todo.md`.

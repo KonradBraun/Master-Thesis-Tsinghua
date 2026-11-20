@@ -12,8 +12,8 @@ Thesis chapter outline (incl. full fundamentals): `outline.md`.
 - Grade: written report 60 % (supervisor) + **oral presentation and defence 40 %** (examination committee).
 - No separate fundamentals chapter required → fundamentals only as far as needed for the gap, woven into the review; the full fundamentals come later in the thesis.
 
-## Proposed structure (4 Nov; §2 order agreed 12 Nov; length 20–40 p main text, student 20 Nov)
-**Length (student, 20 Nov):** 20–40 pages of main text plus references — the supervisor finds the length not critical (WeChat, relayed 19 Nov), so sections may grow where the content needs it; the proposal still carries the argument to the gap, detail goes to the thesis. Section split of the original ~20 p budget (14 Nov), now a lower bound: §1 ~1.5 · §2 ~7–8 (§2.1 1.5 · §2.2 2 + table · §2.3 1.5 · §2.4 1 · §2.5 0.75 · §2.6 0.5) · §3 ~2 · §4 ~5 · §5 + §6 ~2.
+## Proposed structure (4 Nov; §2 order agreed 12 Nov; length not critical, ~20–40 p as rough reference, student 20 Nov)
+**Length (student, 20 Nov):** not critical (supervisor, WeChat, relayed 19 Nov) — ~20–40 pages of main text only as a rough reference, not a target; sections may grow where the content needs it; the proposal still carries the argument to the gap, detail goes to the thesis. Section split of the original ~20 p budget (14 Nov), now a lower bound: §1 ~1.5 · §2 ~7–8 (§2.1 1.5 · §2.2 2 + table · §2.3 1.5 · §2.4 1 · §2.5 0.75 · §2.6 0.5) · §3 ~2 · §4 ~5 · §5 + §6 ~2.
 Funnel (student, 12 Nov): general → very specific → what this work does differently → research question. Simulation literature sits at separator level (§2.3), so §2 narrows without widening again; the group's work gets its own section (§2.5).
 
 | § | Content | ~p | → thesis |
