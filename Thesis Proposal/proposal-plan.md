@@ -12,8 +12,8 @@ Thesis chapter outline (incl. full fundamentals): `outline.md`.
 - Grade: written report 60 % (supervisor) + **oral presentation and defence 40 %** (examination committee).
 - No separate fundamentals chapter required → fundamentals only as far as needed for the gap, woven into the review; the full fundamentals come later in the thesis.
 
-## Proposed structure (4 Nov; §2 order agreed 12 Nov; page budget ~20 p main text agreed 14 Nov)
-**Page budget (student, 14 Nov):** ~20 pages of main text plus references — the proposal carries only the argument to the gap; detail goes to the thesis. Budget: §1 ~1.5 · §2 ~7–8 (§2.1 1.5 · §2.2 2 + table · §2.3 1.5 · §2.4 1 · §2.5 0.75 · §2.6 0.5) · §3 ~2 · §4 ~5 · §5 + §6 ~2. Supervisor (WeChat, relayed 19 Nov): length not very critical.
+## Proposed structure (4 Nov; §2 order agreed 12 Nov; length 20–40 p main text, student 20 Nov)
+**Length (student, 20 Nov):** 20–40 pages of main text plus references — the supervisor finds the length not critical (WeChat, relayed 19 Nov), so sections may grow where the content needs it; the proposal still carries the argument to the gap, detail goes to the thesis. Section split of the original ~20 p budget (14 Nov), now a lower bound: §1 ~1.5 · §2 ~7–8 (§2.1 1.5 · §2.2 2 + table · §2.3 1.5 · §2.4 1 · §2.5 0.75 · §2.6 0.5) · §3 ~2 · §4 ~5 · §5 + §6 ~2.
 Funnel (student, 12 Nov): general → very specific → what this work does differently → research question. Simulation literature sits at separator level (§2.3), so §2 narrows without widening again; the group's work gets its own section (§2.5).
 
 | § | Content | ~p | → thesis |
@@ -32,7 +32,7 @@ Funnel (student, 12 Nov): general → very specific → what this work does diff
 | 6 | **Schedule and expected defence time** — Gantt, milestones | ~1 | — |
 | | References — count Chinese vs international | | |
 
-LaTeX chapters `proposal/data/chap01–06.tex` follow this structure (13 Nov); §2 prose: roadmap + §2.1 written 13 Nov (sources for the 3 "[source?]" markers found 14 Nov), §2.2 + Table 2.1 written 14 Nov and condensed to ~2 p + table (budget), §2.3 written 14 Nov (~1.4 p); all re-audited against full texts 14 Nov; §2.1 and §2.2 reviewed by the student and revised 16 Nov, §2.3 not yet reviewed; §2.4 written and audited against full texts 19 Nov (~1.3 p against the ~1 p budget, not yet reviewed); §2.5 and §2.6 only as plans (comments in `chap02.tex`). Literature behind §2 re-audited 19 Nov; primary sources added where verified 20 Nov (open ones: download list in `../Literature/lit-review-todo.md`). Chapter 3: draft 13 Nov, first comments applied 14 Nov; stays in `main.tex` but is not final (open to change).
+LaTeX chapters `proposal/data/chap01–06.tex` follow this structure (13 Nov); §2 prose: roadmap + §2.1 written 13 Nov (sources for the 3 "[source?]" markers found 14 Nov), §2.2 + Table 2.1 written 14 Nov and condensed to ~2 p + table (budget), §2.3 written 14 Nov (~1.4 p); all re-audited against full texts 14 Nov; §2.1 and §2.2 reviewed by the student and revised 16 Nov, §2.3 not yet reviewed; §2.4 written and audited against full texts 19 Nov (~1.3 p, not yet reviewed); §2.5 and §2.6 only as plans (comments in `chap02.tex`). Literature behind §2 re-audited 19 Nov; primary sources added where verified 20 Nov (open ones: download list in `../Literature/lit-review-todo.md`). Chapter 3: draft 13 Nov, first comments applied 14 Nov; stays in `main.tex` but is not final (open to change).
 
 ## Word form — fields to fill (submitted with the report)
 - [ ] Cover: name, student ID, department, discipline, supervisor + title, enrolment date
