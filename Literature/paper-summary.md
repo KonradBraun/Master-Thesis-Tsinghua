@@ -85,7 +85,7 @@ Formulas:
 | σ method | σ = L/(A·R), CP//CP symmetric cells |
 | Eₐ method | Arrhenius fit of R_ct from variable-temperature EIS, Zn//Zn |
 | ND synthesis | coal + Si nanoparticles, ball-milled, pressed, dehydrogenised, then 1064 nm laser (500 W, 5 mm spot, 10 mm s⁻¹) through 7 mm water layer; 4 runs × 28 scans; product split across **five** separators |
-| **ND loading** | ⚠️ **never stated** — no wt%, no mg cm⁻², no yield |
+| **ND loading** | not stated in the paper; from the group (19 Oct): 0.1–0.4 mg per separator (Φ10 mm), ND layer 30–50 µm on the fibres (`../notes/parameters.md`) |
 
 **Derived — depth of discharge:** 100 µm Zn ≈ **58.5 mAh cm⁻²** areal capacity. Cycling at 1 mAh cm⁻² is therefore **DOD ≈ 1.7%**; at 10 mAh cm⁻², ≈17%.
 
@@ -153,7 +153,7 @@ Consequences:
 2. **The model cannot distinguish an O-terminated nanodiamond from a glass bead.** Identical results would follow from any insulating circle of the same size.
 3. Therefore **the simulation cannot support the paper's central claim.** The title is "crystal facet and surface termination co-engineering"; the simulation offered as mechanistic proof is blind to both facet and termination. By the paper's own DFT, an H-terminated ND would behave differently — but this COMSOL model would return exactly the same answer.
 
-**Main opening for the thesis** (research question not yet decided): give the ND layer physical properties in the continuum model — in the COMSOL-only plan via a fixed charge calibrated on t₊, not via DFT.
+**Main opening for the thesis** (research question not yet decided): give the ND layer physical properties in the continuum model (COMSOL only, no DFT) — fixed charge estimated from the surface chemistry rather than calibrated on t₊ (F13, F19), plus pore structure, interface and corrosion effects (approach: `../notes/progress.md`).
 
 ## F2 — The DFT desolvation formula contains no surface
 
@@ -163,7 +163,7 @@ None of the three terms includes the separator. As written this is the **bulk so
 
 Also: the method is described as an *"implicit solvation model"* **and** as *"a supercell containing 20 water molecules"* — those are mutually exclusive descriptions.
 
-Magnitude check: the real hydration enthalpy of Zn²⁺ is ≈ −2046 kJ mol⁻¹ = **−21.2 eV**. The reported values are 6–28× smaller.
+Magnitude check: the hydration enthalpy of Zn²⁺ is ≈ −2046 kJ mol⁻¹ = **−21.2 eV** (textbook value, source not yet attached — add one before citing). The reported values are 6–28× smaller.
 
 **Figure 5d is not reproducible as documented.**
 
@@ -203,14 +203,14 @@ A **0.5 V** cathodic overpotential is applied, while the measured nucleation ove
 ## F7 — No validation of anything
 σ (2.83 / 2.94 S m⁻¹), t₊ (0.51 / 0.69) and Eₐ were all measured. None is compared against the model. Mesh convergence is asserted, not shown.
 
-## F8 — ND loading is still unknown
-Even with the full synthesis protocol, no mass, yield or areal loading is given — only "deposited onto five glass fiber separators." **Blocking for a loading-optimisation study.**
+## F8 — ND loading not stated in the paper
+Even with the full synthesis protocol, no mass, yield or areal loading is given — only "deposited onto five glass fiber separators." Resolved for the model: the group gave 0.1–0.4 mg per separator and a 30–50 µm ND layer (19 Oct, `../notes/parameters.md`).
 
-## F9 — "2D axisymmetric" may not match the figures
-SI says axisymmetric; Figures 2h/2i look like a flat layered rectangle with semicircular protrusions. Under axisymmetry those protrusions would be rings, not hemispheres. Worth checking against the actual `.mph`.
+## F9 — "2D axisymmetric" does not match the model file
+SI says axisymmetric; Figures 2h/2i look like a flat layered rectangle with semicircular protrusions. The group's `.mph` files have a 2D geometry without an axisymmetric setting (checked 20 Nov, `dmodel.xml`) → planar 2D, as used in model 05 (inference from the file).
 
 ## F10 — Low depth of discharge
-DOD ≈ **1.7%** at 1 mAh cm⁻² on 100 µm foil. The 3738 h figure is real but obtained at very low zinc utilisation — a standard critique of this literature, worth stating plainly in the thesis.
+DOD ≈ **1.7%** at 1 mAh cm⁻² on 100 µm foil, in the range typical of separator papers (0.85–6.8 %, `review-matrix.md` §2.2). Decided (student, 12 Nov): the group's DOD is not singled out in the proposal; what counts is that GF and ND@GF were tested under identical conditions.
 
 ## F11 — Figure 5c may contradict the text ⚠️ verify visually
 Bar heights in Fig. 5c appear to show large negative SO₄²⁻ adsorption energies on the silica surfaces (~−4.5, −6.5 eV), while the text states −0.10/−0.15/−0.18 eV and +1.93 eV for Dia.-O. Either figure and text disagree or the legend is swapped. **Check the figure directly.**
@@ -237,7 +237,7 @@ Fig. 2h/i (20 µm scale bar) and S11 (1 µm scale bar) show the same layout at s
 SEM (S3b) claims mostly <10 nm pores; BET (S4b) shows identical distributions for GF and ND@GF. Whether SEM at this magnification resolves <5 nm pores is doubtful (inference). Matters because the Debye length (~0.1 nm) limits any surface-charge effect to nm-sized pores.
 
 ## F19 — Plain-GF t₊ (0.51) is far above the bulk electrolyte value (0.20)
-Bulk 2 M ZnSO₄: t₊ = 0.197 (Purser & Stokes 1951, EMF method). A neutral glass-fibre separator with µm pores should not raise t₊ noticeably. The group's 0.51 (Bruce–Vincent, Fig. 2b) is therefore either a method artefact (cf. F13; literature reports Bruce–Vincent scatter of 0.2 vs 0.7 for near-identical Zn electrolytes) or measures a different quantity. The GF → ND@GF *difference* may still be meaningful; absolute values should not be used as model inputs.
+Bulk 2 M ZnSO₄: t₊ = 0.197 (Purser & Stokes 1951, EMF method). A neutral glass-fibre separator with µm pores should not raise t₊ noticeably. The group's 0.51 (Bruce–Vincent, Fig. 2b) is therefore either a method artefact (cf. F13; Bruce–Vincent values of 0.2 vs 0.7 have been reported for 30 vs 31 m ZnCl₂, cited by Gomez Vazquez 2025) or measures a different quantity. The GF → ND@GF *difference* may still be meaningful; absolute values should not be used as model inputs.
 
 ## F20 — XPS fit does not separate sp² from sp³
 ND@GF paper (Fig. 1c) fits C 1s with only C–C (284.8 eV, assigned to sp³ diamond) and C–O (286.1 eV). The group's own ND synthesis paper (Zhang et al., ACS Nano 20 (2026) 20231) fits sp² (~284.3–284.6 eV), sp³ (~285.0 eV), C–O and C=O separately and reports "enhanced" sp³ after laser shock — i.e. sp² remains. Matters for the sign of the ND surface charge: a positive zeta potential requires sp² carbon at the surface (Ginés et al. 2017), but sp² alone does not make it positive — oxidised ND with a graphitic shell is at −41 mV in water (Ding et al. 2025).
