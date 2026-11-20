@@ -193,6 +193,8 @@ mit *D* = ambipolarer Diffusionskoeffizient, *c₀* = Konzentration, *J* = Strom
 
 **Wie erhöht ein Separator t₊?** Eine negativ geladene Porenoberfläche stößt Sulfat-Anionen ab (Donnan-Ausschluss), lässt Zn²⁺ aber durch. Eine sauerstoffterminierte Diamantoberfläche (C–O⁻, C=O-Gruppen) ist negativ geladen — **genau das ist der behauptete Mechanismus in deinem Paper.**
 
+*Stand 20.11. — Einschränkungen bei 2 M ZnSO₄:* Die Debye-Länge beträgt nur ~0,1 nm, die Oberflächenladung ist also fast vollständig abgeschirmt; das Zeta-Potential oxidierter NDs geht in 2 M ZnSO₄ gegen null bis leicht positiv (Ding 2025). Am Arbeitspunkt 2 mA/cm² liegt die Sand'sche Zeit bei ~40 h, ein Abscheideschritt dauert 0,5 h — die Verarmung tritt also gar nicht ein. In unseren 1D-Modellen (03/04) war der Effekt einer festen Ladung vernachlässigbar.
+
 ---
 
 ## 7. Wie man AZIB-Performancedaten liest
@@ -256,3 +258,5 @@ Der ND@GF-Separator ist der Versuch, den Separator von einem **passiven Abstands
 3. Diamanthärte **blockiert Durchstoßen** → mechanischer Rückfallschutz
 
 Die 3738 h und 99,6 % CE sind die **Folge**. Deine Arbeit soll den **Mechanismus** erklären und verallgemeinern.
+
+*Stand 20.11.:* Mechanismus 2 (Ladung → t₊) ist nach den Modellen 03/04 quantitativ zu schwach; Mechanismus 1 und die veränderte Porenstruktur werden in 2D untersucht (`../notes/progress.md`).

@@ -204,13 +204,12 @@ Das ist die Standardarchitektur der modernen Materialsimulation — und es ist s
 
 **Entschieden (Betreuerin, 14.10.):** nur COMSOL, keine DFT — zu rechenintensiv, und die Übertragung atomistischer Ergebnisse ins Kontinuum ist in der Zeit nicht realistisch. Die Abschnitte 5 und 7 bleiben als Hintergrundwissen (das Paper enthält DFT, und das Kapitel zu Simulationsmethoden erwähnt sie kurz).
 
-Das Paper enthält beides, aber **ohne Verbindung**: Im COMSOL-Modell sind die NDs nur „hollow circles" ohne Materialeigenschaften (SI §1.7, `../Literature/paper-summary.md` F1). Statt sie aus DFT abzuleiten, bekommt die ND-Schicht bei uns eine physikalische Eigenschaft, die an Messwerte kalibriert wird:
+Das Paper enthält beides, aber **ohne Verbindung**: Im COMSOL-Modell sind die NDs nur „hollow circles" ohne Materialeigenschaften (SI §1.7, `../Literature/paper-summary.md` F1). Bei uns bekommt die ND-Schicht physikalische Eigenschaften, die aus Messwerten und Literatur **abgeschätzt** statt an t₊ angepasst werden.
 
-| Verknüpfung | Wie |
-|---|---|
-| Feste negative Ladung der ND-Schicht → t₊ | Donnan-Ausschluss, kalibriert an t₊ = 0,69 |
-| Prüfung | σ = 2,94 S/m ohne Nachjustieren |
-| t₊ → Dendritenbeginn | Sand'sche Zeit, eine Zeile |
+**Stand (20.11.):**
+- Feste Ladung der ND-Schicht (Donnan): physikalisch abgeschätzt; in den 1D-Modellen 03/04 vernachlässigbar. t₊ = 0,69 ist **kein** Kalibrierziel, weil die Bruce–Vincent-Messung hier nicht reproduzierbar ist (paper-summary F13, F19).
+- Sand'sche Zeit am Arbeitspunkt (2 mA/cm², 2 M): ~40 h gegenüber 0,5 h pro Abscheideschritt → die klassische t₊-Argumentation greift hier kaum (Proposal §2.2).
+- Hauptarbeit: Mechanismen-Ranking in 2D (Porenstruktur/Stromverteilung, Grenzfläche, Korrosion/HER).
 
 Stand und vorgeschlagenes Vorgehen: `../notes/progress.md`.
 
