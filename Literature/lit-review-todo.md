@@ -2,13 +2,36 @@
 
 Living list, carried over from the night loop of 10 Nov 2026. Results go into `review-matrix.md` (conventions in its header); Zotero tags and notes as described there. Strike or reorder freely.
 
-## For the student — next steps (11 Nov)
-1. **Delete** `manual download/d3ta06268f.pdf` (0 bytes; Lee 2024 JMCA is already there as "A hydrophilic Janus-faced separator with.pdf"). All other requested downloads arrived and were processed 13 Nov.
-2. Done 14 Nov: Cha 2024, Zhang 2024 AEM, Zheng 2019, Blanc 2020, Tang 2019 downloaded, read and used (Cha row in Table 2.1, ζ point in §2.3); all sources cited in §2.1–§2.3 are now full text.
-3. **Download (16 Nov), into `manual download/`:** Kao et al., ACS Nano 17 (2023) 3948 — primary source of the ~1 % HER charge loss per cycle (in situ GC, Zn‖Zn, 2 m ZnSO₄, 1 mA cm⁻²) now cited via Rana AEM in §2.1; add to Zotero (DOI not yet looked up, Zotero MCP was offline) and cite directly.
-4. **Download (19 Nov audit), into `manual download/`:** no local full text, matrix rows could not be re-checked — Telmasre 2025 ECS Adv. `10.1149/2754-2734/ae06b5` (OA, IOP blocks curl), Zhang 2018 J. Electrochem. Soc. `10.1149/2.0321815jes` (OA), Li 2022 Chin. Chem. Lett. `10.1016/j.cclet.2022.03.065` (+ Tab. 1), Chen 2026 Energy Z `10.20517/energyz.2026.05`. Abstract-only sources that carry a claim (priority: first three): Sepulveda 2021 `10.1038/s41560-021-00796-8`, Ziegler 2019 `10.1016/j.joule.2019.06.012`, Yu 2024 JACS `10.1021/jacs.4c02558`, Dunn 2011 `10.1126/science.1212741`, Gao 2022 `10.1002/eem2.12359`, Kim 2024 Chem. Soc. Rev. `10.1039/d4cs00557k`, Guo 2025 `10.1039/d4ee05044d`, Wu 2021 `10.1039/d0ta11841a`. (Li 2024 Sci. Bull. is already in `manual download/` as "Separator designs…", not yet read.)
-5. **Primary sources for review-cited statements in §2.1–2.2 (20 Nov)** — open Zotero, then Claude adds them by DOI; you download the PDFs (publishers block automated download): Kao 2023 ACS Nano `10.1021/acsnano.2c12587` (HER ~1 %/cycle, replaces Rana AEM in §2.1; = item 3) · Yang 2024 EES `10.1039/d3ee04515c` (HER share vs current density, §2.2) · Zhang 2021 Carbon Energy `10.1002/cey2.70` and Fenta & Bouchal 2024 JMCA `10.1039/d4ta02704c` (BV t₊ 0.2 vs 0.7 in ZnCl₂, now cited via Gomez Vazquez) · Sand 1901 Phil. Mag. `10.1080/14786440109462590` (original Sand's time) · Yu 2024 JACS (item 4, desolvation water → HER, now cited via the Xu review). Price of Zn vs Li (Cui, secondary): primary data e.g. USGS Mineral Commodity Summaries — decide whether needed.
-4. **Ask the group (WeChat, low priority):** sp²/sp³/C–O/C=O fractions from the XPS fit behind Zhang 2026 ACS Nano Fig. 2D — only needed if ND surface chemistry becomes a model parameter.
+## For the student — papers to download (all pending, updated 20 Nov)
+Put the PDFs into `manual download/`; Claude then converts them (`bash tools/pdf2txt.sh "Literature/manual download"`), checks the values and switches the citations. All papers below are already in Zotero (metadata only). "OA" = free to read, but the publisher blocks automated download.
+
+**A. Needed for the proposal text (before 14 Dec)** — statements now cited via a review or a secondary source
+| Paper | DOI | Why |
+|---|---|---|
+| Kao 2023, ACS Nano | `10.1021/acsnano.2c12587` | ~1 % HER charge loss per cycle (§2.1, now via Rana AEM) |
+| Yang 2024, Energy Environ. Sci. | `10.1039/d3ee04515c` | HER share vs current density (§2.2, now via Rana AEM) |
+| Zhang 2021, Carbon Energy (OA) | `10.1002/cey2.70` | Bruce–Vincent t₊ 0.2 in 30 m ZnCl₂ (§2.2, now via Gomez Vazquez) |
+| Fenta & Bouchal 2024, J. Mater. Chem. A (OA) | `10.1039/d4ta02704c` | Bruce–Vincent t₊ 0.7 in 31 m ZnCl₂ (§2.2, now via Gomez Vazquez) |
+| Yu 2024, J. Am. Chem. Soc. | `10.1021/jacs.4c02558` | water left after desolvation feeds HER (§2.1, now via the Xu review) |
+| Sand 1901, Phil. Mag. | `10.1080/14786440109462590` | original Sand's time (§2.2, now via Yang 2025); free scan on Zenodo, record 1430630 |
+| Sepulveda 2021, Nat. Energy | `10.1038/s41560-021-00796-8` | ≤ US$20 kWh⁻¹ cost target (§1, abstract only so far) |
+| Ziegler 2019, Joule | `10.1016/j.joule.2019.06.012` | same cost target (§1, abstract only so far) |
+
+**B. To re-check rows of `review-matrix.md`** (read earlier from web sources, no local text)
+Telmasre 2025, ECS Adv. (OA) `10.1149/2754-2734/ae06b5` · Zhang 2018, J. Electrochem. Soc. (OA) `10.1149/2.0321815jes` · Li 2022, Chin. Chem. Lett. `10.1016/j.cclet.2022.03.065` (incl. Tab. 1) · Chen 2026, Energy Z `10.20517/energyz.2026.05`
+
+**C. Abstract only, low priority** (context or not cited)
+Dunn 2011, Science `10.1126/science.1212741` · Gao 2022, Energy Environ. Mater. `10.1002/eem2.12359` · Kim 2024, Chem. Soc. Rev. `10.1039/d4cs00557k` (only if a Li-vs-Zn comparison is written) · Guo 2025, Energy Environ. Sci. `10.1039/d4ee05044d` · Wu 2021, J. Mater. Chem. A `10.1039/d0ta11841a`
+
+**D. Supporting information — only if the point becomes needed** (what each SI is for: "Needs access" lists in `review-matrix.md`)
+Zhao 2024 CCL (OA) `10.1016/j.cclet.2023.109332` · Shao 2025 (OA) `10.1002/cey2.701` · Tan 2025 `10.1002/smll.202510596` · Zhang 2023 CEJ `10.1016/j.cej.2023.143312` · Luo 2024 `10.1016/j.cej.2023.148448` · Hansen 2023 `10.1016/j.memsci.2023.122130` · Akram 2025 `10.1016/j.matchemphys.2025.130863` · Liu 2024 AEM `10.1002/aenm.202401479` · Rana 2025 Joule `10.1016/j.joule.2025.102167`
+
+**Other**
+- Delete `manual download/d3ta06268f.pdf` (0 bytes; Lee 2024 JMCA is already there as "A hydrophilic Janus-faced separator with.pdf").
+- Li 2024 Sci. Bull. is already in `manual download/` ("Separator designs…") — nothing to download, not read yet.
+- Zn vs Li price (Cui 2025 quotes it from reviews): decide whether a primary price source (e.g. USGS Mineral Commodity Summaries) is needed.
+- Ask the group (WeChat, low priority): sp²/sp³/C–O/C=O fractions from the XPS fit behind Zhang 2026 ACS Nano Fig. 2D — only needed if ND surface chemistry becomes a model parameter.
+- Done earlier: all downloads requested until 14 Nov arrived and were processed (Cha 2024, Zhang 2024 AEM, Zheng 2019, Blanc 2020, Tang 2019 and the 13 Nov batch).
 
 Done 11 Nov: Zotero cleanup (62 misplaced PDF copies on Shao DML59VLW → Trash; all had their own items with PDFs; Shao's own PDF attached); filtering scheme decided (`use-*` tags, criteria in `review-matrix.md` header).
 
