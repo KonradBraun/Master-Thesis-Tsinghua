@@ -34,6 +34,13 @@ Funnel (student, 12 Nov): general → very specific → what this work does diff
 
 LaTeX chapters `proposal/data/chap01–06.tex` follow this structure (13 Nov); §2 prose: roadmap + §2.1 written 13 Nov (sources for the 3 "[source?]" markers found 14 Nov), §2.2 + Table 2.1 written 14 Nov and condensed to ~2 p + table (budget), §2.3 written 14 Nov (~1.4 p); all re-audited against full texts 14 Nov; §2.1 and §2.2 reviewed by the student and revised 16 Nov, §2.3 not yet reviewed; §2.4 written and audited against full texts 19 Nov (~1.3 p, not yet reviewed); §2.5 and §2.6 only as plans (comments in `chap02.tex`). Literature behind §2 re-audited 19 Nov; primary sources added where verified 20 Nov (open ones: download list in `../Literature/lit-review-todo.md`). Chapter 3: draft 13 Nov, first comments applied 14 Nov; stays in `main.tex` but is not final (open to change).
 
+## Writing decisions for §2 (student, 12–14 Nov; kept from the removed paragraph outline)
+- The group's ND@GF manuscript is discussed only in §2.5; elsewhere at most a neutral row in Table 2.1 (needs the supervisor's OK). Its DOD (1.7 %) is not singled out.
+- Per family of modified separators, cite 1–2 of the strongest full-text papers, not a long list; the table carries the rest.
+- Bruce–Vincent appears in §2.2 only as a one-sentence limitation; the discussion (with the virtual Bruce–Vincent result) goes to §4/§5.
+- pH of 2 M ZnSO₄ is given as a range (Cui 2025 vs Price & Weingärtner 1991), not a single value.
+- Prose style (explanation over numbers, claims carry the citation, no em-dashes, one sentence per line): Claude's memory `thesis-writing-style`.
+
 ## Word form — fields to fill (submitted with the report)
 - [ ] Cover: name, student ID, department, discipline, supervisor + title, enrolment date
 - [ ] Thesis title, date of the proposal report
