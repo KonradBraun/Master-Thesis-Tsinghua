@@ -37,3 +37,9 @@ Thesis Proposal/**/*.pdf
 VSCode/
 Thumbs.db
 desktop.ini
+
+# Downloaded templates/forms (official originals, re-downloadable)
+*.zip
+*.rar
+~$*
+/Thesis Proposal/Thesis Templates (EN)(202605)/
