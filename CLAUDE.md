@@ -39,7 +39,7 @@
 - `notes/comsol-guide-NN.md` — temporary step-by-step guide for the COMSOL model currently being built
 - `notes/parameters.md` — model parameter table with sources and status (living file, becomes the parameter table in proposal §4)
 - `Literature/lit-review-todo.md` — open literature-review tasks and the student's to-dos (missing SI, Zotero fixes)
-- `Literature/triage.md` — triage of the student's PDF collection (`Literature/Potential/`, text versions in `txt/`) and open literature gaps
+- `Literature/triage.md` — PDFs in `Literature/Potential/` not used yet, sorted by thesis chapter (text versions in `txt/`)
 - `Thesis Proposal/proposal/` — the proposal in LaTeX (ThuThesis v7.7.1, Tsinghua 选题报告 format, English, XeLaTeX); `ref/refs.bib` from Zotero via `tools/zotero2bib.ps1` (PowerShell; `bash` in PowerShell hits WSL) or `tools/zotero2bib.sh` (Git Bash)
 - `Thesis Proposal/proposal-plan.md` — proposal: form requirements, proposed structure with page budget, Word-form checklist, timeline, supervisor questions
 - `Thesis Proposal/outline.md` — draft thesis chapter outline (incl. full fundamentals), open options, literature workflow
