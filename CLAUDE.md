@@ -38,11 +38,23 @@
 - `Literature/paper-summary.md` — group paper + SI: methods, measured data, critical findings
 - `notes/comsol-guide-NN.md` — temporary step-by-step guide while a COMSOL model is being built (none at the moment)
 - `notes/parameters.md` — model parameter table with sources and status (living file, becomes the parameter table in proposal §4)
-- `Literature/lit-review-todo.md` — the student's download list (top) and open literature tasks
-- `Literature/triage.md` — PDFs in `Literature/Potential/` not used yet, sorted by thesis chapter (text versions in `txt/`)
+- `Literature/lit-review-todo.md` — the student's download list (top), open literature tasks, and the thesis reading list of unused PDFs in `Literature/Potential/`
 - `Thesis Proposal/proposal/` — the proposal in LaTeX (ThuThesis v7.7.1, Tsinghua 选题报告 format, English, XeLaTeX); `ref/refs.bib` from Zotero via `tools/zotero2bib.ps1` (PowerShell; `bash` in PowerShell hits WSL) or `tools/zotero2bib.sh` (Git Bash)
 - `Thesis Proposal/proposal-plan.md` — proposal: form requirements, structure (agreed 12 Nov), length, writing decisions for §2, Word-form checklist, timeline, supervisor questions
 - `Thesis Proposal/drafts/thesis-material/` — longer drafts kept for the thesis (e.g. the full §2.2 of 14 Nov)
 - `Thesis Proposal/outline.md` — draft thesis chapter outline (incl. full fundamentals) and open options
 - `Reference/` — background primers (German)
 - `notes/claude-notes.md` — Claude's own short notes on pitfalls and non-obvious facts; read before relying on assumptions
+
+## Which files to read for which task
+Read only what the task needs. `Literature/review-matrix.md` is large: open only the section needed (search for `## §2.x`); its section numbers are old topic labels — matrix §2.3 = nanodiamonds (proposal §2.4), matrix §2.4 = simulation (proposal §2.3).
+
+| Task | Read first |
+|---|---|
+| Writing or revising proposal text | `Thesis Proposal/proposal-plan.md` (structure, writing decisions) · matching section of `Literature/review-matrix.md` · the `.tex` file being edited · memory notes on writing style and source accuracy |
+| Checking or adding literature | header + relevant section of `Literature/review-matrix.md` · `Literature/lit-review-todo.md` · access routes in `notes/claude-notes.md` |
+| COMSOL modelling | `notes/progress.md` (approach, model results) · `notes/parameters.md` · COMSOL part of `notes/claude-notes.md` · `Literature/paper-summary.md` F1–F21 for the group's model |
+| The group's paper and data | `Literature/paper-summary.md` · data section of `notes/progress.md` |
+| Planning, deadlines, supervisor | Status above · timeline and open supervisor questions in `Thesis Proposal/proposal-plan.md` · next steps in `notes/progress.md` |
+| Thesis structure beyond the proposal | `Thesis Proposal/outline.md` · thesis reading list in `Literature/lit-review-todo.md` |
+| Explaining basics to the student | `Reference/` primers (German) |

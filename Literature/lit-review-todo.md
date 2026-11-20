@@ -46,4 +46,20 @@ Zhao 2024 CCL (OA) `10.1016/j.cclet.2023.109332` · Shao 2025 (OA) `10.1002/cey2
 - [ ] **Consistency check:** `parameters.md` audited 19 Nov; `paper-summary.md` against the corrected matrix still open.
 - [ ] **σ–t₊ figure** (GF → modified, full-text rows), optional.
 
+## For the thesis — PDFs in `Potential/` not used yet (moved from `triage.md`, 20 Nov)
+Papers from the student's PDF collection that the proposal does not use yet; text versions in `Potential/txt/`, Zotero tag `pdf-folder-import`. Chapter numbers refer to `../Thesis Proposal/outline.md`.
+| Topic → thesis chapter | Files in `Potential/` |
+|---|---|
+| Sand's time (3.4) | MODIFICATION TO THE SAND'S APPROACH (PhD thesis, Akolkar group) |
+| Donnan / charged membranes (4.6) | Comparative Analysis of Donnan Steric Partitioning … (Saavedra 2024) |
+| ND synthesis, coal context (3.6) | Upgrading carbonaceous materials (Zang 2022, review) |
+| Continuum models of Zn deposition (5.1) | NONISOTHERMAL SIMULATION OF (Zn in ZnSO₄, FEM + KMC) |
+| Phase-field history (4.7, 5.3 — only if in scope) | Computer Simulation of Dendritic (Voss 1985) |
+| V&V (4.8) | Verification and validation in computational (Babuška & Oden 2004) · Concepts of Model Verification and Validation (LANL report) · VER IF ICAT ION AND VAL IDAT ION IN (Oberkampf & Roy — **only the book's front matter**; get chapters if the V&V chapter needs them) |
+| Cathode (2.4) | Recent Advances … Manganese Dioxide · Rechargeable Zn–MnO2 Batteries |
+| Manufacturing chapter (option) | Continuous Roll-To-Roll Coating and Drying of (separators, TUM) · Scalable aqueous-phase fabrication of rGO (R2R vs vacuum filtration) · A facile method to enhance the uniformity and adhesion … · Enhancing Li-Ion Battery Performance with Alumina-Coated Separators · Fabrication Techniques for Graphene Oxide-Based Membranes |
+
+### Not needed (off-topic, judged from the abstract)
+Two-dimensional quantum-sheet films (MoS₂) · Electronic, Structural, and Magnetic Upgrading of Coal-Based Products · Bimetallic MOF glass fiber (Li–S) · Current density driven texture evolution in zinc powder anodes · Multifunctional pH-Controlling Electrolyte · The magnetohydrodynamic effect (alkaline) · Flexible electrodes review · Scalable Manufacturing of (MXene films) · Validating Computational Models (social-science models) · Transverse Number Measurement (scanned notes, no text)
+
 Full-text access routes and blocked publishers: `../notes/claude-notes.md`.
