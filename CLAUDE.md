@@ -33,15 +33,16 @@
 **COMSOL:** version 6.3 runs on the laptop this project runs on. The office PC has **5.6** (cannot open 6.3 files; GUI differs, e.g. no separate Species Charges node — charges probably in the Electrolyte node, unverified). Full licence — includes Electrochemistry, Electrodeposition, Battery Design, Corrosion, Optimization and Uncertainty Quantification.
 
 ## Key files
-- `notes/progress.md` — current state, approach (agreed with the student, not yet with the supervisor), model results, setup, pending tasks
-- `Literature/review-matrix.md` — literature matrix and synthesis per proposal section (built by the literature-search session); Zotero tags `use-core` / `use-context` / `use-drop` mark what gets cited (criteria in its header)
+- `notes/progress.md` — current state, approach (agreed with the student; the supervisor replied "sounds great plan" to a summary, details still to discuss), model results, setup, next steps
+- `Literature/review-matrix.md` — literature matrix and synthesis per proposal section (audited against the full texts 19 Nov); Zotero tags `use-core` / `use-context` / `use-drop` mark what gets cited (criteria in its header)
 - `Literature/paper-summary.md` — group paper + SI: methods, measured data, critical findings
-- `notes/comsol-guide-NN.md` — temporary step-by-step guide for the COMSOL model currently being built
+- `notes/comsol-guide-NN.md` — temporary step-by-step guide while a COMSOL model is being built (none at the moment)
 - `notes/parameters.md` — model parameter table with sources and status (living file, becomes the parameter table in proposal §4)
-- `Literature/lit-review-todo.md` — open literature-review tasks and the student's to-dos (missing SI, Zotero fixes)
+- `Literature/lit-review-todo.md` — the student's download list (top) and open literature tasks
 - `Literature/triage.md` — PDFs in `Literature/Potential/` not used yet, sorted by thesis chapter (text versions in `txt/`)
 - `Thesis Proposal/proposal/` — the proposal in LaTeX (ThuThesis v7.7.1, Tsinghua 选题报告 format, English, XeLaTeX); `ref/refs.bib` from Zotero via `tools/zotero2bib.ps1` (PowerShell; `bash` in PowerShell hits WSL) or `tools/zotero2bib.sh` (Git Bash)
-- `Thesis Proposal/proposal-plan.md` — proposal: form requirements, proposed structure with page budget, Word-form checklist, timeline, supervisor questions
-- `Thesis Proposal/outline.md` — draft thesis chapter outline (incl. full fundamentals), open options, literature workflow
+- `Thesis Proposal/proposal-plan.md` — proposal: form requirements, structure (agreed 12 Nov), length, writing decisions for §2, Word-form checklist, timeline, supervisor questions
+- `Thesis Proposal/drafts/thesis-material/` — longer drafts kept for the thesis (e.g. the full §2.2 of 14 Nov)
+- `Thesis Proposal/outline.md` — draft thesis chapter outline (incl. full fundamentals) and open options
 - `Reference/` — background primers (German)
 - `notes/claude-notes.md` — Claude's own short notes on pitfalls and non-obvious facts; read before relying on assumptions
