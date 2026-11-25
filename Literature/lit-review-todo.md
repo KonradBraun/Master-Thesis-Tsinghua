@@ -33,8 +33,8 @@ Zhao 2024 CCL (OA) `10.1016/j.cclet.2023.109332` · Shao 2025 (OA) `10.1002/cey2
 - Ask the group (WeChat, low priority): sp²/sp³/C–O/C=O fractions from the XPS fit behind Zhang 2026 ACS Nano Fig. 2D — only needed if ND surface chemistry becomes a model parameter.
 - Done earlier: all downloads requested until 14 Nov arrived and were processed (Cha 2024, Zhang 2024 AEM, Zheng 2019, Blanc 2020, Tang 2019 and the 13 Nov batch).
 
-## Status (20 Nov)
-- Proposal §2.1–§2.4 written in `../Thesis Proposal/proposal/data/chap02.tex`, incl. Table 2.1; §2.5 (group's ND@GF work) and §2.6 (gap) are still plans only.
+## Status (25 Nov)
+- Proposal §2 complete in `../Thesis Proposal/proposal/data/chap02.tex`, incl. Table 2.1; §2.5 (group's ND@GF work) and §2.6 (gap) written and audited 25 Nov, not yet reviewed.
 - Literature work done: broad search (10–11 Nov), targeted round T1–T9 (13 Nov: simulation critique and V&V, HER/pH/ZHS models, charged pores, ND layer, §1 cost and safety sources, thermodynamic factor, CN/INT count, Chinese-language search), claim-by-claim audit of `review-matrix.md` and `notes/parameters.md` against the full texts (19 Nov). Results live in the matrix.
 - Further searches only as targeted gaps right before the section that needs them.
 

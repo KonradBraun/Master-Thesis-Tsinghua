@@ -215,10 +215,55 @@ The study thus shows that NDs on GF can prolong cycling, but not which of the pr
 
 \section{Starting point of this work}
 \label{sec:starting-point}
-% The group's ND@GF separator: improvement under identical conditions, proposed mechanisms, existing model
-% (NDs as "hollow circles", 0.5 V, SI §1.7); neutral; only place where papers are discussed by name.
+% TEMPORARY (student, 25 Nov): the group's ND@GF manuscript is cited as zhang_crystal_2026 (Zotero STQT2W6E, type
+% 'Manuscript under review, Journal of Power Sources') until the supervisor agrees. If she declines: drop these
+% citations (the text already says 'a manuscript that is currently under review') and delete the Zotero item.
+% Draft 25 Nov, unreviewed; budget ~0.75-1 p. Group manuscript and SI checked in full text 25 Nov (cycling p. 19, Fig. 3d/3e;
+% mechanisms pp. 13, 15-17, 21, 23-25; SI sec. 1.1, 1.2, 1.7). ND synthesis: same laser parameters in the SI and in the ACS Nano paper.
+% Model description from the group's files COMSOL/Old models/GF(1).mph, ND@GF(1).mph (modelinfo/dmodel.xml, 25 Nov): Electric
+% Currents only, Stationary, terminal 0.5 V vs ground, ND row = 100 circles r = 0.8 um, pitch 2 um, just below the separator layer.
+% The SI names secondary current distribution + dilute species transport and a planar anode; the files of Fig. 2h/i contain only
+% Electric Currents and a Zn surface with bumps (Fig. S11, concentration, is not from these files). The text describes the files.
+% Final audit 25 Nov: every sentence checked at its location (table in the session scratchpad); Fig. 2 and 3 rendered and match.
+% GF/D is named in the SI only for cell assembly (sec. 1.1); the ND substrate is "a commercial glass fiber (GF) substrate" (p. 12).
+
+This work builds on a nanodiamond-decorated GF separator (ND@GF) developed in the host group and described in a manuscript that is currently under review\cite{zhang_crystal_2026}.
+Its NDs are synthesised from low-rank coal by a laser-induced shockwave method of the same group, which yields diamond crystallites of about \SI{5}{nm}\cite{zhang_silicon-mediated_2026}, and are described as oxygen-terminated with exposed (111) facets\cite{zhang_crystal_2026}.
+Vacuum-filtered onto a commercial GF separator, they fill the large voids between the fibres and leave pores smaller than \SI{10}{nm} in electron micrographs, while the measured ionic conductivity rises slightly\cite{zhang_crystal_2026}.
+Under identical conditions in \SI{2}{M} ZnSO$_4$ at \SI{2}{mA.cm^{-2}} and \SI{1}{mAh.cm^{-2}}, the Zn$\|$Zn cell with ND@GF cycled for \SI{3738}{h} without signs of a short circuit, whereas the cell with a plain Whatman GF/D separator short-circuited after about \SI{47}{h}\cite{zhang_crystal_2026}.
+ND@GF also prolonged cycling at ten times this current density, in Zn$\|$Cu cells and in full cells\cite{zhang_crystal_2026}.
+
+The manuscript attributes the improvement to the oxygen-terminated (111) surface of the NDs and, as additional reinforcement, to their hardness\cite{zhang_crystal_2026}.
+In this picture, the surface binds Zn$^{2+}$, repels sulfate and speeds up the desolvation of Zn$^{2+}$, which the manuscript supports with DFT calculations, an H-cell test in which less sulfur and more zinc passed through ND@GF, a lower activation energy from impedance spectra at several temperatures and a measured Zn$^{2+}$ transference number of 0.69 instead of 0.51\cite{zhang_crystal_2026}.
+Together, these effects are proposed to make the electric field and the Zn$^{2+}$ flux at the anode more uniform, in line with smoother zinc surfaces after and during cycling, while the hard NDs, which raise the puncture force of the separator, are proposed to act as a barrier against dendrites\cite{zhang_crystal_2026}.
+The manuscript relates the lower hydrogen evolution and corrosion found with ND@GF in voltammetry and Tafel measurements to a suppressed adsorption of sulfate at the ND surface\cite{zhang_crystal_2026}.
+These effects are presented as acting in synergy, and their individual contributions are not quantified\cite{zhang_crystal_2026}.
+
+To visualise the effect of the separator on the electric field near the anode, the manuscript includes COMSOL simulations\cite{zhang_crystal_2026}.
+According to its supporting information, a simplified two-dimensional model is solved for the steady state at a constant cathodic overpotential of \SI{0.5}{V}, with the NDs represented by ``hollow circles'' on the anode-facing side of the GF\cite{zhang_crystal_2026}.
+The model files of the two field maps, which the group made available for this work, solve only for ohmic conduction, without electrode kinetics or ion concentrations, and place a row of circles \SI{1.6}{\um} in diameter along the anode-facing edge of the separator layer, above a zinc surface with semicircular protrusions.
+The NDs thus enter as electrically insulating voids, defined by their size and position alone, and none of the surface properties to which the improvement is attributed is part of the model.
+The maps show a lower peak field at the protrusions with ND@GF at the same fixed overpotential, whereas the cells were cycled at constant current with nucleation overpotentials below \SI{90}{mV}\cite{zhang_crystal_2026}.
+Which of the proposed mechanisms accounts for the difference between about \SI{47}{h} and \SI{3738}{h} of cycling therefore remains open.
 
 \section{Research gap and approach of this work}
 \label{sec:gap}
-% Operating point 2 mA cm-2, NDs with physical properties, kinetics + concentration, quantitative metrics,
-% mesh study, comparison with measurements, mechanism ranking.
+% Draft 25 Nov, unreviewed; budget ~0.5 p. Synthesis of sec. 2.1-2.5 only (the claims carry their citations there), no new sources;
+% research question and work packages are in chapter 3, preliminary results in chapter 4 (not repeated here).
+% Contrasts: fixed voltage, steady state, ohmic only, NDs as voids = shown for the group's model only (sec. 2.5);
+% stated/sourced inputs, quantitative measures, mesh study, comparison with measurements = current practice (end of sec. 2.3).
+% Gap check 25 Nov (all txt): only ND paper with a kinetics + transport model is Ding 2025 SI (ND additive as rotating domain,
+% fixed 0.2 V, no mechanism comparison) -> gap scoped to ND-modified separators.
+
+Studies of modified separators report longer cycle lives than with plain GF but explain them with a recurring set of mechanisms, whose individual contributions are rarely isolated (Section~\ref{sec:separators}).
+The arguments for ion selectivity in particular have limited scope under the conditions considered here.
+At \SI{2}{mA.cm^{-2}} and \SI{1}{mAh.cm^{-2}}, the classical argument for a higher $t_+$ hardly applies, and in \SI{2}{M} ZnSO$_4$ a fixed charge can act only in a thin layer at the pore walls, while the charge of NDs at this concentration cannot be assumed to be negative (Sections~\ref{sec:separators} to~\ref{sec:nanodiamonds}).
+The simulations that accompany separator studies illustrate the proposed mechanisms rather than test them (Section~\ref{sec:simulation}).
+For NDs on GF, both the published precedent and the separator of the host group attribute a many-fold longer cycle life to several effects that were not separated, and the existing model of the host group represents the NDs as insulating voids in a purely ohmic model at a fixed voltage (Sections~\ref{sec:nanodiamonds} and~\ref{sec:starting-point}).
+A continuum model of an ND-modified separator that gives the NDs physical properties, couples electrode kinetics with ion transport at the experimental operating point and weighs the proposed mechanisms against one another was not found in the literature reviewed here.
+
+This work addresses this gap with continuum simulations in COMSOL Multiphysics of symmetric Zn$\|$Zn cells with the plain and the ND-modified separator.
+In contrast to the existing model of the host group, the cells are simulated at constant current at the experimental operating point and over the course of a plating step, electrode kinetics and concentration gradients are solved together with the potential, and the NDs enter with physical properties, such as a fixed charge estimated from their loading and surface chemistry and the pore structure of the ND layer.
+Beyond current practice in separator studies, the equations, boundary conditions and parameters are stated with their sources, the current distribution along the anode is evaluated with quantitative measures and a mesh study instead of colour maps alone, and the models are compared with the measurements of the host group.
+Each mechanism is switched on separately, so that the mechanisms can be compared by how strongly each changes the conditions for zinc deposition at the anode.
+The simulations are thus used to test the proposed mechanisms rather than to illustrate them.
