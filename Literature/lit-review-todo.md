@@ -13,6 +13,19 @@ Put the PDFs into `manual download/`; Claude then converts them (`bash tools/pdf
 
 **C. Low priority** (context, not cited): Guo 2025, Energy Environ. Sci. `10.1039/d4ee05044d`
 
+**E. CNKI — Chinese-language sources (searched 25 Nov via oversea.cnki.net; full texts only on the Tsinghua network; pick PDF, not CAJ, if offered; "download by chapter" is enough where chapters are named).** Not in Zotero yet (CNKI thesis DOIs probably don't resolve via CrossRef — unverified; add them from the CNKI page when the PDFs arrive).
+| Prio | Work | Type, year, DOI | Why |
+|---|---|---|---|
+| 1 | 张秋霞 · 水系锌离子电池锌负极界面稳定性调控及性能研究 | PhD thesis, Jilin Univ. 2025 (supervisor 李红东), 114 pp., `10.27162/d.cnki.gjlin.2025.000488` — ch. 3 (ND electrolyte additive) and ch. 4 (ND-modified separator) | long version of Zhang 2024 ACS AMI, our closest precedent (§2.4): loading, pores, surface groups, possibly data not in the paper |
+| 1 | 苏奕闻 · 基于传质调控的水系锌离子电池负极稳定化研究 | Master's thesis, Soochow Univ. 2023 (supervisor 孙靖宇), 102 pp., `10.27351/d.cnki.gszhu.2023.002170` — ch. 3 (MXene Janus separator, §3.2.4 finite-element simulation) | long version of Su 2022 AFM, whose 3 µm FEM separator §2.3 discusses; check whether the thesis documents setup, BCs, mesh |
+| 1 | 常乐 · 新型沸石基隔膜稳定水系锌离子电池的研究 | Master's thesis 2026 (supervisor 朱前程; Hebei Univ. judging from the DOI code — unverified), 83 pp., `10.27103/d.cnki.ghebu.2026.001643` — §2.4.2 COMSOL, ch. 4 (ZSM-5/GF composite separator) | separator thesis with a COMSOL section; co-author of Wang 2026 ACS Nano (zeolite-filled GF, in Zotero); check against the §2.3/§2.6 gap claims |
+| 2 | 方蓉蓉 et al. · 水系锌离子电池复合隔膜的改性策略与研究进展 | review, 工程科学学报 48(10) (2026) 2434–2448, `10.13374/j.issn2095-9389.2026.02.26.001` — free PDF on cje.ustb.edu.cn | Chinese-language review for §2.2 (GF deficits, t₊, modification families) |
+| 2 | 刘爽, 房栾, 聂平 · 水系锌离子电池功能隔膜材料研究进展 | review, 金属功能材料 31(4) (2024) 8–16, `10.13228/j.boyuan.issn1005-8192.20240050` | Chinese-language review for §2.2 ("intrinsic problems of GF") |
+| 2 | 郑玉杰 et al. · 水系锌离子电池负极-电解液界面优化及虚拟开发 | review, 华中师范大学学报(自然科学版) 60(2) (2026), 16 pp., `10.19603/j.cnki.1000-1190.2026.02.009` | Chinese-language review of DFT/MD/ML for Zn interfaces — possible source for the atomistic-context sentence in §2.3 |
+| 3 | 王美玲 · "Electrolyte Modification and Zinc Anode Interface Design for Aqueous Zinc-ion Batteries" (CNKI English title) | PhD thesis, Jilin Univ. 2024 (supervisor 陈岗), 150 pp., `10.27162/d.cnki.gjlin.2024.000156` — ch. 5 only | long version of Wang 2024 AFM (ND rolled into Zn, §2.4) |
+| 3 | 翟晓丽 · 电池组件的金刚石改性及性能提高研究 | PhD thesis, Jilin Univ. 2023 (supervisor 李红东), 99 pp., `10.27162/d.cnki.gjlin.2023.006933` — ch. 4 only | ND-modified GF separator (incl. heat-treated ND) in Na-ion cells — thesis material, not proposal |
+Searched and not needed: general Zn-separator theses without continuum models (黄梦诚 2025, 冯紫君 2025, 李睿涵 2025), anode-side COMSOL theses (张伯焘 2025, 孙奇 2025, 王祎城 2026, 李逸峰 2023) — keep as examples of COMSOL practice only if §2.3 needs Chinese-language cases. CNKI search syntax that works: subject search with `*` as AND, e.g. `纳米金刚石*锌离子电池`.
+
 **Arrived and checked 25 Nov** (rows and corrections in `review-matrix.md`, Zotero status tags updated)
 - Kao 2023: HER faradaic efficiency 1.1 % for bare Zn‖Zn at 1 mA cm⁻², 0.5 mAh cm⁻² ✓ — but the electrolyte is **2 M** ZnSO₄ (Methods), not "2 m" as Rana AEM quotes and §2.1 l. 30 prints.
 - Yang 2024 EES (SI only): Fig. S11b gives the H₂ **volume ratio of the sampled gas** (~60 / 32 / 7.5 / 2 % at 0.05 / 0.2 / 1 / 10 mA cm⁻²), not a faradaic HER share → the "HER share" wording in the chap02 comment (l. 95) is wrong.
