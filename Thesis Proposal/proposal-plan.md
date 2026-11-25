@@ -54,8 +54,8 @@ LaTeX chapters `proposal/data/chap01–06.tex` follow this structure (13 Nov); �
 ## Timeline — proposed 4 Nov, replaces the 30 Oct plan (§ numbers = structure above)
 Preliminary results = models 01–05 (done by 10 Nov); 2D is optional for the proposal.
 - **11 – 19 Nov ✅:** literature search and matrix · §2.1–§2.4 written (13–19 Nov) · WeChat update to the supervisor (reply relayed 19 Nov)
-- **20 – 24 Nov:** §2.5 starting point, §2.6 gap · §4 methodology with preliminary results · first 2D step (group geometry, models A/B) only if on track
-- **25 – 29 Nov:** §1, 3, 5, 6 → full draft to supervisor ~29 Nov
+- **20 – 24 Nov:** §2.5 starting point ✅, §2.6 gap ✅ (both 25 Nov, unreviewed) · §4 methodology with preliminary results (not started) · first 2D step (group geometry, models A/B) only if on track
+- **25 – 29 Nov:** §1, 3, 5, 6 → full draft to supervisor ~29 Nov — with §1, §4, §5, §6 still open this date is hardly realistic; a new date is the student's decision (raised 25 Nov)
 - **30 Nov – 14 Dec:** short chat with the supervisor (Thu 3 Dec afternoon, to confirm) · revision · Word form · slides for the oral presentation (5–10 min, defence ~17 Dec) · rehearsal with Dr Zhang (offered by the supervisor) · supervisor signature on the form before 14 Dec · buffer · submission
 
 Moved after the draft (optional for the proposal): i₀ calibration · first 2D step. (Group model verified and re-run = model 05, 10 Nov.)
@@ -64,7 +64,7 @@ Moved after the draft (optional for the proposal): i₀ calibration · first 2D 
 Open questions go to the short chat in her Thursday afternoon discussion session (student away 26 Nov, proposing 3 Dec, to confirm).
 - [ ] Project category and thesis type for the form; interdisciplinary supervision needed?
 - [ ] Citation style? Example proposals from previous students?
-- [ ] OK to cite the group's ND@GF manuscript (J. Power Sources, under review) in §2.5 as "manuscript under review"? Would she like the simulation results in a revision of that paper or in a follow-up paper?
+- [ ] OK to cite the group's ND@GF manuscript (J. Power Sources, under review) in §2.5 as "manuscript under review"? (Cited temporarily since 25 Nov, Zotero STQT2W6E; if she declines, drop the citations and delete the item — the text works without them.) Would she like the simulation results in a revision of that paper or in a follow-up paper?
 - [ ] Depth on simulation fundamentals vs electrochemistry?
 - [ ] One committed scope, or alternatives with a recommendation?
 - [ ] Her view on: the approach (mechanism ranking, `../notes/progress.md`) · dendrite growth in scope · manufacturing-chapter idea
