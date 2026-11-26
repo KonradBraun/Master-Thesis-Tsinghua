@@ -45,7 +45,7 @@ LaTeX chapters `proposal/data/chap01–06.tex` follow this structure (13 Nov); �
 - [ ] Cover: name, student ID, department, discipline, supervisor + title, enrolment date
 - [ ] Thesis title, date of the proposal report
 - [ ] Interdisciplinary supervision yes/no (ask supervisor)
-- [ ] Literature counts (Chinese / international) + major references
+- [ ] Literature counts (Chinese / international) + major references (a hand-picked list on the form itself; no number given — ~5–10 suggested). The English form doesn't define "Chinese literature": the 10 Nov decision (groups in China) stands; if the Chinese form version means Chinese-language, the 8 CNKI items (26 Nov, Zotero tag `lang-zh`) cover it — check with Dr Zhang or the Chinese form when filling in. Form item 3 also asks for "current trends": covered by two sentences in §2.2 (26 Nov).
 - [ ] Available research conditions: COMSOL 6.3 full licence (laptop), 5.6 (office), group data
 - [ ] Experimental safety: no experiments → (1) No; (2)/(3) clarify whether still required
 - [ ] Project category (ask supervisor) · thesis type: likely *applied fundamental research* (proposal)
