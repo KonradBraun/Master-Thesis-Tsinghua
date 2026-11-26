@@ -5,7 +5,7 @@ Living list, carried over from the night loop of 10 Nov 2026. Results go into `r
 ## For the student — papers to download (updated 25 Nov)
 Put the PDFs into `manual download/`; Claude then converts them (`bash tools/pdf2txt.sh "Literature/manual download"`), checks the values and switches the citations. All papers below are already in Zotero (metadata only). "OA" = free to read, but the publisher blocks automated download.
 
-**A. Still needed for the proposal text (before 14 Dec)**
+**A. Still needed for the proposal text (before 14 Dec)** — both PDFs arrived 25 Nov and are converted (`txt/Correlating hydrogen evolution and zinc.txt`, `txt/Storage Requirements and Costs of Shaping.txt`), not yet checked against the text
 | Paper | DOI | Why |
 |---|---|---|
 | Yang 2024, Energy Environ. Sci. — **main text** (the file that arrived 25 Nov is only the SI) | `10.1039/d3ee04515c` | HER at low vs high current density (§2.2 comment, now via Rana AEM) |
@@ -13,17 +13,7 @@ Put the PDFs into `manual download/`; Claude then converts them (`bash tools/pdf
 
 **C. Low priority** (context, not cited): Guo 2025, Energy Environ. Sci. `10.1039/d4ee05044d`
 
-**E. CNKI — Chinese-language sources (searched 25 Nov via oversea.cnki.net; full texts only on the Tsinghua network; pick PDF, not CAJ, if offered; "download by chapter" is enough where chapters are named).** Not in Zotero yet (CNKI thesis DOIs probably don't resolve via CrossRef — unverified; add them from the CNKI page when the PDFs arrive).
-| Prio | Work | Type, year, DOI | Why |
-|---|---|---|---|
-| 1 | 张秋霞 · 水系锌离子电池锌负极界面稳定性调控及性能研究 | PhD thesis, Jilin Univ. 2025 (supervisor 李红东), 114 pp., `10.27162/d.cnki.gjlin.2025.000488` — ch. 3 (ND electrolyte additive) and ch. 4 (ND-modified separator) | long version of Zhang 2024 ACS AMI, our closest precedent (§2.4): loading, pores, surface groups, possibly data not in the paper |
-| 1 | 苏奕闻 · 基于传质调控的水系锌离子电池负极稳定化研究 | Master's thesis, Soochow Univ. 2023 (supervisor 孙靖宇), 102 pp., `10.27351/d.cnki.gszhu.2023.002170` — ch. 3 (MXene Janus separator, §3.2.4 finite-element simulation) | long version of Su 2022 AFM, whose 3 µm FEM separator §2.3 discusses; check whether the thesis documents setup, BCs, mesh |
-| 1 | 常乐 · 新型沸石基隔膜稳定水系锌离子电池的研究 | Master's thesis 2026 (supervisor 朱前程; Hebei Univ. judging from the DOI code — unverified), 83 pp., `10.27103/d.cnki.ghebu.2026.001643` — §2.4.2 COMSOL, ch. 4 (ZSM-5/GF composite separator) | separator thesis with a COMSOL section; co-author of Wang 2026 ACS Nano (zeolite-filled GF, in Zotero); check against the §2.3/§2.6 gap claims |
-| 2 | 方蓉蓉 et al. · 水系锌离子电池复合隔膜的改性策略与研究进展 | review, 工程科学学报 48(10) (2026) 2434–2448, `10.13374/j.issn2095-9389.2026.02.26.001` — free PDF on cje.ustb.edu.cn | Chinese-language review for §2.2 (GF deficits, t₊, modification families) |
-| 2 | 刘爽, 房栾, 聂平 · 水系锌离子电池功能隔膜材料研究进展 | review, 金属功能材料 31(4) (2024) 8–16, `10.13228/j.boyuan.issn1005-8192.20240050` | Chinese-language review for §2.2 ("intrinsic problems of GF") |
-| 2 | 郑玉杰 et al. · 水系锌离子电池负极-电解液界面优化及虚拟开发 | review, 华中师范大学学报(自然科学版) 60(2) (2026), 16 pp., `10.19603/j.cnki.1000-1190.2026.02.009` | Chinese-language review of DFT/MD/ML for Zn interfaces — possible source for the atomistic-context sentence in §2.3 |
-| 3 | 王美玲 · "Electrolyte Modification and Zinc Anode Interface Design for Aqueous Zinc-ion Batteries" (CNKI English title) | PhD thesis, Jilin Univ. 2024 (supervisor 陈岗), 150 pp., `10.27162/d.cnki.gjlin.2024.000156` — ch. 5 only | long version of Wang 2024 AFM (ND rolled into Zn, §2.4) |
-| 3 | 翟晓丽 · 电池组件的金刚石改性及性能提高研究 | PhD thesis, Jilin Univ. 2023 (supervisor 李红东), 99 pp., `10.27162/d.cnki.gjlin.2023.006933` — ch. 4 only | ND-modified GF separator (incl. heat-treated ND) in Na-ion cells — thesis material, not proposal |
+**E. CNKI — all 8 arrived as PDFs 25 Nov, processed 26 Nov** (rows in `review-matrix.md`, Zotero items with `lang-zh` tag, bib keys `zhang_qiuxia_2025`, `su_yiwen_2023`, `chang_le_2026`, `wang_meiling_2024`, `zhai_xiaoli_2023`, `fang_composite_2026`, `liu_functional_2024`, `zheng_interface_2026`). Results: the theses confirm §2.3/§2.4/§2.6 and add no contradiction (张秋霞 ch. 4 = paper, plus GF/D and the 0.1 mg loading quantisation; 苏奕闻 §3.2.4 = Su SI; 常乐 COMSOL = two maps without setup). Chinese-language citations added next to the existing ones (student's OK, 26 Nov; source comments in chap02): §2.2 GF advantages (刘爽 + Gu; "ionic conductivity" added), GF flux and cross-study comparability (方蓉蓉), t₊ 0.13 → 0.45 (张秋霞); §2.3 multiscale coupling (郑玉杰, new sentence), 3 µm separator (苏奕闻); §2.4 ND seeds and zinc-attracting (王美玲), "neither the paper nor the thesis reports ζ, thermal measurement or simulation" (张秋霞). Also added 26 Nov (form V202401 asks for "current trends"): two trend sentences in §2.2 (research focus since about 2019 — Li 2024 Sci. Bull. + 刘爽; passive → active separators — 方蓉蓉; thinner separators — Nian + 刘爽; continuous production — 方蓉蓉). Not added: Table 2.1 values, the 0.01 m dilution (§2.2) and "aggregated NDs" (§2.4) — not verifiable in the theses. Student (26 Nov): if the double citations look bad, replace the paper by the Chinese source where both say the same — decide on the PDF. Technical notes: CNKI DOIs entered via CSL JSON (no CrossRef lookup); Zotero's own BibTeX export gives Chinese items the key `__<year>` unless a citation key is set; 刘爽's PDF has non-embedded GBK fonts → text only via pypdf (`txt/` file replaced).
 Searched and not needed: general Zn-separator theses without continuum models (黄梦诚 2025, 冯紫君 2025, 李睿涵 2025), anode-side COMSOL theses (张伯焘 2025, 孙奇 2025, 王祎城 2026, 李逸峰 2023) — keep as examples of COMSOL practice only if §2.3 needs Chinese-language cases. CNKI search syntax that works: subject search with `*` as AND, e.g. `纳米金刚石*锌离子电池`.
 
 **Arrived and checked 25 Nov** (rows and corrections in `review-matrix.md`, Zotero status tags updated)
@@ -41,7 +31,7 @@ Zhao 2024 CCL (OA) `10.1016/j.cclet.2023.109332` · Shao 2025 (OA) `10.1002/cey2
 
 **Other**
 - Delete `manual download/d3ta06268f.pdf` (0 bytes; Lee 2024 JMCA is already there as "A hydrophilic Janus-faced separator with.pdf").
-- Li 2024 Sci. Bull. is already in `manual download/` ("Separator designs…") — nothing to download, not read yet.
+- Li 2024 Sci. Bull. (`li_separator_2024`, "Separator designs…" in `manual download/`): pp. 688–690 read 26 Nov and cited in §2.2 for the trend sentence (separators long less studied than electrodes/electrolytes, increasing attention recently; Fig. 1 timeline 2020–2022; p. 690 also names GF's chemical stability and porosity); rest not read. Proposed `use-context`.
 - Zn vs Li price (Cui 2025 quotes it from reviews; Kim 2024 gives metal prices Zn US$0.003 vs Li US$1.44 per g, also from its refs): decide whether a primary price source (e.g. USGS Mineral Commodity Summaries) is needed.
 - Ask the group (WeChat, low priority): sp²/sp³/C–O/C=O fractions from the XPS fit behind Zhang 2026 ACS Nano Fig. 2D — only needed if ND surface chemistry becomes a model parameter.
 - Done earlier: all downloads requested until 14 Nov arrived and were processed (Cha 2024, Zhang 2024 AEM, Zheng 2019, Blanc 2020, Tang 2019 and the 13 Nov batch).
@@ -53,7 +43,7 @@ Zhao 2024 CCL (OA) `10.1016/j.cclet.2023.109332` · Shao 2025 (OA) `10.1002/cey2
 
 ## Open tasks
 - [x] **Citation switches in chap02 from the 25 Nov downloads** (done 25 Nov, student's OK): §2.1 cites Kao 2023 (2 m → 2 M) and Yu 2024 (next to Xu 2023); §2.2 cites Sand 1901 for "Sand's time"; source comments updated; Table 2.1 caption now says "unless marked otherwise" (Yuan values from the SI). Zotero `use-*`: Kao `use-core`, Yu `use-drop` → `use-context`, Sand `use-context`.
-- [ ] **`use-*` tags — student's decision:** the "Proposed `use-*`" lines in matrix §1, §2.2 (alternatives to GF), §2.3 and §2.4, plus Rana 2025 AEM (proposed `use-core`); most of these Zotero items have no `use-*` tag yet.
+- [ ] **`use-*` tags — student's decision:** the "Proposed `use-*`" lines in matrix §1, §2.2 (alternatives to GF), §2.3 and §2.4, plus Rana 2025 AEM (proposed `use-core`); most of these Zotero items have no `use-*` tag yet. CNKI items (26 Nov, now cited): proposed `use-context` for 方蓉蓉, 刘爽, 郑玉杰, 张秋霞, 苏奕闻, 王美玲; `use-drop` for 常乐, 翟晓丽.
 - [ ] **PDF processing (ongoing).** New files in `manual download/` → `bash tools/pdf2txt.sh "Literature/manual download"`; check for "Figure S1" captions before assuming an SI is included. Per paper: matrix row (incl. comparison-table fields: GF grade, Zn thickness → DOD, σ/t₊ with method and ΔV, Zn//Zn life at j/Q with GF control, CE, simulation setup), Zotero tag + note. Processed: everything in the folder as of 25 Nov.
 - [ ] **Table 2.1:** group row waits for the supervisor's OK; whether life/DOD columns are added is open. Yang 2022 and Gou 2025 not added (student, 19 Nov: table detailed enough).
 - [ ] **Alternatives to GF (optional):** subsection in matrix §2.2 (Zhou 2022, Zheng 2023, reviews Nian 2025 and Lee 2025); unverified further leads: 10.1002/adfm.202316619, 10.1002/aenm.202101299, 10.1063/5.0214281.
